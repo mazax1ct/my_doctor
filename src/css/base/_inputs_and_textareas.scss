@@ -1,0 +1,67 @@
+.form-label {
+    display: block;
+}
+
+.input,
+.textarea {
+    border-radius: 8px;
+    border: 1px solid var(--grey_2);
+    background-color: #fff;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 21px;
+    transition: border-color 0.3s;
+    width: 100%;
+
+    &::-webkit-input-placeholder {
+        color: inherit;
+        opacity: 1;
+    }
+
+    &::-moz-placeholder {
+        color: inherit;
+        opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+        color: inherit;
+        opacity: 1;
+    }
+
+    &:focus {
+        border-color: var(--primary_color);
+    }
+
+    &.disabled,
+    &:disabled {
+        opacity: 0.6;
+    }
+
+    &.error {
+        color: var(--red);
+    }
+}
+
+.input {
+    height: 60px;
+}
+
+.textarea {
+    height: 180px;
+    resize: none;
+}
+
+input,
+textarea {
+    &:focus {
+        outline: 0;
+    }
+}
+
+.error-text {
+    color: var(--red);
+    font-size: 12px;
+    margin-top: 4px;
+}

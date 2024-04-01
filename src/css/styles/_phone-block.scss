@@ -1,0 +1,33 @@
+.phone-block {
+    &__phone {
+        align-items: center;
+        color: var(--blue_3);
+        display: flex;
+        gap: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 2px;
+        text-decoration: none;
+        @include hover {
+            color: var(--blue_7);
+        }
+        @include active {
+            color: var(--blue_8);
+        }
+
+        svg {
+            fill: var(--blue_1);
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
+        }
+    }
+
+    &__work-time {
+        color: var(--grey_6);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+}

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>UI</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#393185">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" href="fonts/subset-Qanelas-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Qanelas-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Qanelas-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.png" srcset="images/logo@2x.png" alt="Мой доктор">
+                </a>
+    
+                <div class="header__search-form">
+                    <div class="search-form">
+                        <form class="search-form__form" action="">
+                            <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+    
+                            <button class="search-form__submit" type="submit" title="Найти">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+    
+                            <div class="search-form__dropdown">
+                                <div class="search-form__dropdown-list">
+                                    <button class="search-form__var" type="button">Справки</button>
+                                    <button class="search-form__var" type="button">Справка для занятий общей физической подготовкой (ОФП)</button>
+                                    <button class="search-form__var" type="button">Справка для получения санаторно-курортной путевки (070/У)</button>
+                                    <button class="search-form__var" type="button">Справка для оздоровительного лагеря</button>
+                                    <button class="search-form__var" type="button">Справки для водителей (в ГИБДД)</button>
+                                    <button class="search-form__var" type="button">Справка для бассейна</button>
+                                    <button class="search-form__var" type="button">Справка об отсутствии COVID-1</button>
+                                    <button class="search-form__var" type="button">Справки</button>
+                                    <button class="search-form__var" type="button">Справка для занятий общей физической подготовкой (ОФП)</button>
+                                    <button class="search-form__var" type="button">Справка для получения санаторно-курортной путевки (070/У)</button>
+                                    <button class="search-form__var" type="button">Справка для оздоровительного лагеря</button>
+                                    <button class="search-form__var" type="button">Справки для водителей (в ГИБДД)</button>
+                                    <button class="search-form__var" type="button">Справка для бассейна</button>
+                                    <button class="search-form__var" type="button">Справка об отсутствии COVID-1</button>
+                                </div>
+                                <a class="search-form__var search-form__var--more" href="#" title="Показать все">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <div class="header__contacts-buttons">
+                        <a class="button button--white" href="#">
+                            <svg class="fill-red" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="button button--white" href="#">
+                            <svg class="fill-green" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#whatsapp_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="header__phone-block phone-block">
+                    <a class="phone-block__phone" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 906 033 46 46</span>
+                    </a>
+                    <div class="phone-block__work-time">Ежедневно с 7:30 до 21:00</div>
+                </div>
+    
+                <a class="header__ally-button" href="#">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#eye_icon" />
+                    </svg>
+                </a>
+    
+                <a class="header__phone-button" href="#">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#phone_icon" />
+                    </svg>
+                </a>
+    
+                <a class="header__record-button button button--red" href="#">Запись на приём</a>
+    
+                <button class="js-menu-toggler menu-toggler" type="button" title="Открыть меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <div class="main-menu">
+            <nav class="main-menu__nav">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link is-active" href="#">О нас</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Специалисты</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Услуги и цены</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Акции</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Аптека</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Вакансии</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="main-menu__contacts">
+                <div class="phone-block">
+                    <a class="phone-block__phone" href="#">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 906 033 46 46</span>
+                    </a>
+                    <div class="phone-block__work-time">Ежедневно с 7:30 до 21:00</div>
+                </div>
+    
+                <a class="button button--red" href="#">Запись на приём</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Оформление медкнижек в Ивантеевке
+                </li>
+            </ul>
+
+            <h1>Оформление медкнижек в Ивантеевке</h1>
+
+            <h2>Красная кнопка</h2>
+
+            <a class="button button--red" href="#">Запись на приём</a><br>
+
+            <a class="button button--red disabled" href="#">Запись на приём</a><br>
+
+            <button class="button button--red" type="button">Запись на приём</button><br>
+
+            <button class="button button--red" type="button" disabled>Запись на приём</button><br>
+
+            <h2>Синяя кнопка</h2>
+
+            <a class="button button--blue" href="#">Запись на приём</a><br>
+
+            <a class="button button--blue disabled" href="#">Запись на приём</a><br>
+
+            <button class="button button--blue" type="button">Запись на приём</button><br>
+
+            <button class="button button--blue" type="button" disabled>Запись на приём</button><br>
+
+            <h2>Голубая кнопка</h2>
+
+            <a class="button button--light_blue" href="#">Запись на приём</a><br>
+
+            <a class="button button--light_blue disabled" href="#">Запись на приём</a><br>
+
+            <button class="button button--light_blue" type="button">Запись на приём</button><br>
+
+            <button class="button button--light_blue" type="button" disabled>Запись на приём</button><br>
+
+            <h2>Белая кнопка</h2>
+
+            <a class="button button--white" href="#">Запись на приём</a><br>
+
+            <a class="button button--white disabled" href="#">Запись на приём</a><br>
+
+            <button class="button button--white" type="button">Запись на приём</button><br>
+
+            <button class="button button--white" type="button" disabled>Запись на приём</button><br>
+
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
