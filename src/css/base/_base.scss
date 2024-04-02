@@ -11,6 +11,10 @@ html {
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
     background-color: var(--white_2);
     color: var(--blue_3);
@@ -196,4 +200,9 @@ ul {
 
 .fill-green {
     fill: var(--green);
+}
+
+.req,
+.required {
+    color: var(--red_1);
 }

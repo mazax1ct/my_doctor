@@ -111,9 +111,11 @@
         }
 
         &--more {
+            align-items: center;
             border-top: 1px solid var(--grey_2);
             border-radius: 0 0 7px 7px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
 
             svg {
                 fill: var(--blue_1);
