@@ -52,3 +52,31 @@ $(document).on('blur', '.search-form__input', function() {
   $('.search-form__form').removeClass('is-open');
 });
 /*****************************позже удалить*****************************/
+
+$(document).ready(function () {
+  //состояние заполненности поля ввода
+  $('.js-input-group__input').each(function(index) {
+    if($(this).val() !== '') {
+      $(this).closest('.input-group').addClass('is-filled');
+    } else {
+      $(this).closest('.input-group').removeClass('is-filled');
+    }
+  });
+});
+
+//состояние заполненности поля ввода
+$(document).on('keyup', '.js-input-group__input', function () {
+  if($(this).val() !== '') {
+    $(this).closest('.input-group').addClass('is-filled');
+  } else {
+    $(this).closest('.input-group').removeClass('is-filled');
+  }
+});
+
+//сбросс содержимого поля ввода
+$(document).on('click', '.js-input-group__clear', function () {
+  $(this).closest('.input-group').find('.js-input-group__input').val('');
+  $(this).closest('.input-group').removeClass('is-filled');
+  $(this).closest('.input-group').find('.js-input-group__input').focus();
+  return false;
+});
