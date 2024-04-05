@@ -54,6 +54,24 @@ $(document).on('blur', '.search-form__input', function() {
 /*****************************позже удалить*****************************/
 
 $(document).ready(function () {
+  //кастомный селект
+  $('.js-select').each(function() {
+    var $p = $(this).closest('.select-wrapper');
+    $(this).select2({
+      minimumResultsForSearch: 1,
+      dropdownPosition: 'below',
+      dropdownParent: $p,
+    });
+	}).on("select2:open", function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.addClass('open');
+    $p.find('.select2-search__field');
+	}).on("select2:close", function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.removeClass('open');
+	});
+
+
   //состояние заполненности поля ввода
   $('.js-input-group__input').each(function(index) {
     if($(this).val() !== '') {
