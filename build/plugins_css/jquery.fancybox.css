@@ -51,7 +51,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-bg {
-  background: rgba(12, 17, 23, 0.5);
+  background: rgba(13, 110, 253, 0.19);
   opacity: 0;
   transition-duration: inherit;
   transition-property: opacity;
@@ -59,7 +59,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-is-open .fancybox-bg {
-  opacity: .9;
+  opacity: 1;
   transition-timing-function: cubic-bezier(.22, .61, .36, 1);
 }
 
@@ -164,7 +164,7 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-slide--html {
-  padding: 6px;
+  padding: 24px 20px 32px;
 }
 
 .fancybox-content {

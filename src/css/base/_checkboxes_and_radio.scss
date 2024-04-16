@@ -11,6 +11,7 @@
 
     a {
         color: var(--blue_1);
+        text-decoration: none;
         @include hover {
             color: var(--blue_7);
         }

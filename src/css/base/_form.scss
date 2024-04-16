@@ -1,0 +1,63 @@
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    @media(min-width: $sm) {
+        flex-direction: row;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+        }
+    }
+
+    & > div {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - 16px / 2);
+        }
+    }
+}
+
+.button-block {
+    color: var(--blue_4);
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+    line-height: 1.21428;
+    margin-top: 16px;
+    @media(min-width: $sm) {
+        align-items: center;
+        flex-direction: row;
+        margin-top: 24px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .button {
+        width: 100%;
+        @media(min-width: $sm) {
+            width: 180px;
+        }
+    }
+}
+
+.form-checkboxes {
+    .checkbox {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+}

@@ -44,12 +44,12 @@ $(document).on('click', '.js-menu-toggler', function () {
 });
 
 /*****************************позже удалить*****************************/
-$(document).on('focus', '.search-form__input', function() {
-  $('.search-form__form').addClass('is-open');
+$(document).on('focus', '.header .search-form__input', function() {
+  $('.header .search-form__form').addClass('is-open');
 });
 
-$(document).on('blur', '.search-form__input', function() {
-  $('.search-form__form').removeClass('is-open');
+$(document).on('blur', '.header .search-form__input', function() {
+  $('.header .search-form__form').removeClass('is-open');
 });
 /*****************************позже удалить*****************************/
 
@@ -70,7 +70,6 @@ $(document).ready(function () {
     var $p = $(this).closest('.select-wrapper');
     $p.removeClass('open');
 	});
-
 
   //состояние заполненности поля ввода
   $('.js-input-group__input').each(function(index) {
@@ -96,5 +95,12 @@ $(document).on('click', '.js-input-group__clear', function () {
   $(this).closest('.input-group').find('.js-input-group__input').val('');
   $(this).closest('.input-group').removeClass('is-filled');
   $(this).closest('.input-group').find('.js-input-group__input').focus();
+  return false;
+});
+
+
+//закрытие попапа
+$(document).on('click', '.popup__closer', function () {
+  $.fancybox.close();
   return false;
 });

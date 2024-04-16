@@ -12,6 +12,20 @@
                 display: block;
             }
         }
+
+        &--big {
+            @media(min-width: $sm) {
+                display: flex;
+                gap: 24px;
+            }
+
+            .search-form__input,
+            .search-form__submit {
+                @media(min-width: $sm) {
+                    height: 45px;
+                }
+            }
+        }
     }
 
     &__input {
@@ -70,6 +84,21 @@
         }
     }
 
+    &__submit-big {
+        @media(max-width: $sm - 0.01px) {
+            margin-top: 16px;
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            min-width: 162px;
+            width: 162px;
+        }
+        @media(min-width: $lg) {
+            min-width: 180px;
+            width: 180px;
+        }
+    }
+
     &__dropdown {
         background-color: var(--white_2);
         border: 1px solid var(--grey_2);
@@ -77,6 +106,7 @@
         border-radius: 0 0 7px 7px;
         display: none;
         left: 0;
+        overscroll-behavior: none;
         position: absolute;
         top: 100%;
         width: 100%;
@@ -87,6 +117,7 @@
         @include scrollbar;
         max-height: 340px;
         overflow-y: auto;
+        overscroll-behavior: none;
     }
 
     &__var {

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Поиск
+                </li>
+            </ul>
+
+            <h1>Поиск</h1>
+
+            <div class="search-form">
+                <form class="search-form__form search-form__form--big" action="">
+                    <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+
+                    <div class="search-form__submit">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search_icon" />
+                        </svg>
+                    </div>
+
+                    <button class="search-form__submit-big button button--blue" type="submit">Найти</button>
+                </form>
+            </div>
+
+            <div class="search-results">
+                <p class="search-results__title"><b>Результаты поиска:</b> справка</p>
+
+                <ol class="search-results__list">
+                    <li>
+                        <a class="search-results__item" href="#">Справки</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для занятий общей физической подготовкой (ОФП)</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для получения санаторно-курортной путевки (070/У)</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для оздоровительного лагеря</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справки для водителей (в ГИБДД)</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для бассейна</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка об отсутствии COVID-1</a>
+                    </li>
+                </ol>
+
+                <div class="show-more">
+                    <button class="show-more__button" type="button">Показать еще +</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

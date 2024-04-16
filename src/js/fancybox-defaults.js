@@ -4,4 +4,6 @@ $.fancybox.defaults.i18n.en.PREV = "Назад";
 $.fancybox.defaults.autoFocus = false;
 $.fancybox.defaults.hash = false;
 $.fancybox.defaults.touch = false;
-$.fancybox.defaults.btnTpl.smallBtn = '<button data-fancybox-close class="fancybox-button fancybox-close-small" type="button" title="{{CLOSE}}"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#close_icon" /></svg></button>';
+$.fancybox.defaults.smallBtn = false;
+$.fancybox.defaults.toolbar = false;
+//$.fancybox.defaults.btnTpl.smallBtn = '<button data-fancybox-close class="fancybox-button fancybox-close-small" type="button" title="{{CLOSE}}"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#close_icon" /></svg></button>';

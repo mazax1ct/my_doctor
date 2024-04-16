@@ -30,6 +30,14 @@ html {
         overflow: hidden;
     }
 
+    &.fancybox-active {
+        .footer,
+        .header,
+        .page__content {
+            filter: blur(10px);
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: 95px;

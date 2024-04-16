@@ -1,0 +1,22 @@
+.search-results {
+    margin-top: 16px;
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__list {
+        @include list-reset;
+    }
+
+    &__item {
+        border-bottom: 1px solid var(--grey_3);
+        display: block;
+        padding: 11px 16px;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        @include hover {
+            background-color: var(--light_blue_1);
+        }
+    }
+}

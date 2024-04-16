@@ -173,7 +173,64 @@
     </header>
 
     <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Поиск
+                </li>
+            </ul>
 
+            <h1>Поиск</h1>
+
+            <div class="search-form">
+                <form class="search-form__form search-form__form--big" action="">
+                    <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+
+                    <div class="search-form__submit">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search_icon" />
+                        </svg>
+                    </div>
+
+                    <button class="search-form__submit-big button button--blue" type="submit">Найти</button>
+                </form>
+            </div>
+
+            <div class="search-results">
+                <p class="search-results__title"><b>Результаты поиска:</b> справка</p>
+
+                <ol class="search-results__list">
+                    <li>
+                        <a class="search-results__item" href="#">Справки</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для занятий общей физической подготовкой (ОФП)</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для получения санаторно-курортной путевки (070/У)</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для оздоровительного лагеря</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справки для водителей (в ГИБДД)</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка для бассейна</a>
+                    </li>
+                    <li>
+                        <a class="search-results__item" href="#">Справка об отсутствии COVID-1</a>
+                    </li>
+                </ol>
+
+                <div class="show-more">
+                    <button class="show-more__button" type="button">Показать еще +</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -361,101 +418,6 @@
             </div>
         </div>
     </footer>
-
-    <div id="callback" class="popup">
-        <button class="popup__closer" type="button" title="Закрыть">
-            <svg aria-hidden="true">
-                <use xlink:href="images/sprite.svg#popup_close_icon" />
-            </svg>
-        </button>
-    
-        <p class="popup__title">Заявка на звонок</p>
-    
-        <div class="popup__text">
-            <p>Обращаем ваше внимание, что заявки обрабатываются ежедневно с&nbsp;08:00&nbsp;до&nbsp;21:00</p>
-        </div>
-    
-        <p class="popup__subtitle">Представьтесь, пожалуйста, и&nbsp;наш администратор перезвонит:</p>
-    
-        <form action="">
-            <div class="form-row">
-                <div>
-                    <div class="input-group input-group--simple">
-                        <div class="input-group__inner">
-                            <div class="input-group__input-container">
-                                <input id="callback_fio" class="js-input-group__input input-group__input" type="text" name="callback_fio" placeholder="ФИО пациента">
-                                <label class="input-group__label" for="callback_fio">ФИО пациента<span class="required">*</span></label>
-                            </div>
-                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#clear_icon" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-    
-                <div>
-                    <div class="input-group input-group--phone">
-                        <div class="input-group__inner">
-                            <div class="input-group__input-container">
-                                <input id="callback_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="callback_phone" placeholder="(XXX) XXX-XX-XX">
-                                <label class="input-group__label" for="callback_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
-                            </div>
-                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#clear_icon" />
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
-            <p class="popup__subtitle">Напишите Ваши пожелания или&nbsp;вопрос:</p>
-    
-            <div class="input-group input-group--textarea">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <textarea id="inp_11" class="js-input-group__input input-group__textarea" name="" placeholder="Комментарий"></textarea>
-                        <div class="input-group__pseudo-textarea"></div>
-                        <label class="input-group__label" for="inp_11">Комментарий</label>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-    
-            <div class="button-block">
-                <p><span class="required">*</span> Обязательные для заполнения поля</p>
-    
-                <button class="button button--red" type="submit">Отправить</button>
-            </div>
-    
-            <div class="form-checkboxes">
-                <label class="checkbox checkbox--small">
-                    <input type="checkbox" value="" name="">
-                    <span class="checkbox__icon"></span>
-                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
-                </label>
-    
-                <label class="checkbox checkbox--small">
-                    <input type="checkbox" value="" name="">
-                    <span class="checkbox__icon"></span>
-                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
-                </label>
-    
-                <label class="checkbox checkbox--small">
-                    <input type="checkbox" value="" name="">
-                    <span class="checkbox__icon"></span>
-                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
-                </label>
-            </div>
-        </form>
-    </div>
 
     <script src="js/jquery-3.6.0.min.js"></script>
     
