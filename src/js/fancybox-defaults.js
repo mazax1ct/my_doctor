@@ -6,4 +6,5 @@ $.fancybox.defaults.hash = false;
 $.fancybox.defaults.touch = false;
 $.fancybox.defaults.smallBtn = false;
 $.fancybox.defaults.toolbar = false;
+$.fancybox.defaults.closeExisting = true;
 //$.fancybox.defaults.btnTpl.smallBtn = '<button data-fancybox-close class="fancybox-button fancybox-close-small" type="button" title="{{CLOSE}}"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#close_icon" /></svg></button>';

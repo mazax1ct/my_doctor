@@ -98,9 +98,87 @@ $(document).on('click', '.js-input-group__clear', function () {
   return false;
 });
 
-
 //закрытие попапа
-$(document).on('click', '.popup__closer', function () {
+$(document).on('click', '.js-popup-closer', function () {
   $.fancybox.close();
+  return false;
+});
+
+//input[type=file]
+$('.file-container input[type=file]').on('change', function(){
+	let file = this.files[0];
+  $(this).closest('.file-container').find('.file-attach').addClass('is-filled');
+	$(this).closest('.file-container').find('.file-attach__value').html(file.name);
+});
+
+//сбросс содержимого input[type=file]
+$(document).on('click', '.js-file-attach__clear', function () {
+  $(this).closest('.file-container').find('input[type=file]').val('');
+  $(this).closest('.file-attach').removeClass('is-filled');
+  $(this).closest('.file-container').find('.file-attach__value').html('Файл не выбран...');
+  return false;
+});
+
+//выбор периода
+$(document).on('click', '.period__button', function () {
+  if(!$(this).closest('.period').hasClass('is-open')){
+    $(this).closest('.period').addClass('is-open');
+    document.addEventListener('click', closePeriod);
+  }else{
+    $(this).closest('.period').removeClass('is-open');
+    document.removeEventListener('click', closePeriod);
+  }
+  return false;
+});
+
+function closePeriod(evt) {
+  if (!$('.period.is-open').is(evt.target) && $('.period.is-open').has(evt.target).length === 0) {
+    $('.period').removeClass('is-open');
+    document.removeEventListener('click', closePeriod);
+	}
+}
+
+$(document).on('click', '.js-start-list .period__item', function () {
+  var that = $(this);
+  $(this).closest('.period__list').find('.period__item').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $(this).closest('.period').find('.js-start').html($(this).text());
+  $(this).closest('.period').find('input[name="period_start"]').val($(this).text());
+
+  $(this).closest('.period').find('.js-end-list').find('.period__item').removeClass('is-active').css('display', 'block');
+
+  if($(this).closest('.period').find('input[name="period_start"]').val() < $(this).closest('.period').find('input[name="period_end"]').val()){
+    $(this).closest('.period').find('.js-end').html('____');
+    $(this).closest('.period').find('input[name="period_end"]').val('');
+  }
+
+  $(this).closest('.period').find('.js-end-list').find('.period__item').filter(function(i, elem){
+    var text = elem.innerText;
+    return parseInt(text) < parseInt(that.text());
+	}).css('display', 'none');
+
+  if($(this).closest('.period').find('input[name="period_start"]').val() !== '' && $(this).closest('.period').find('input[name="period_end"]').val() !== '') {
+    $(this).closest('.period').addClass('is-filled');
+  }else{
+    $(this).closest('.period').removeClass('is-filled');
+  }
+
+  return false;
+});
+
+$(document).on('click', '.js-end-list .period__item', function () {
+  $(this).closest('.period__list').find('.period__item').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  $(this).closest('.period').find('.js-end').html($(this).text());
+  $(this).closest('.period').find('input[name="period_end"]').val($(this).text());
+
+  if($(this).closest('.period').find('input[name="period_start"]').val() !== '' && $(this).closest('.period').find('input[name="period_end"]').val() !== '') {
+    $(this).closest('.period').addClass('is-filled');
+  }else{
+    $(this).closest('.period').removeClass('is-filled');
+  }
+
   return false;
 });
