@@ -1,51 +1,6 @@
 .footer {
     flex-shrink: 0;
 
-    &__float-block {
-        bottom: 0;
-        left: 0;
-        position: fixed;
-        right: 0;
-        top: auto;
-        z-index: 9;
-    }
-
-    &__note {
-        background-color: var(--grey_1);
-        color: var(--blue_5);
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 1.5;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-align: center;
-        text-transform: uppercase;
-        @media(min-width: $sm) {
-            font-size: 22px;
-            font-weight: 800;
-            line-height: 1.22727;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        br {
-            @media(min-width: $hd) {
-                display: none;
-            }
-        }
-    }
-
-    &__mobile-buttons {
-        background-color: var(--white_2);
-        box-shadow: 0 0 15px 0 var(--blue_6);
-        display: flex;
-        justify-content: space-between;
-        padding: 4px var(--container_padding);
-        @media(min-width: $sm) {
-            display: none;
-        }
-    }
-
     &__top {
         background-color: var(--light_blue_4);
         padding-top: 48px;
@@ -252,13 +207,13 @@
     &__bottom {
         background-color: var(--grey_1);
         padding-top: 48px;
-        padding-bottom: 127px;
-        @media(min-width: $sm) {
+        padding-bottom: 48px;
+        /*@media(min-width: $sm) {
             padding-bottom: 94px;
         }
         @media(min-width: $hd) {
             padding-bottom: 67px;
-        }
+        }*/
     }
 
     &__bottom-links {
@@ -364,30 +319,6 @@
             @include active {
                 color: var(--grey_4);
             }
-        }
-    }
-}
-
-.mobile-button {
-    @include button-reset;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.23076;
-
-    &__icon {
-        border-radius: 11px;
-        background-color: var(--light_blue_4);
-        display: block;
-        height: 45px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 2px;
-        width: 45px;
-
-        svg {
-            fill: var(--blue_1);
-            height: 45px;
-            width: 45px;
         }
     }
 }

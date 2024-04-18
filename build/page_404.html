@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="page">
+<body class="page page--404">
     <header class="header compensate-for-scrollbar">
         <div class="header__top">
             <div class="header__top-inner container">
@@ -173,7 +173,46 @@
     </header>
 
     <main class="page__content">
-        <div class="container"></div>
+        <div class="container">
+            <div class="page-404">
+                <img class="page-404__image" src="images/page_404/bg.png" alt="">
+
+                <div class="page-404__content">
+                    <div class="page-404__image-title">
+                        <img src="images/page_404/404.svg" alt="">
+                        <img src="images/page_404/heart.png" srcset="images/page_404/heart@2x.png 2x" alt="">
+                    </div>
+
+                    <p class="page-404__title">Извините, страница не найдена</p>
+
+                    <div class="page-404__text">
+                        <p>Возможно, она была удалена или в запросе был указан неверный адрес.</p>
+                        <p>Попробуйте вернуться на главную страницу или воспользуйтесь поиском:</p>
+                    </div>
+
+                    <div class="page-404__buttons">
+                        <a class="button button--white" href="/">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#home_icon" />
+                            </svg>
+                            <span>Вернуться на главную</span>
+                        </a>
+
+                        <div class="search-form">
+                            <form class="search-form__form search-form__form--big" action="">
+                                <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+
+                                <button class="search-form__submit" type="submit" title="Найти">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="float-block compensate-for-scrollbar">
             <div class="float-block__note">

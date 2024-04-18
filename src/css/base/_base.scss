@@ -38,16 +38,60 @@ html {
         }
     }
 
+    &--404 {
+        .page__content {
+            background-color: #D8EAF4;
+            @media(min-width: $hd) {
+                padding-top: 210px;
+            }
+        }
+
+        .float-block {
+            @media(min-width: $hd) {
+                margin-top: 24px;
+            }
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: 95px;
-        padding-bottom: 50px;
+        //padding-bottom: 50px;
         @media(min-width: $sm) {
             padding-top: 115px;
         }
         @media(min-width: $hd) {
             padding-top: 195px;
-            padding-bottom: 95px;
+            //padding-bottom: 95px;
+        }
+    }
+
+    &__columns {
+        @media(min-width: $hd) {
+            display: flex;
+            gap: 24px;
+        }
+    }
+
+    &__left-column {
+        margin-bottom: 16px;
+        @media(max-width: $hd - 0.01px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+            width: 180px;
+        }
+    }
+
+    &__right-column {
+        @media(min-width: $hd) {
+            width: calc(100% - 180px - 24px);
         }
     }
 }

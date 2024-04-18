@@ -1,0 +1,40 @@
+.left-buttons {
+    @media(max-width: $sm - 0.01px) {
+        display: none;
+    }
+    @media(min-width: $sm) and (max-width: $hd - 0.01px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.25;
+        @media(max-width: $hd - 0.01px) {
+            display: none;
+        }
+    }
+}
+
+.left-button {
+    line-height: 1.25;
+    min-height: 40px;
+    min-width: 70px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    @media(min-width: $hd) {
+        font-size: 16px;
+        justify-content: flex-start;
+        min-height: 60px;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    span {
+        @media(max-width: $hd - 0.01px) {
+            display: none;
+        }
+    }
+}

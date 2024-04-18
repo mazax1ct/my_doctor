@@ -179,55 +179,58 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    Поиск
+                    <a class="breadcrumbs__link" href="#">О нас</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Фотогалерея
                 </li>
             </ul>
 
-            <h1>Поиск</h1>
+            <h1>Фотогалерея</h1>
 
-            <div class="search-form">
-                <form class="search-form__form search-form__form--big" action="">
-                    <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#">Описание</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#">Цены</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#">Услуги</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#">Врачи</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#">Фото и видео</a>
+                        </li>
+                    </ul>
 
-                    <div class="search-form__submit">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#search_icon" />
-                        </svg>
+                    <div class="left-buttons">
+                        <p class="left-buttons__title">Остались вопросы?</p>
+
+                        <a class="button button--white left-button" href="#">
+                            <svg class="fill-red" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                            <span>Заказать<br> звонок</span>
+                        </a>
+
+                        <a class="button button--white left-button" href="#">
+                            <svg class="fill-green" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#whatsapp_icon" />
+                            </svg>
+                            <span>Написать<br> в WhatsApp</span>
+                        </a>
                     </div>
+                </div>
+                <div class="page__right-column">
 
-                    <button class="search-form__submit-big button button--blue" type="submit">Найти</button>
-                </form>
-            </div>
-
-            <div class="search-results">
-                <p class="search-results__title"><b>Результаты поиска:</b> справка</p>
-
-                <ol class="search-results__list">
-                    <li>
-                        <a class="search-results__item" href="#">Справки</a>
-                    </li>
-                    <li>
-                        <a class="search-results__item" href="#">Справка для занятий общей физической подготовкой (ОФП)</a>
-                    </li>
-                    <li>
-                        <a class="search-results__item" href="#">Справка для получения санаторно-курортной путевки (070/У)</a>
-                    </li>
-                    <li>
-                        <a class="search-results__item" href="#">Справка для оздоровительного лагеря</a>
-                    </li>
-                    <li>
-                        <a class="search-results__item" href="#">Справки для водителей (в ГИБДД)</a>
-                    </li>
-                    <li>
-                        <a class="search-results__item" href="#">Справка для бассейна</a>
-                    </li>
-                    <li>
-                        <a class="search-results__item" href="#">Справка об отсутствии COVID-1</a>
-                    </li>
-                </ol>
-
-                <div class="show-more">
-                    <button class="show-more__button" type="button">Показать еще +</button>
                 </div>
             </div>
         </div>

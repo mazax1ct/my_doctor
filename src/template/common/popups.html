@@ -1370,3 +1370,157 @@
         </div>
     </div>
 </div>
+
+<div id="prof" class="popup">
+    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#popup_close_icon" />
+        </svg>
+    </button>
+
+    <p class="popup__title">Запрос на стоимость профосмотра</p>
+
+    <p class="popup__subtitle">Пожалуйста, введите Ваши данные:</p>
+
+    <form action="">
+        <div class="form-row">
+            <div>
+                <div class="input-group input-group--simple">
+                    <div class="input-group__inner">
+                        <div class="input-group__input-container">
+                            <input id="prof_fio" class="js-input-group__input input-group__input" type="text" name="prof_fio" placeholder="ФИО контактного лица">
+                            <label class="input-group__label" for="prof_fio">ФИО контактного лица<span class="required">*</span></label>
+                        </div>
+                        <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clear_icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="input-group input-group--phone">
+                    <div class="input-group__inner">
+                        <div class="input-group__input-container">
+                            <input id="prof_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="prof_phone" placeholder="(XXX) XXX-XX-XX">
+                            <label class="input-group__label" for="prof_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                        </div>
+                        <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clear_icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="input-group input-group--simple">
+                    <div class="input-group__inner">
+                        <div class="input-group__input-container">
+                            <input id="prof_org" class="js-input-group__input input-group__input" type="text" name="prof_org" placeholder="Название органицации">
+                            <label class="input-group__label" for="prof_org">Название органицации<span class="required">*</span></label>
+                        </div>
+                        <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clear_icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="input-group input-group--simple">
+                    <div class="input-group__inner">
+                        <div class="input-group__input-container">
+                            <input id="prof_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="prof_email" placeholder="E-mail">
+                            <label class="input-group__label" for="prof_email">E-mail</label>
+                        </div>
+                        <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clear_icon" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="popup__subtitle">Напишите короткую информацию о Вашей организации:</p>
+
+        <div class="input-group input-group--textarea">
+            <div class="input-group__inner">
+                <div class="input-group__input-container">
+                    <textarea id="prof_comment" class="js-input-group__input input-group__textarea" name="prof_comment" placeholder="Информация об организации для рассчетов"></textarea>
+                    <div class="input-group__pseudo-textarea"></div>
+                    <label class="input-group__label" for="prof_comment">Информация об организации для рассчетов</label>
+                </div>
+                <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#clear_icon" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="button-block">
+            <p><span class="required">*</span> Обязательные для заполнения поля</p>
+
+            <button class="button button--red" type="submit" data-fancybox="prof_success" data-src="#prof_success">Отправить</button>
+        </div>
+
+        <div class="form-checkboxes">
+            <label class="checkbox checkbox--small">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+            </label>
+
+            <label class="checkbox checkbox--small">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+            </label>
+
+            <label class="checkbox checkbox--small">
+                <input type="checkbox" value="" name="">
+                <span class="checkbox__icon"></span>
+                <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+            </label>
+        </div>
+    </form>
+</div>
+
+<div id="prof_success" class="popup popup--info">
+    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#popup_close_icon" />
+        </svg>
+    </button>
+
+    <div class="info-popup">
+        <svg class="info-popup__icon" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#success_icon" />
+        </svg>
+
+        <div>
+            <p class="popup__title">Запрос на стоимость профосмотра</p>
+
+            <div class="popup__text">
+                <p>Заявка успешно создана</p>
+                <p>Благодарим Вас за обращение в медицинский центр «Мой доктор»</p>
+            </div>
+
+            <div class="popup__text ok-button-block color-grey">
+                <div>
+                    <p>В ближайшее время наш сотрудник свяжется с Вами для уточнения информации по запросу! Обращаем Ваше внимание, что заявки обрабатываются в будние дни с&nbsp;10:00&nbsp;до&nbsp;18:00</p>
+                </div>
+
+                <button class="js-popup-closer button button--red" type="button">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>

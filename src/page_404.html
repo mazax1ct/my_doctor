@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--404">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <div class="page-404">
+                <img class="page-404__image" src="images/page_404/bg.png" alt="">
+
+                <div class="page-404__content">
+                    <div class="page-404__image-title">
+                        <img src="images/page_404/404.svg" alt="">
+                        <img src="images/page_404/heart.png" srcset="images/page_404/heart@2x.png 2x" alt="">
+                    </div>
+
+                    <p class="page-404__title">Извините, страница не найдена</p>
+
+                    <div class="page-404__text">
+                        <p>Возможно, она была удалена или в запросе был указан неверный адрес.</p>
+                        <p>Попробуйте вернуться на главную страницу или воспользуйтесь поиском:</p>
+                    </div>
+
+                    <div class="page-404__buttons">
+                        <a class="button button--white" href="/">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#home_icon" />
+                            </svg>
+                            <span>Вернуться на главную</span>
+                        </a>
+
+                        <div class="search-form">
+                            <form class="search-form__form search-form__form--big" action="">
+                                <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+
+                                <button class="search-form__submit" type="submit" title="Найти">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
