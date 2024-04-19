@@ -53,20 +53,45 @@ $(document).on('blur', '.header .search-form__input', function() {
 });
 /*****************************позже удалить*****************************/
 
+
+function formatState (state) {
+  if (!state.id) {
+    return state.text;
+  }
+
+  if(state.element.parentElement.dataset.icon !== '' && state.element.parentElement.dataset.icon !== undefined) {
+    var $state = $('<span><svg aria-hidden="true"><use xlink:href="images/sprite.svg#'+state.element.parentElement.dataset.icon+'" /></svg> <span>'+state.text+'</span></span>');
+  } else {
+    $state = state.text;
+  }
+
+  return $state;
+};
+
 $(document).ready(function () {
   //кастомный селект
   $('.js-select').each(function() {
     var $p = $(this).closest('.select-wrapper');
     $(this).select2({
-      minimumResultsForSearch: 1,
       dropdownPosition: 'below',
       dropdownParent: $p,
+      'language': {
+        'noResults': function(){
+          return 'Ничего не найдено';
+        }
+      },
+      templateSelection: formatState
     });
-	}).on("select2:open", function (e) {
+    if($(this).attr('data-icon') !== '' && $(this).attr('data-icon') !== undefined) {
+      var $placeholder = $(this).parent().find('.select2-selection__placeholder');
+      $placeholder.html('<svg aria-hidden="true"><use xlink:href="images/sprite.svg#'+$(this).attr('data-icon')+'" /></svg> <span>'+$(this).attr('data-placeholder')+'</span>');
+    }
+	}).on('select2:open', function (e) {
     var $p = $(this).closest('.select-wrapper');
     $p.addClass('open');
-    $p.find('.select2-search__field');
-	}).on("select2:close", function (e) {
+    var $searchfield = $(this).parent().find('.select2-search__field');
+    $searchfield.get(0).focus();
+	}).on('select2:close', function (e) {
     var $p = $(this).closest('.select-wrapper');
     $p.removeClass('open');
 	});

@@ -59,26 +59,23 @@
                         </li>
                     </ul>
 
-                    <div class="left-buttons">
-                        <p class="left-buttons__title">Остались вопросы?</p>
-
-                        <a class="button button--white left-button" href="#">
-                            <svg class="fill-red" aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#phone_icon" />
-                            </svg>
-                            <span>Заказать<br> звонок</span>
-                        </a>
-
-                        <a class="button button--white left-button" href="#">
-                            <svg class="fill-green" aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#whatsapp_icon" />
-                            </svg>
-                            <span>Написать<br> в WhatsApp</span>
-                        </a>
-                    </div>
+                    //= template/common/left-buttons.html
                 </div>
-                <div class="page__right-column">
 
+                <div class="page__right-column">
+                    <div class="select-wrapper select-wrapper--type_2">
+                        <select class="js-select" data-icon="camera_icon" data-placeholder="Выбрать категорию" data-minimum-results-for-search="Infinity">
+                            <option></option>
+                            <option value="1">Категория 1</option>
+                            <option value="2">Категория 2</option>
+                            <option value="3">Категория 3</option>
+                            <option value="4">Категория 5</option>
+                            <option value="5">Категория 6</option>
+                            <option value="6">Категория 7</option>
+                            <option value="7">Категория 8</option>
+                            <option value="8">Категория 9</option>
+                        </select>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,6 +84,8 @@
     </main>
 
     //= template/common/footer.html
+
+    //= template/common/popups.html
 
     //= template/common/scripts.html
 </body>
