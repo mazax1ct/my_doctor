@@ -1,0 +1,14 @@
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    @media(min-width: $sm) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    &--type_2 {
+        @media(min-width: $md) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

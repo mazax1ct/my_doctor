@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">О нас</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Новости
+                </li>
+            </ul>
+
+            <h1>Новости</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#">Новости</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div class="articles-grid">
+                        <a class="article-card" href="#">
+                            <div class="article-card__image" href="#">
+                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                            </div>
+                            <div class="article-card__text">
+                                <h3 class="article-card__title">Состоялось открытие нового отделения на Карла Маркса</h3>
+
+                                <p class="article-card__preview">Новое отделение расположено по адресу:<br> г. Ивантеевка, ул. Карла-Маркса, д. 1</p>
+
+                                <div class="article-card__bottom">
+                                    <div class="article-card__date">30.03 2022</div>
+
+                                    <div class="article-card__link">
+                                        <span>Прочитать</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="article-card" href="#">
+                            <div class="article-card__image" href="#">
+                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                            </div>
+                            <div class="article-card__text">
+                                <h3 class="article-card__title">Анализ на антитела к SARS-COV-2 (COVID-19), IGG (КОЛ) вновь доступен</h3>
+
+                                <p class="article-card__preview">С 05.07.2021 г. данный анализ вновь доступен в наших клиниках. Срок исполнения - 2 рабочих дня!</p>
+
+                                <div class="article-card__bottom">
+                                    <div class="article-card__date">30.03 2022</div>
+
+                                    <div class="article-card__link">
+                                        <span>Прочитать</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="article-card" href="#">
+                            <div class="article-card__image" href="#">
+                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                            </div>
+                            <div class="article-card__text">
+                                <h3 class="article-card__title">Состоялось открытие нового отделения на Карла Маркса</h3>
+
+                                <p class="article-card__preview">Новое отделение расположено по адресу:<br> г. Ивантеевка, ул. Карла-Маркса, д. 1</p>
+
+                                <div class="article-card__bottom">
+                                    <div class="article-card__date">30.03 2022</div>
+
+                                    <div class="article-card__link">
+                                        <span>Прочитать</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="article-card" href="#">
+                            <div class="article-card__image" href="#">
+                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                            </div>
+                            <div class="article-card__text">
+                                <h3 class="article-card__title">Анализ на антитела к SARS-COV-2 (COVID-19), IGG (КОЛ) вновь доступен</h3>
+
+                                <p class="article-card__preview">С 05.07.2021 г. данный анализ вновь доступен в наших клиниках. Срок исполнения - 2 рабочих дня!</p>
+
+                                <div class="article-card__bottom">
+                                    <div class="article-card__date">30.03 2022</div>
+
+                                    <div class="article-card__link">
+                                        <span>Прочитать</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="show-more">
+                        <button class="show-more__button" type="button">Показать еще +</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

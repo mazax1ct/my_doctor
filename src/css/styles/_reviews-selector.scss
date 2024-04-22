@@ -1,0 +1,32 @@
+.reviews-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    @media(min-width: $sm) {
+        align-items: center;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: space-between;
+    }
+    @media(min-width: $md) {
+        margin-bottom: 32px;
+    }
+
+    .select-wrapper {
+        flex-grow: 1;
+        @media(min-width: $md) {
+            max-width: 486px;
+        }
+    }
+
+    .button {
+        @media(max-width: $sm - 0.01px) {
+            width: 100%;
+        }
+        @media(min-width: $md) {
+            flex-grow: 1;
+            max-width: 282px;
+        }
+    }
+}

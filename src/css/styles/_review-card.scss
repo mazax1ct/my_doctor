@@ -1,0 +1,118 @@
+.review-card {
+    background: #FEFEFE;
+    border: 1px solid var(--blue_6);
+    border-radius: 17px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    @media(min-width: $sm) {
+        padding: 40px 30px;
+    }
+    @include hover {
+        .review-card__show-answer {
+            color: var(--red_3);
+        }
+    }
+    @include active {
+        .review-card__show-answer {
+            color: var(--red_4);
+        }
+    }
+
+    &__doctor {
+        align-items: center;
+        display: flex;
+        gap: 20px;
+        margin-bottom: 24px;
+        @media(min-width: $md) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__doctor-title {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    &__doctor-name {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        @media(min-width: $md) {
+            font-size: 18px;
+            line-height: 1.22222;
+        }
+    }
+
+    &__preview {
+        color: var(--blue_4);
+        font-size: 16px;
+        line-height: 1.25;
+        margin-bottom: 24px;
+        position: relative;
+        padding-right: 8px;
+        z-index: 1;
+
+        &::after {
+            background-image: url("data:image/svg+xml,%3Csvg width='9' height='178' viewBox='0 0 9 178' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.85355 0.646447C4.65829 0.451184 4.34171 0.451184 4.14645 0.646447L0.964466 3.82843C0.769204 4.02369 0.769204 4.34027 0.964466 4.53553C1.15973 4.7308 1.47631 4.7308 1.67157 4.53553L4.5 1.70711L7.32843 4.53553C7.52369 4.7308 7.84027 4.7308 8.03553 4.53553C8.2308 4.34027 8.2308 4.02369 8.03553 3.82843L4.85355 0.646447ZM4.14645 177.354C4.34172 177.549 4.6583 177.549 4.85356 177.354L8.03554 174.172C8.2308 173.976 8.2308 173.66 8.03554 173.464C7.84028 173.269 7.5237 173.269 7.32843 173.464L4.50001 176.293L1.67158 173.464C1.47632 173.269 1.15974 173.269 0.964474 173.464C0.769211 173.66 0.769211 173.976 0.964474 174.172L4.14645 177.354ZM4 1L4.00001 177L5.00001 177L5 1L4 1Z' fill='%230D6EFD' fill-opacity='0.3'/%3E%3C/svg%3E%0A");
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            content: '';
+            height: 100%;
+            left: auto;
+            position: absolute;
+            right: -8px;
+            top: 0;
+            width: 9px;
+            z-index: 1;
+        }
+    }
+
+    &__more {
+        color: var(--blue_3);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.21428;
+        text-decoration: underline;
+        @media(max-width: $md - 0.01px) {
+            display: block;
+            margin-top: 8px;
+        }
+    }
+
+    &__author {
+        align-items: center;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        line-height: 1.6875;
+        margin-bottom: 8px;
+
+        svg {
+            fill: var(--blue_1);
+            height: 20px;
+            min-width: 20px;
+            width: 20px;
+        }
+    }
+
+    &__author-name {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &__author-date {
+        color: var(--grey_6);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    &__show-answer {
+        color: var(--red_2);
+        font-size: 16px;
+        font-weight: 700;
+        transition: color 0.3s;
+    }
+}

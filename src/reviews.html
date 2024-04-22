@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">О нас</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Отзывы
+                </li>
+            </ul>
+
+            <h1>Отзывы</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#">Отзывы</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div class="reviews-selector">
+                        <div class="select-wrapper select-wrapper--type_2">
+                            <select class="js-select" data-placeholder="Найти отзыв о враче" data-minimum-results-for-search="1" data-search-input-placeholder="Найти отзыв о враче">
+                                <option></option>
+                                <option value="1">Алексеева Виктория Павловна</option>
+                                <option value="2">Артамонова Елена Викторона</option>
+                                <option value="3">Архипцева Ольга Владимировна</option>
+                                <option value="4">Атрошенко Ксения Викторона</option>
+                                <option value="5">Басенко Наталия Гурьевна</option>
+                                <option value="6">Батманова Любовь Николаевна</option>
+                            </select>
+                        </div>
+
+                        <button class="button button--blue" type="button" data-fancybox="review_" data-src="#review">Оставить отзыв на сайте</button>
+                    </div>
+
+
+                    <div class="reviews-grid">
+                        <div class="review-card" data-fancybox="review_1" data-src="#review_card_1">
+                            <p class="review-card__doctor">
+                                <span class="review-card__doctor-title">Врач:</span>
+                                <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
+                            </p>
+
+                            <p class="review-card__preview">
+                                <span>
+                                    Хочу выразить благодарность Шайхутдиновой Эльмире Маратовне. Благодаря ей, впервые к 30 годам у меня был выявлен стенозаортального клапана, с последующей успешной операцией в Бакулева. Отличный врач, с чутким
+                                    подходом к лечению...
+                                </span>
+                                <span class="review-card__more">Читать больше</span>
+                            </p>
+
+                            <p class="review-card__author">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chat_icon" />
+                                </svg>
+                                <span class="review-card__author-name">Губенко Т.</span>
+                                <span class="review-card__date">05 мая 2022</span>
+                            </p>
+
+                            <p class="review-card__show-answer">Показать ответ администрации</p>
+
+                            <div id="review_card_1" class="popup popup--info">
+                                <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="info-popup">
+                                    <svg class="info-popup__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#success_icon" />
+                                    </svg>
+
+                                    <div>
+                                        <p class="popup__title">Отзыв о враче</p>
+
+                                        <div class="popup__text">
+                                            <p><b>Дата отзыва:</b> 10.04.2024</p>
+                                            <p><b>Автор:</b> Анна</p>
+                                            <p><b>О ком:</b> Чабанова Наталья Борисовна</p>
+                                            <p>
+                                                <b>Отзыв:</b> Женщины меня поймут, как сложно порой найти своего доктора Наталья Борисовна - тот самый специалист, который помог выявить причины моих недугов. Подобрала грамотное, эффективное лечение,
+                                                назначила
+                                                восстанавливающий курс. Спасибо Вам огромное, доктор!!!
+                                            </p>
+                                        </div>
+
+                                        <div class="popup__text ok-button-block color-grey">
+                                            <div>
+                                                <p><b>Ответ администрации:</b><br> Здравствуйте, Анна!<br> Благодарим Вас за отзыв!<br> С уважением, Администрация</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card" data-fancybox="review_2" data-src="#review_card_2">
+                            <p class="review-card__doctor">
+                                <span class="review-card__doctor-title">Врач:</span>
+                                <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
+                            </p>
+
+                            <p class="review-card__preview">
+                                <span>
+                                    Благодарим вас за то, что поделились вашим опытом о визите к нашему врачу. Мы серьезно относимся к каждому отзыву, и ваш отзыв играет важную роль в повышении качества наших медицинских услуг. Мы гордимся нашим
+                                    медицинским персо...
+                                </span>
+                                <span class="review-card__more">Читать больше</span>
+                            </p>
+
+                            <p class="review-card__author">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chat_icon" />
+                                </svg>
+                                <span class="review-card__author-name">Губенко Т.</span>
+                                <span class="review-card__date">05 мая 2022</span>
+                            </p>
+
+                            <p class="review-card__show-answer">Показать ответ администрации</p>
+
+                            <div id="review_card_2" class="popup popup--info">
+                                <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="info-popup">
+                                    <svg class="info-popup__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#success_icon" />
+                                    </svg>
+
+                                    <div>
+                                        <p class="popup__title">Отзыв о враче</p>
+
+                                        <div class="popup__text">
+                                            <p><b>Дата отзыва:</b> 10.04.2024</p>
+                                            <p><b>Автор:</b> Анна</p>
+                                            <p><b>О ком:</b> Чабанова Наталья Борисовна</p>
+                                            <p>
+                                                <b>Отзыв:</b> Женщины меня поймут, как сложно порой найти своего доктора Наталья Борисовна - тот самый специалист, который помог выявить причины моих недугов. Подобрала грамотное, эффективное лечение,
+                                                назначила
+                                                восстанавливающий курс. Спасибо Вам огромное, доктор!!!
+                                            </p>
+                                        </div>
+
+                                        <div class="popup__text ok-button-block color-grey">
+                                            <div>
+                                                <p><b>Ответ администрации:</b><br> Здравствуйте, Анна!<br> Благодарим Вас за отзыв!<br> С уважением, Администрация</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card" data-fancybox="review_3" data-src="#review_card_3">
+                            <p class="review-card__doctor">
+                                <span class="review-card__doctor-title">Врач:</span>
+                                <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
+                            </p>
+
+                            <p class="review-card__preview">
+                                <span>
+                                    Хочу выразить благодарность Шайхутдиновой Эльмире Маратовне. Благодаря ей, впервые к 30 годам у меня был выявлен стенозаортального клапана, с последующей успешной операцией в Бакулева. Отличный врач, с чутким
+                                    подходом к лечению...
+                                </span>
+                                <span class="review-card__more">Читать больше</span>
+                            </p>
+
+                            <p class="review-card__author">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chat_icon" />
+                                </svg>
+                                <span class="review-card__author-name">Губенко Т.</span>
+                                <span class="review-card__date">05 мая 2022</span>
+                            </p>
+
+                            <p class="review-card__show-answer">Показать ответ администрации</p>
+
+                            <div id="review_card_3" class="popup popup--info">
+                                <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="info-popup">
+                                    <svg class="info-popup__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#success_icon" />
+                                    </svg>
+
+                                    <div>
+                                        <p class="popup__title">Отзыв о враче</p>
+
+                                        <div class="popup__text">
+                                            <p><b>Дата отзыва:</b> 10.04.2024</p>
+                                            <p><b>Автор:</b> Анна</p>
+                                            <p><b>О ком:</b> Чабанова Наталья Борисовна</p>
+                                            <p>
+                                                <b>Отзыв:</b> Женщины меня поймут, как сложно порой найти своего доктора Наталья Борисовна - тот самый специалист, который помог выявить причины моих недугов. Подобрала грамотное, эффективное лечение,
+                                                назначила
+                                                восстанавливающий курс. Спасибо Вам огромное, доктор!!!
+                                            </p>
+                                        </div>
+
+                                        <div class="popup__text ok-button-block color-grey">
+                                            <div>
+                                                <p><b>Ответ администрации:</b><br> Здравствуйте, Анна!<br> Благодарим Вас за отзыв!<br> С уважением, Администрация</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="review-card" data-fancybox="review_4" data-src="#review_card_4">
+                            <p class="review-card__doctor">
+                                <span class="review-card__doctor-title">Врач:</span>
+                                <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
+                            </p>
+
+                            <p class="review-card__preview">
+                                <span>
+                                    Благодарим вас за то, что поделились вашим опытом о визите к нашему врачу. Мы серьезно относимся к каждому отзыву, и ваш отзыв играет важную роль в повышении качества наших медицинских услуг. Мы гордимся нашим
+                                    медицинским персо...
+                                </span>
+                                <span class="review-card__more">Читать больше</span>
+                            </p>
+
+                            <p class="review-card__author">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chat_icon" />
+                                </svg>
+                                <span class="review-card__author-name">Губенко Т.</span>
+                                <span class="review-card__date">05 мая 2022</span>
+                            </p>
+
+                            <p class="review-card__show-answer">Показать ответ администрации</p>
+
+                            <div id="review_card_4" class="popup popup--info">
+                                <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="info-popup">
+                                    <svg class="info-popup__icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#success_icon" />
+                                    </svg>
+
+                                    <div>
+                                        <p class="popup__title">Отзыв о враче</p>
+
+                                        <div class="popup__text">
+                                            <p><b>Дата отзыва:</b> 10.04.2024</p>
+                                            <p><b>Автор:</b> Анна</p>
+                                            <p><b>О ком:</b> Чабанова Наталья Борисовна</p>
+                                            <p>
+                                                <b>Отзыв:</b> Женщины меня поймут, как сложно порой найти своего доктора Наталья Борисовна - тот самый специалист, который помог выявить причины моих недугов. Подобрала грамотное, эффективное лечение,
+                                                назначила
+                                                восстанавливающий курс. Спасибо Вам огромное, доктор!!!
+                                            </p>
+                                        </div>
+
+                                        <div class="popup__text ok-button-block color-grey">
+                                            <div>
+                                                <p><b>Ответ администрации:</b><br> Здравствуйте, Анна!<br> Благодарим Вас за отзыв!<br> С уважением, Администрация</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="show-more">
+                        <button class="show-more__button" type="button">Показать еще +</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

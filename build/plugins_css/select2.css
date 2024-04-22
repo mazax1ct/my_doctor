@@ -345,6 +345,15 @@
   min-height: 38px;
 }
 
+.select-wrapper--type_2 .select2-search--dropdown {
+  top: -40px;
+}
+
+.select-wrapper--type_2 .select2-container--default .select2-search--dropdown .select2-search__field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .select-wrapper--type_2 .select2-container--default .select2-selection--single {
   background-color: #fff;
   border: 1px solid var(--grey_2);

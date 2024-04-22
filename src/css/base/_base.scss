@@ -262,3 +262,13 @@ ul {
 .color-grey {
     color: var(--grey_4);
 }
+
+.category-selector {
+    margin-bottom: 16px;
+    @media(min-width: $sm) {
+        margin-bottom: 32px;
+    }
+    @media(min-width: $md) {
+        max-width: 486px;
+    }
+}
