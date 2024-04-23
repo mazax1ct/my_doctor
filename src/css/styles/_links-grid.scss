@@ -1,0 +1,95 @@
+.links-grid {
+    display: grid;
+    gap: 16px;
+    @media(min-width: $sm) {
+        gap: 24px;
+    }
+
+    &--type_1 {
+        grid-template-columns: 1fr 1fr;
+        @media(min-width: $sm) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media(min-width: $hd) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+
+        .icon-link {
+            padding: 35px 12px;
+            @media(min-width: $sm) {
+                padding: 35px 8px 35px 20px;
+            }
+            @media(min-width: $hd) {
+                padding: 35px 20px 35px 24px;
+            }
+
+            .icon-link__title {
+                @media(min-width: $sm) and (max-width: $md - 0.01px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &--type_2 {
+        grid-template-columns: 1fr 1fr;
+        @media(min-width: $hd) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .icon-link {
+            padding: 24px 10px;
+            @media(min-width: $sm) {
+                padding: 24px 48px;
+            }
+
+            .icon-link__title {
+                font-weight: 600;
+                @media(max-width: $sm - 0.01px) {
+                    font-size: 14px;
+                    min-height: 3.43em;
+                }
+                @media(min-width: $sm) {
+                    font-size: 20px;
+                    line-height: 1.2;
+                    min-height: 2.4em;
+                }
+            }
+
+            .icon-link__link {
+                @media(max-width: $sm - 0.01px) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &--type_3 {
+        grid-template-columns: 1fr;
+        @media(min-width: $sm) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(min-width: $hd) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .icon-link {}
+    }
+
+    &--type_4 {
+        grid-template-columns: 1fr 1fr;
+        @media(min-width: $sm) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        .icon-link {
+            padding: 35px 12px;
+            @media(min-width: $sm) {
+                padding: 35px 10px 35px 12px;
+            }
+            @media(min-width: $hd) {
+                padding: 35px 24px;
+            }
+        }
+    }
+}

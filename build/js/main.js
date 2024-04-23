@@ -53,7 +53,6 @@ $(document).on('blur', '.header .search-form__input', function() {
 });
 /*****************************позже удалить*****************************/
 
-
 function formatState (state) {
   if (!state.id) {
     return state.text;
@@ -103,6 +102,41 @@ $(document).ready(function () {
     } else {
       $(this).closest('.input-group').removeClass('is-filled');
     }
+  });
+
+  $('.js-articles-slider').each(function() {
+    var arrowsContainer = $(this).closest('.articles-slider-wrapper').find('.articles-slider-wrapper__arrows');
+    var dostContainer = $(this).closest('.articles-slider-wrapper').find('.articles-slider-wrapper__dots');
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2,
+           infinite: true,
+           dots: true,
+           arrows: true,
+           variableWidth: true
+         }
+       },
+       {
+         breakpoint: 1024,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3
+         }
+       }
+     ]
+    });
   });
 });
 

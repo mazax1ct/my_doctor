@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="plugins_css/air-datepicker.css" />
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
     <link rel="stylesheet" href="plugins_css/select2.css" />
+    <link rel="stylesheet" href="plugins_css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -179,35 +180,20 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">О нас</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    Фотогалерея
+                    О нас
                 </li>
             </ul>
 
-            <h1>Фотогалерея</h1>
+            <h1>О нас</h1>
 
             <div class="page__columns">
                 <div class="page__left-column">
                     <ul class="left-menu">
                         <li class="left-menu__item">
-                            <a class="button button--white left-menu__link is-active" href="#">Описание</a>
+                            <a class="button button--white left-menu__link is-active" href="#">Информация</a>
                         </li>
                         <li class="left-menu__item">
-                            <a class="button button--white left-menu__link" href="#">Цены</a>
-                        </li>
-                        <li class="left-menu__item">
-                            <a class="button button--white left-menu__link" href="#">Услуги</a>
-                        </li>
-                        <li class="left-menu__item">
-                            <a class="button button--white left-menu__link" href="#">Врачи</a>
-                        </li>
-                        <li class="left-menu__item">
-                            <a class="button button--white left-menu__link" href="#">Акции</a>
-                        </li>
-                        <li class="left-menu__item">
-                            <a class="button button--white left-menu__link" href="#">Фото и видео</a>
+                            <a class="button button--white left-menu__link" href="#">Меню</a>
                         </li>
                     </ul>
 
@@ -231,50 +217,106 @@
                 </div>
 
                 <div class="page__right-column">
-                    <div class="category-selector select-wrapper select-wrapper--type_2">
-                        <select class="js-select" data-icon="camera_icon" data-placeholder="Выбрать категорию" data-minimum-results-for-search="Infinity">
-                            <option></option>
-                            <option value="1">Категория 1</option>
-                            <option value="2">Категория 2</option>
-                            <option value="3">Категория 3</option>
-                            <option value="4">Категория 5</option>
-                            <option value="5">Категория 6</option>
-                            <option value="6">Категория 7</option>
-                            <option value="7">Категория 8</option>
-                            <option value="8">Категория 9</option>
-                        </select>
+                    <div class="links-grid links-grid--type_2">
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/history.svg" alt=""></span>
+                            <span class="icon-link__title">История медцентра</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/bookmark.svg" alt=""></span>
+                            <span class="icon-link__title">Миссия и ценности</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/management.svg" alt=""></span>
+                            <span class="icon-link__title">Руководство</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/hearts.svg" alt=""></span>
+                            <span class="icon-link__title">Грамоты<br> и благодарности</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/chat.svg" alt=""></span>
+                            <span class="icon-link__title">Отзывы</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/text-fill.svg" alt=""></span>
+                            <span class="icon-link__title">Новости</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/hospital.svg" alt=""></span>
+                            <span class="icon-link__title">Корпоративным<br> клиентам</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/file.svg" alt=""></span>
+                            <span class="icon-link__title">Видеогалерея</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/fileimg.svg" alt=""></span>
+                            <span class="icon-link__title">Фотогалерея</span>
+                            <span class="icon-link__link">
+                                Подробнее
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                </svg>
+                            </span>
+                        </a>
                     </div>
-
-                    <div class="photo-gallery">
-                        <a href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
-                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
-                        </a>
-
-                        <a href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
-                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
-                        </a>
-
-                        <a href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
-                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
-                        </a>
-
-                        <a href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
-                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
-                        </a>
-
-                        <a href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
-                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
-                        </a>
-
-                        <a href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
-                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
-                        </a>
-                    </div>
-
-                    <div class="show-more">
-                        <button class="show-more__button" type="button">Показать еще +</button>
-                    </div>
-
                 </div>
             </div>
         </div>

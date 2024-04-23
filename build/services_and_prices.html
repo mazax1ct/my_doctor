@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="plugins_css/air-datepicker.css" />
     <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
     <link rel="stylesheet" href="plugins_css/select2.css" />
+    <link rel="stylesheet" href="plugins_css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -179,20 +180,20 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">О нас</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    Видео
+                    Услуги и цены
                 </li>
             </ul>
 
-            <h1>Видео</h1>
+            <h1>Услуги и цены</h1>
 
             <div class="page__columns">
                 <div class="page__left-column">
                     <ul class="left-menu">
                         <li class="left-menu__item">
-                            <a class="button button--white left-menu__link is-active" href="#">Видео</a>
+                            <a class="button button--white left-menu__link is-active" href="#">Поиск</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#">Направления</a>
                         </li>
                     </ul>
 
@@ -216,114 +217,67 @@
                 </div>
 
                 <div class="page__right-column">
-                    <div class="category-selector select-wrapper select-wrapper--type_2">
-                        <select class="js-select" data-icon="video_icon" data-placeholder="Выбрать категорию" data-minimum-results-for-search="Infinity">
-                            <option></option>
-                            <option value="1">Категория 1</option>
-                            <option value="2">Категория 2</option>
-                            <option value="3">Категория 3</option>
-                            <option value="4">Категория 5</option>
-                            <option value="5">Категория 6</option>
-                            <option value="6">Категория 7</option>
-                            <option value="7">Категория 8</option>
-                            <option value="8">Категория 9</option>
-                        </select>
-                    </div>
-
-                    <div class="articles-grid">
-                        <a class="article-card" href="#">
-                            <div class="article-card__image" href="#">
-                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
-                            </div>
-                            <div class="article-card__text">
-                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
-
-                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
-
-                                <div class="article-card__bottom">
-                                    <div class="article-card__tag">#наши_услуги</div>
-
-                                    <div class="article-card__link">
-                                        <span>Смотреть</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="links-grid links-grid--type_4">
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/nurse.svg" alt=""></span>
+                            <span class="icon-link__title">Консультации<br> и лечение</span>
                         </a>
 
-                        <a class="article-card" href="#">
-                            <div class="article-card__image" href="#">
-                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
-                            </div>
-                            <div class="article-card__text">
-                                <h3 class="article-card__title">Реабилитация постковидного синдрома</h3>
-
-                                <p class="article-card__preview">В этом видео мы рассказываем о нашей новой программе востановления после коронавируса COVID-19</p>
-
-                                <div class="article-card__bottom">
-                                    <div class="article-card__tag">#наши_методы</div>
-
-                                    <div class="article-card__link">
-                                        <span>Смотреть</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/ambulance.svg" alt=""></span>
+                            <span class="icon-link__title">Вызов врача<br> на дом</span>
                         </a>
 
-                        <a class="article-card" href="#">
-                            <div class="article-card__image" href="#">
-                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
-                            </div>
-                            <div class="article-card__text">
-                                <h3 class="article-card__title">Овсянникова Марина Викторовна</h3>
-
-                                <p class="article-card__preview">С большим удовольствием хотим представить вам нашего специалиста по телу и гуру массажа - Овсянникову Марину Викторовну</p>
-
-                                <div class="article-card__bottom">
-                                    <div class="article-card__tag">#наши_специалисты</div>
-
-                                    <div class="article-card__link">
-                                        <span>Смотреть</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/stethoscope.svg" alt=""></span>
+                            <span class="icon-link__title">Диагностика<br> (обследования)</span>
                         </a>
 
-                        <a class="article-card" href="#">
-                            <div class="article-card__image" href="#">
-                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
-                            </div>
-                            <div class="article-card__text">
-                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/testtube.svg" alt=""></span>
+                            <span class="icon-link__title">Анализы</span>
+                        </a>
 
-                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/serum.svg" alt=""></span>
+                            <span class="icon-link__title">Процедурный<br> кабинет</span>
+                        </a>
 
-                                <div class="article-card__bottom">
-                                    <div class="article-card__tag">#наши_услуги</div>
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/medexamination.svg" alt=""></span>
+                            <span class="icon-link__title">Профосмотры<br> и услуги ЮЛ</span>
+                        </a>
 
-                                    <div class="article-card__link">
-                                        <span>Смотреть</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#arrow_right" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/injection.svg" alt=""></span>
+                            <span class="icon-link__title">Вакцинация</span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/programs.svg" alt=""></span>
+                            <span class="icon-link__title">Комплексные<br> программы</span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/book.svg" alt=""></span>
+                            <span class="icon-link__title">Медкнижки</span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/sertificates.svg" alt=""></span>
+                            <span class="icon-link__title">Медицинские<br> справки<br> и заключения</span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/cosmetology.svg" alt=""></span>
+                            <span class="icon-link__title">Косметология</span>
+                        </a>
+
+                        <a class="icon-link" href="#">
+                            <span class="icon-link__icon"><img src="images/icons/icon-links/gift_sertificate.svg" alt=""></span>
+                            <span class="icon-link__title">Подарочные<br> сертификаты</span>
                         </a>
                     </div>
-
-                    <div class="show-more">
-                        <button class="show-more__button" type="button">Показать еще +</button>
-                    </div>
-
                 </div>
             </div>
         </div>

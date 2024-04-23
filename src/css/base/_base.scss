@@ -272,3 +272,26 @@ ul {
         max-width: 486px;
     }
 }
+
+.more-link {
+    align-items: center;
+    color: var(--blue_1);
+    display: inline-flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    @include hover {
+        color: var(--blue_7);
+    }
+    @include active {
+        color: var(--blue_8);
+    }
+
+    svg {
+        fill: currentColor;
+        height: 40px;
+        min-width: 40px;
+        width: 40px;
+    }
+}
