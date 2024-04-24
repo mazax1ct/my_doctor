@@ -22,4 +22,16 @@
             color: var(--blue_8);
         }
     }
+
+    .button {
+        @media(max-width: $sm - 0.01px) {
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            min-width: 162px;
+        }
+        @media(min-width: $hd) {
+            min-width: 180px;
+        }
+    }
 }

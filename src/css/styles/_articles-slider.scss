@@ -1,17 +1,42 @@
-.articles-slider-wrapper {
+.articles-slider {
     margin-left: calc(0.01px - var(--container_padding));
     margin-right: calc(0.01px - var(--container_padding));
     padding-right: var(--container_padding);
     padding-left: var(--container_padding);
-    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    & > .slick-next,
+    & > .slick-prev {
+        @media(min-width: 1300px) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+
+    & > .slick-prev {
+        @media(min-width: 1300px) {
+            left: -24px;
+        }
+    }
+
+    & > .slick-next {
+        @media(min-width: 1300px) {
+            left: auto;
+            right: -24px;
+        }
+    }
 
     &__title-block {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
+        gap: 16px;
         margin-bottom: 24px;
         @media(min-width: $hd) {
-            margin-bottom: 48px;
+            margin-bottom: 32px;
         }
     }
 
@@ -32,18 +57,9 @@
     .slick-slide {
         margin-left: var(--container_padding);
         padding-bottom: 24px;
-        /*padding-left: var(--container_padding);
-        padding-right: var(--container_padding);
-        padding-bottom: 24px;
-        @media(min-width: $sm) {
-            padding-right: 0;
-            width: calc((100vw - var(--container_padding)) / 2);
-        }
-        @media(min-width: 1200px) {
-            width: calc(1200px / 3);
-        }*/
+
         .article-card {
-            //margin-left: var(--container_padding);
+            height: 100%;
         }
     }
 
@@ -52,22 +68,30 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
         @media(min-width: $sm) {
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
             margin-top: 12px;
         }
 
         .more-link {
             margin-left: auto;
+            position: relative;
+            z-index: 2;
         }
     }
 
     &__dots {
+        width: 100%;
         @media(max-width: $sm - 0.01px) {
             margin-bottom: 32px;
-            width: 100%;
+        }
+        @media(min-width: $hd) {
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
         }
     }
 }

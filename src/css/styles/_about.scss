@@ -1,0 +1,12 @@
+.about {
+    @media(min-width: $hd) {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__column {
+        @media(min-width: $hd) {
+            width: calc((100% - 24px) / 2);
+        }
+    }
+}

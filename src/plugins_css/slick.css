@@ -37,22 +37,7 @@
 }
 
 .slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: '';
-}
-
-.slick-track:after {
-  clear: both;
+  display: flex;
 }
 
 .slick-loading .slick-track {
@@ -61,8 +46,7 @@
 
 .slick-slide {
   display: none;
-  float: left;
-  height: 100%;
+  height: auto;
   min-height: 1px;
 }
 

@@ -105,8 +105,114 @@ $(document).ready(function () {
   });
 
   $('.js-articles-slider').each(function() {
-    var arrowsContainer = $(this).closest('.articles-slider-wrapper').find('.articles-slider-wrapper__arrows');
-    var dostContainer = $(this).closest('.articles-slider-wrapper').find('.articles-slider-wrapper__dots');
+    var arrowsContainer = $(this).closest('.articles-slider').find('.articles-slider__arrows');
+    var arrowsContainer2 = $(this).closest('.articles-slider');
+    var dostContainer = $(this).closest('.articles-slider').find('.articles-slider__dots');
+
+    var articlesSliderOptions_1 = {
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1279,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3
+         }
+       },
+       {
+         breakpoint: 1310,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3,
+           appendArrows: arrowsContainer2
+         }
+       }
+     ]
+    };
+
+    var articlesSliderOptions_2 = {
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1310,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2,
+           appendArrows: arrowsContainer2
+         }
+       }
+     ]
+    };
+
+    var articlesSliderOptions_3 = {
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1310,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       }
+     ]
+    };
+
+    if($(this).hasClass('articles-slider__slider--type_1')){
+      $(this).slick(articlesSliderOptions_1);
+    } else if ($(this).hasClass('articles-slider__slider--type_2')) {
+      $(this).slick(articlesSliderOptions_2);
+    } else {
+      $(this).slick(articlesSliderOptions_3);
+    }
+
+  });
+
+  $('.js-contacts-slider').each(function() {
+    var arrowsContainer = $(this).closest('.contacts-slider').find('.contacts-slider__arrows');
+    var dostContainer = $(this).closest('.contacts-slider').find('.contacts-slider__dots');
+
     $(this).slick({
       infinite: true,
       mobileFirst: true,
@@ -121,15 +227,11 @@ $(document).ready(function () {
          breakpoint: 767,
          settings: {
            slidesToShow: 2,
-           slidesToScroll: 2,
-           infinite: true,
-           dots: true,
-           arrows: true,
-           variableWidth: true
+           slidesToScroll: 2
          }
        },
        {
-         breakpoint: 1024,
+         breakpoint: 1279,
          settings: {
            slidesToShow: 3,
            slidesToScroll: 3

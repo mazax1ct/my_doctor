@@ -1,0 +1,27 @@
+.main-page-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    @media(min-width: $hd) {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    &--bg {
+        @media(min-width: $sm) {
+            background-color: #F1FAFF;
+        }
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 1.21428;
+        @media(min-width: $sm) {
+            font-size: 40px;
+            line-height: 1.25;
+        }
+        @media(min-width: $hd) {
+            font-size: 45px;
+            line-height: 1.22222;
+        }
+    }
+}
