@@ -57,18 +57,21 @@
     }
 
     &__title {
-        align-items: center;
         color: var(--blue_3);
-        display: flex;
-        gap: 10px;
         font-size: 20px;
         font-weight: 600;
-        justify-content: space-between;
         line-height: 1.2;
         min-height: 2.4em;
         margin-bottom: 20px;
         position: relative;
         z-index: 1;
+
+        &:has(.article-card__discount) {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
 
         a {
             color: var(--blue_3);
@@ -137,13 +140,13 @@
         align-items: center;
         color: var(--red_2);
         display: flex;
+        gap: 5px;
         font-weight: 700;
         transition: color 0.3s;
         text-decoration: none;
 
         svg {
             fill: currentColor;
-            gap: 5px;
             height: 27px;
             min-width: 27px;
             width: 27px;

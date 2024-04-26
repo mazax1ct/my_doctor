@@ -1,0 +1,33 @@
+.licenses {
+    @media(min-width: $hd) {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__links {
+        @media(min-width: $hd) {
+            width: calc(100% - 24px - 220px);
+        }
+
+        .download-link {
+            width: 100%;
+
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__images {
+        width: 220px;
+        @media(max-width: $hd - 0.01px) {
+            display: none;
+        }
+
+        img {
+            border-radius: 17px;
+            display: block;
+            width: 100%;
+        }
+    }
+}

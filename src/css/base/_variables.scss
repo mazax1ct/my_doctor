@@ -41,4 +41,8 @@ $lg: 1400px;
     @media(min-width: $sm) {
         --container_padding: 24px;
     }
+    --typo_vertical_indent: 24px;
+    @media(min-width: $sm) {
+        --typo_vertical_indent: 48px;
+    }
 }

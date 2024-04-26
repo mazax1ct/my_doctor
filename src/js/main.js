@@ -343,3 +343,23 @@ $(document).on('click', '.js-end-list .period__item', function () {
 
   return false;
 });
+
+//лицензии
+$(document).on('mouseenter', '.licenses .download-link', function () {
+  $('.licenses__images img').attr('src', $(this).attr('href'));
+  $('.licenses__images img').attr('srcset', $(this).attr('data-img'));
+});
+
+//аккордеон
+$(document).on('click', '.accordion__toggler', function () {
+  var _this = $(this);
+  if(!_this.hasClass('is-active')){
+    _this.addClass('is-active');
+    _this.next('.accordion__body').slideDown();
+  }else{
+    _this.next('.accordion__body').slideUp(function() {
+      _this.removeClass('is-active');
+    });
+  }
+  return false;
+});

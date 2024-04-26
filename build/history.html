@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#393185">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" href="fonts/subset-Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="plugins_css/air-datepicker.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="plugins_css/select2.css" />
+    <link rel="stylesheet" href="plugins_css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="header__top">
+            <div class="header__top-inner container">
+                <a class="header__logo" href="#">
+                    <img src="images/logo.png" srcset="images/logo@2x.png" alt="Мой доктор">
+                </a>
+    
+                <div class="header__search-form">
+                    <div class="search-form">
+                        <form class="search-form__form" action="">
+                            <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск по сайту..." autocomplete="off">
+    
+                            <button class="search-form__submit" type="submit" title="Найти">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+    
+                            <div class="search-form__dropdown">
+                                <div class="search-form__dropdown-list">
+                                    <button class="search-form__var" type="button">Справки</button>
+                                    <button class="search-form__var" type="button">Справка для занятий общей физической подготовкой (ОФП)</button>
+                                    <button class="search-form__var" type="button">Справка для получения санаторно-курортной путевки (070/У)</button>
+                                    <button class="search-form__var" type="button">Справка для оздоровительного лагеря</button>
+                                    <button class="search-form__var" type="button">Справки для водителей (в ГИБДД)</button>
+                                    <button class="search-form__var" type="button">Справка для бассейна</button>
+                                    <button class="search-form__var" type="button">Справка об отсутствии COVID-1</button>
+                                    <button class="search-form__var" type="button">Справки</button>
+                                    <button class="search-form__var" type="button">Справка для занятий общей физической подготовкой (ОФП)</button>
+                                    <button class="search-form__var" type="button">Справка для получения санаторно-курортной путевки (070/У)</button>
+                                    <button class="search-form__var" type="button">Справка для оздоровительного лагеря</button>
+                                    <button class="search-form__var" type="button">Справки для водителей (в ГИБДД)</button>
+                                    <button class="search-form__var" type="button">Справка для бассейна</button>
+                                    <button class="search-form__var" type="button">Справка об отсутствии COVID-1</button>
+                                </div>
+    
+                                <a class="search-form__var search-form__var--more" href="#" title="Показать все">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+    
+                    <div class="header__contacts-buttons">
+                        <a class="button button--white" href="#" target="_blank">
+                            <svg class="fill-red" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                        </a>
+    
+                        <a class="button button--white" href="#" target="_blank" rel="nofollow noreferrer noopener">
+                            <svg class="fill-green" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#whatsapp_icon" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+    
+                <div class="header__phone-block phone-block">
+                    <a class="phone-block__phone" href="#" target="_blank">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 906 033 46 46</span>
+                    </a>
+                    <div class="phone-block__work-time">Ежедневно с 7:30 до 21:00</div>
+                </div>
+    
+                <a class="header__ally-button" href="#">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#eye_icon" />
+                    </svg>
+                </a>
+    
+                <a class="header__phone-button" href="#" target="_blank">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#phone_icon" />
+                    </svg>
+                </a>
+    
+                <button class="header__record-button button button--red" type="button" data-fancybox="record_3" data-src="#record">Запись на приём</button>
+    
+                <button class="js-menu-toggler menu-toggler" type="button" title="Открыть меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    
+        <div class="main-menu">
+            <nav class="main-menu__nav">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a class="main-menu__link is-active" href="#">О нас</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Пациентам</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Специалисты</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Услуги и цены</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Акции</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Аптека</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Вакансии</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a class="main-menu__link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="main-menu__contacts">
+                <div class="phone-block">
+                    <a class="phone-block__phone" href="#" target="_blank">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone_icon" />
+                        </svg>
+                        <span>+7 906 033 46 46</span>
+                    </a>
+                    <div class="phone-block__work-time">Ежедневно с 7:30 до 21:00</div>
+                </div>
+    
+                <button class="button button--red" type="button" data-fancybox="record_4" data-src="#record">Запись на приём</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">О нас</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    История медицинского центра
+                </li>
+            </ul>
+
+            <h1>История медицинского центра</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#history">История</a>
+                        </li>
+                    </ul>
+
+                    <div class="left-buttons">
+                        <p class="left-buttons__title">Остались вопросы?</p>
+                    
+                        <a class="button button--white left-button" href="#">
+                            <svg class="fill-red" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#phone_icon" />
+                            </svg>
+                            <span>Заказать<br> звонок</span>
+                        </a>
+                    
+                        <a class="button button--white left-button" href="#">
+                            <svg class="fill-green" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#whatsapp_icon" />
+                            </svg>
+                            <span>Написать<br> в WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="page__right-column">
+                    <section id="history" class="page__section">
+                        <div class="page__section" style="max-width: 730px">
+                            <h2 class="color-blue">Сеть медицинских центров “Мой доктор”<br> - работаем для вас с 1997 года</h2>
+
+                            <div class="bordered-text">
+                                <p>Деятельность МЦ «Мой доктор» началась в 1997 году с открытия<br> первого медицинского центра</p>
+
+                                <p>В дальнейшем шло развитие новых направлений, увеличивалось количество многопрофильных медицинских центров и сегодня «Мой доктор» — это 4 клиники для взрослых и детей!</p>
+                            </div>
+                        </div>
+
+                        <div class="history">
+                            <div class="history__item">
+                                <div class="history__year">1997</div>
+
+                                <div class="history__text">
+                                    <h3>Открытие первого центра</h3>
+                                    <p>В 1997 году состоялось открытие первого медицинского центра в г. Ивантеевка на ул. Детский проезд, д.8: прием 1997 вели терапевт и офтальмолог</p>
+                                </div>
+                            </div>
+
+                            <div class="history__item">
+                                <div class="history__year">1999</div>
+
+                                <div class="history__text">
+                                    <h3>Расширение числа специалистов</h3>
+                                    <p>Прием ведут специалисты по 6 медицинским специальностям</p>
+                                </div>
+                            </div>
+
+                            <div class="history__item">
+                                <div class="history__year">2000</div>
+
+                                <div class="history__text">
+                                    <h3>Многопрофильный статус</h3>
+                                    <p>Применяемое высокотехнологическое оборудование позволяет значительно расширить перечень услуг. Клиника приобретает многопрофильный статус</p>
+                                </div>
+                            </div>
+
+                            <div class="history__item">
+                                <div class="history__year">2016</div>
+
+                                <div class="history__text">
+                                    <h3>Открытие рентген-кабинета</h3>
+                                    <p>Выполняем рентгенографию придаточных пазух носа, костей черепа, позвоночника, кистей, стоп, органов грудной полости как взрослым, так и детям</p>
+                                </div>
+                            </div>
+
+                            <div class="history__item">
+                                <div class="history__year">2016</div>
+
+                                <div class="history__text">
+                                    <h3>Открытие второго центра и аптеки</h3>
+                                    <p>Значительное возрастание потока пациентов приводит к решению открыть новый медицинский центр с аптечным пунктом по адресу: Новая Слобода, д. 4</p>
+                                </div>
+                            </div>
+
+                            <div class="history__item">
+                                <div class="history__year">2018</div>
+
+                                <div class="history__text">
+                                    <h3>Открытие третьего центра</h3>
+                                    <p>Успех второго центра и возрастающее число пациентов приводят к открытию 3-го центра под брендом «Мой Доктор+» по адресу: Хлебозаводская, д. 43А</p>
+                                </div>
+                            </div>
+
+                            <div class="history__item">
+                                <div class="history__year">2021</div>
+
+                                <div class="history__text">
+                                    <h3>Открытие четвертого центра</h3>
+                                    <p>Развитие центра продолжается, для пациентов открывает свои двери наше новое отделение, расположенное по адресу: Карла Маркса, д. 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="float-block compensate-for-scrollbar">
+            <div class="float-block__note">
+                <div class="container">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО<br> ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ</div>
+            </div>
+        
+            <div class="float-block__mobile-buttons">
+                <button class="mobile-button" type="button" data-fancybox="record" data-src="#record">
+                    <span class="mobile-button__icon">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mobile_record_icon" />
+                        </svg>
+                    </span>
+                    Запись
+                </button>
+        
+                <button class="mobile-button" type="button" data-fancybox="callback" data-src="#callback">
+                    <span class="mobile-button__icon">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mobile_call_icon" />
+                        </svg>
+                    </span>
+                    Звонок
+                </button>
+        
+                <button class="mobile-button" type="button">
+                    <span class="mobile-button__icon">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mobile_review_icon" />
+                        </svg>
+                    </span>
+                    Отзыв
+                </button>
+        
+                <button class="mobile-button" type="button" data-fancybox="whatsapp" data-src="#whatsapp">
+                    <span class="mobile-button__icon">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#mobile_write_icon" />
+                        </svg>
+                    </span>
+                    Написать
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__top-top">
+                    <div class="footer__logo"><img src="images/logo.png" srcset="images/logo@2x.png" alt="Мой доктор"></div>
+    
+                    <div class="footer__buttons">
+                        <button class="footer__button button button--red" type="button" data-fancybox="record_2" data-src="#record">Запись на прием</button>
+    
+                        <button class="footer__button button button--light_blue" type="button" data-fancybox="callback_2" data-src="#callback">Заказать звонок</button>
+    
+                        <button class="footer__button footer__button--big button button--light_blue" type="button" data-fancybox="whatsapp_2" data-src="#whatsapp">
+                            <svg class="fill-green" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#whatsapp_icon" />
+                            </svg>
+                            <span>Написать в WhatsApp</span>
+                        </button>
+    
+                        <button class="footer__button button button--light_blue" type="button" data-fancybox="review" data-src="#review">Оставить отзыв</button>
+                    </div>
+    
+                    <a class="footer__to-top" href="#" title="Наверх">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_up" />
+                        </svg>
+                    </a>
+                </div>
+    
+                <div class="footer__blocks">
+                    <div class="footer__block footer__block--mod_1">
+                        <div class="phone-block">
+                            <a class="phone-block__phone" href="#" target="_blank">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#phone_icon" />
+                                </svg>
+                                <span>+7 906 033 46 46</span>
+                            </a>
+                            <div class="phone-block__work-time">Ежедневно с 7:30 до 21:00</div>
+                        </div>
+    
+                        <a class="footer__email-link" href="#">
+                            <span>Написать нам:</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#envelope_icon" />
+                            </svg>
+                        </a>
+    
+                        <div class="socials">
+                            <p class="socials__title">Наши соц сети:</p>
+    
+                            <div class="socials__links">
+                                <a class="socials__link socials__link--vk" href="#" title="Мы Вконтакте" target="_blank" rel="nofollow noreferrer noopener">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#vk_icon" />
+                                    </svg>
+                                </a>
+    
+                                <a class="socials__link socials__link--od" href="#" title="Мы в Одноклассниках" target="_blank" rel="nofollow noreferrer noopener">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#od_icon" />
+                                    </svg>
+                                </a>
+    
+                                <a class="socials__link socials__link--yt" href="#" title="Мы на YouTube" target="_blank" rel="nofollow noreferrer noopener">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#yt_icon" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="footer__block">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">О нас</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Руководство</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Отзывы</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Новости</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Правовая информация</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Корпоративным клиентам</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Лицензии</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__block">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Пациентам</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Врачи</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Услуги и цены</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Обслуживание по ДМС</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Вакансии</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Акции</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__block">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="javascript:void(0)" data-fancybox="record_5" data-src="#record">Записаться на прием</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="javascript:void(0)" data-fancybox="whatsapp_3" data-src="#whatsapp">Написать в WhatsApp</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="javascript:void(0)" data-fancybox="ask" data-src="#ask">Обратиться к руководству</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="javascript:void(0)" data-fancybox="tax" data-src="#tax">Запросить налоговый вычет</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="javascript:void(0)" data-fancybox="resume" data-src="#resume">Заполнить резюме</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="javascript:void(0)" data-fancybox="review_2" data-src="#review">Оставить отзыв</a></li>
+                            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Карта сайта</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-links">
+                    <a class="link-with-icon" href="#">
+                        Версия для слабовидящих
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#eye_slash_icon" />
+                        </svg>
+                    </a>
+    
+                    <a href="#">Политика обработки cookie</a>
+    
+                    <a href="#">Политика конфиденциальности</a>
+    
+                    <a href="#">Обработка персональных данных</a>
+                </div>
+    
+                <div class="footer__bottom-bottom">
+                    <p>Копирование, тиражирование, а равно иное использование материалов, размещенных на moy-doktor.org возможно только с письменного разрешения Правообладателя</p>
+                    <p>Сайт носит исключительно информационный характер и ни при каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ</p>
+                    <p class="footer__copyrights">
+                        <span>© 1997-2023 Все права защищены ООО&nbsp;«МЦ&nbsp;ВМЛ&nbsp;«Мой&nbsp;Доктор»</span>
+    
+                        <a href="#">Сайт разработан - “Designer”</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="callback" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Заявка на звонок</p>
+    
+        <div class="popup__text">
+            <p>Обращаем ваше внимание, что заявки обрабатываются ежедневно с&nbsp;08:00&nbsp;до&nbsp;21:00</p>
+        </div>
+    
+        <p class="popup__subtitle">Представьтесь, пожалуйста, и&nbsp;наш администратор перезвонит:</p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="callback_fio" class="js-input-group__input input-group__input" type="text" name="callback_fio" placeholder="ФИО пациента">
+                                <label class="input-group__label" for="callback_fio">ФИО пациента<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--phone">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="callback_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="callback_phone" placeholder="(XXX) XXX-XX-XX">
+                                <label class="input-group__label" for="callback_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Напишите Ваши пожелания или&nbsp;вопрос:</p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="callback_comment" class="js-input-group__input input-group__textarea" name="callback_comment" placeholder="Комментарий"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="callback_comment">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="callback_success" data-src="#callback_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="callback_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Заказать звонок</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый пациент, заявка успешно создана</p>
+                    <p>Благодарим Вас за обращение в медицинский центр «Мой доктор»</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>В ближайшее время наш администратор свяжется с Вами. Обращаем Ваше внимание, что заявки обрабатываются ежедневно с&nbsp;08:00&nbsp;до&nbsp;21:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="whatsapp" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <img width="143" height="143" src="images/icons/qr.jpg" alt="">
+    
+            <div>
+                <p class="popup__title">
+                    <svg class="whatsapp" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#whatsapp_icon" />
+                    </svg>
+    
+                    <span>Написать в WhatsApp</span>
+                </p>
+    
+                <div class="popup__text">
+                    <p>Пожалуйста, просканируйте QR-код с помощью Вашего мобильного телефона</p>
+                    <p>Наш администратор постарается ответить на Ваш запрос</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>Внимание! Запросы обрабатываются ежедневно, с&nbsp;08:00&nbsp;до&nbsp;21:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="record" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Заявка на запись в МЦ «Мой доктор»</p>
+    
+        <div class="popup__text">
+            <p>Уважаемый пациент, заявка на запись является предварительной. После отправки формы, с Вами свяжется администратор для согласования даты и времени визита</p>
+        </div>
+    
+        <p class="popup__subtitle">Пожалуйста, введите ваши данные:</p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="record_fio" class="js-input-group__input input-group__input" type="text" name="record_fio" placeholder="ФИО пациента">
+                                <label class="input-group__label" for="record_fio">ФИО пациента<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--phone">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="record_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="record_phone" placeholder="(XXX) XXX-XX-XX">
+                                <label class="input-group__label" for="record_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple input-group--datepicker">
+                        <div id="pop" class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="record_birth" class="js-input-group__input js-date-mask input-group__input" type="text" name="record_birth" placeholder="дд.мм.гггг">
+                                <label class="input-group__label" for="record_birth">Дата рождения<span class="required">*</span></label>
+                                <svg class="input-group__calendar-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#calendar_icon" />
+                                </svg>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="record_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="record_email" placeholder="E-mail">
+                                <label class="input-group__label" for="record_email">E-mail</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Выберете специализацию, врача и/или тип медицинских услуг:<span class="required">*</span></p>
+    
+            <div class="form-row">
+                <div class="wide">
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Специальность">
+                            <option></option>
+                            <option value="1">Хирург</option>
+                            <option value="2">Офтальмолог</option>
+                            <option value="3">Эндокринолог</option>
+                            <option value="4">Терапевт</option>
+                            <option value="5">Гигапевт</option>
+                            <option value="6">Мегапевт</option>
+                            <option value="7">Килопевт</option>
+                            <option value="8">Певт</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Врач" data-minimum-results-for-search="1" data-search-input-placeholder="Врач">
+                            <option></option>
+                            <option value="1">Хирург</option>
+                            <option value="2">Офтальмолог</option>
+                            <option value="3">Эндокринолог</option>
+                            <option value="4">Терапевт</option>
+                            <option value="5">Гигапевт</option>
+                            <option value="6">Мегапевт</option>
+                            <option value="7">Килопевт</option>
+                            <option value="8">Певт</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Тип услуг" data-minimum-results-for-search="1" data-search-input-placeholder="Тип услуг">
+                            <option></option>
+                            <option value="1">Хирург</option>
+                            <option value="2">Офтальмолог</option>
+                            <option value="3">Эндокринолог</option>
+                            <option value="4">Терапевт</option>
+                            <option value="5">Гигапевт</option>
+                            <option value="6">Мегапевт</option>
+                            <option value="7">Килопевт</option>
+                            <option value="8">Певт</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Напишите Ваши пожелания и/или причину обращения:</p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="record_comment" class="js-input-group__input input-group__textarea" name="record_comment" placeholder="Комментарий"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="record_comment">Комментарий</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="record_success" data-src="#record_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="record_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Заявка на запись в МЦ «Мой доктор»</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый пациент, заявка успешно создана</p>
+                    <p>Благодарим Вас за обращение в медицинский центр «Мой доктор»</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>Уведомляем Вас, что заявка на запись является предварительной. Наш администратор свяжется с Вами для подтверждения и согласования даты и времени визита. Заявки обрабатываются ежедневно с&nbsp;08:00&nbsp;до&nbsp;21:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="review" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Оставить отзыв</p>
+    
+        <p class="popup__subtitle">Пожалуйста, введите ваши данные:</p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="review_fio" class="js-input-group__input input-group__input" type="text" name="review_fio" placeholder="Ваше имя">
+                                <label class="input-group__label" for="review_fio">Ваше имя<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="review_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="review_email" placeholder="E-mail">
+                                <label class="input-group__label" for="review_email">E-mail<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-row">
+                <label class="checkbox">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Отправить ответ на e-mail</span>
+                </label>
+            </div>
+    
+            <p class="popup__subtitle">Выберете врача:<span class="required">*</span></p>
+    
+            <div class="form-row">
+                <div class="wide">
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Врач" data-minimum-results-for-search="1" data-search-input-placeholder="Врач">
+                            <option></option>
+                            <option value="1">Хирург</option>
+                            <option value="2">Офтальмолог</option>
+                            <option value="3">Эндокринолог</option>
+                            <option value="4">Терапевт</option>
+                            <option value="5">Гигапевт</option>
+                            <option value="6">Мегапевт</option>
+                            <option value="7">Килопевт</option>
+                            <option value="8">Певт</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Напишите Ваш отзыв:<span class="required">*</span></p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="callback_comment" class="js-input-group__input input-group__textarea" name="callback_comment" placeholder="Отзыв"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="callback_comment">Отзыв<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="review_success" data-src="#review_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="review_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Оставить отзыв</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый пациент, заявка успешно создана</p>
+                    <p>Благодарим Вас за обращение в медицинский центр «Мой доктор»</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>Нам очень важно Ваше мнение!</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="ask" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Задать вопрос руководству</p>
+    
+        <p class="popup__subtitle">Выберите кому вы хотите задать вопрос:<span class="required">*</span></p>
+    
+        <form action="">
+            <div class="form-row">
+                <div class="wide">
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Руководитель" data-minimum-results-for-search="1" data-search-input-placeholder="Руководитель">
+                            <option></option>
+                            <option value="1">Хирург</option>
+                            <option value="2">Офтальмолог</option>
+                            <option value="3">Эндокринолог</option>
+                            <option value="4">Терапевт</option>
+                            <option value="5">Гигапевт</option>
+                            <option value="6">Мегапевт</option>
+                            <option value="7">Килопевт</option>
+                            <option value="8">Певт</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Представьтесь, заполните все поля:</p>
+    
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="ask_fio" class="js-input-group__input input-group__input" type="text" name="ask_fio" placeholder="Ваше имя">
+                                <label class="input-group__label" for="ask_fio">Ваше имя<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="review_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="review_email" placeholder="E-mail">
+                                <label class="input-group__label" for="review_email">E-mail<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Напишите Ваши пожелания или вопрос:</p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="ask_question" class="js-input-group__input input-group__textarea" name="ask_question" placeholder="Вопрос и/или обращение"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="ask_question">Вопрос и/или обращение<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="ask_success" data-src="#ask_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="ask_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Задать вопрос руководству</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый пациент, заявка успешно создана</p>
+                    <p>Благодарим Вас за вопрос/обращение</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>В ближайшее время руководитель ответит на интересующий Вас вопрос. Обращаем Ваше внимание, что заявки обрабатываются в будние дни, с&nbsp;10:00&nbsp;до&nbsp;18:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="resume" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Заполнить резюме</p>
+    
+        <p class="popup__subtitle">Пожалуйста, введите Ваши данные:</p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="resume_fio" class="js-input-group__input input-group__input" type="text" name="resume_fio" placeholder="ФИО">
+                                <label class="input-group__label" for="resume_fio">ФИО<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple input-group--datepicker">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="resume_birth" class="js-input-group__input js-date-mask input-group__input" type="text" name="resume_birth" placeholder="дд.мм.гггг">
+                                <label class="input-group__label" for="resume_birth">Дата рождения<span class="required">*</span></label>
+                                <svg class="input-group__calendar-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#calendar_icon" />
+                                </svg>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="resume_spec" class="js-input-group__input input-group__input" type="text" name="resume_spec" placeholder="Специальность">
+                                <label class="input-group__label" for="resume_spec">Специальность<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="resume_stazh" class="js-input-group__input input-group__input" type="text" name="resume_stazh" placeholder="Стаж работы">
+                                <label class="input-group__label" for="resume_stazh">Стаж работы<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="resume_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="resume_email" placeholder="E-mail">
+                                <label class="input-group__label" for="resume_email">E-mail<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--phone">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="resume_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="resume_phone" placeholder="(XXX) XXX-XX-XX">
+                                <label class="input-group__label" for="resume_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="file-container">
+                <label class="file">
+                    <input id="resume_file" type="file" name="resume_file">
+                    <span class="file__inner">
+                        <span>Прикрепить файл резюме<span class="required">*</span></span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#attach_icon" />
+                        </svg>
+                    </span>
+                </label>
+    
+                <div class="file-attach">
+                    <p class="file-attach__title">Прикрепленный файл:</p>
+                    <p class="file-attach__value">Файл не выбран...</p>
+    
+                    <button class="js-file-attach__clear file-attach__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="resume_success" data-src="#resume_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="resume_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Заполнить резюме</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый соискатель, резюме успешно отправлено</p>
+                    <p>Спасибо за выбор медицинского центра «Мой доктор»</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+    
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="copy" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Запрос копий медицинских документов</p>
+    
+        <p class="popup__subtitle">Пожалуйста, введите ваши данные:</p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="copy_fio" class="js-input-group__input input-group__input" type="text" name="copy_fio" placeholder="ФИО пациента">
+                                <label class="input-group__label" for="copy_fio">ФИО пациента<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--phone">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="copy_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="copy_phone" placeholder="(XXX) XXX-XX-XX">
+                                <label class="input-group__label" for="copy_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple input-group--datepicker">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="copy_birth" class="js-input-group__input js-date-mask input-group__input" type="text" name="copy_birth" placeholder="дд.мм.гггг">
+                                <label class="input-group__label" for="copy_birth">Дата рождения<span class="required">*</span></label>
+                                <svg class="input-group__calendar-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#calendar_icon" />
+                                </svg>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="copy_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="copy_email" placeholder="E-mail">
+                                <label class="input-group__label" for="copy_email">E-mail<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Укажите, какой документ Вам необходим?</p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="copy_docs" class="js-input-group__input input-group__textarea" name="copy_docs" placeholder="Название документа в произвольной форме"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="copy_docs">Название документа в произвольной форме<span class="required">*</span></label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Напишите Ваши пожелания:</p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="copy_comment" class="js-input-group__input input-group__textarea" name="copy_comment" placeholder="Комментарий в произвольной форме"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="copy_comment">Комментарий в произвольной форме</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="copy_success" data-src="#copy_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="copy_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Запрос копий медицинских документов</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый пациент, запрос успешно создан</p>
+                    <p>Наш специалист обработает поступившую информацию и подготовит необходимые документы. Спасибо за обращение</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>Обращаем Ваше внимание, что заявки обрабатываются в будние дни, с&nbsp;10:00&nbsp;до&nbsp;18:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tax" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Запрос справки для налогового вычета</p>
+    
+        <div class="popup__text">
+            <p><b>Внимание!</b> Получить налоговый вычет по затратам на лечение можно только в году, следующем за годом, в котором осуществлялось лечение</p>
+        </div>
+    
+        <p class="popup__subtitle">Налогоплательщик:<span class="required">*</span></p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_fio" class="js-input-group__input input-group__input" type="text" name="tax_fio" placeholder="ФИО">
+                                <label class="input-group__label" for="tax_fio">ФИО<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--phone">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="tax_phone" placeholder="(XXX) XXX-XX-XX">
+                                <label class="input-group__label" for="tax_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple input-group--datepicker">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_birth" class="js-input-group__input js-date-mask input-group__input" type="text" name="tax_birth" placeholder="дд.мм.гггг">
+                                <label class="input-group__label" for="tax_birth">Дата рождения<span class="required">*</span></label>
+                                <svg class="input-group__calendar-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#calendar_icon" />
+                                </svg>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="tax_email" placeholder="E-mail">
+                                <label class="input-group__label" for="tax_email">E-mail<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="period">
+                        <button class="period__button" type="button">
+                            <span class="period__placeholder">Период получения вычета<span class="required">*</span></span>
+                            <span class="period__value">с <span class="js-start period__val ">____</span> по <span class="js-end period__val">____</span> гг.</span>
+                            <input name="period_start" type="text">
+                            <input name="period_end" type="text">
+    
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+    
+                        <div class="period__dropdown">
+                            <div class="period__dropdown-inner">
+                                <div class="period__dropdown-block">
+                                    <div class="period__dropdown-title">Год начала приода<span class="required">*</span></div>
+                                    <div class="js-start-list period__list">
+                                        <button class="period__item" type="button">2000</button>
+                                        <button class="period__item" type="button">2001</button>
+                                        <button class="period__item" type="button">2002</button>
+                                        <button class="period__item" type="button">2003</button>
+                                        <button class="period__item" type="button">2004</button>
+                                        <button class="period__item" type="button">2005</button>
+                                        <button class="period__item" type="button">2006</button>
+                                        <button class="period__item" type="button">2007</button>
+                                        <button class="period__item" type="button">2008</button>
+                                        <button class="period__item" type="button">2009</button>
+                                        <button class="period__item" type="button">2010</button>
+                                        <button class="period__item" type="button">2011</button>
+                                        <button class="period__item" type="button">2012</button>
+                                        <button class="period__item" type="button">2013</button>
+                                        <button class="period__item" type="button">2014</button>
+                                        <button class="period__item" type="button">2015</button>
+                                        <button class="period__item" type="button">2016</button>
+                                        <button class="period__item" type="button">2017</button>
+                                        <button class="period__item" type="button">2018</button>
+                                        <button class="period__item" type="button">2019</button>
+                                        <button class="period__item" type="button">2020</button>
+                                        <button class="period__item" type="button">2021</button>
+                                        <button class="period__item" type="button">2022</button>
+                                        <button class="period__item" type="button">2023</button>
+                                        <button class="period__item" type="button">2024</button>
+                                    </div>
+                                </div>
+                                <div class="period__dropdown-block">
+                                    <div class="period__dropdown-title">Год окончания приода<span class="required">*</span></div>
+                                    <div class="js-end-list period__list">
+                                        <button class="period__item" type="button">2000</button>
+                                        <button class="period__item" type="button">2001</button>
+                                        <button class="period__item" type="button">2002</button>
+                                        <button class="period__item" type="button">2003</button>
+                                        <button class="period__item" type="button">2004</button>
+                                        <button class="period__item" type="button">2005</button>
+                                        <button class="period__item" type="button">2006</button>
+                                        <button class="period__item" type="button">2007</button>
+                                        <button class="period__item" type="button">2008</button>
+                                        <button class="period__item" type="button">2009</button>
+                                        <button class="period__item" type="button">2010</button>
+                                        <button class="period__item" type="button">2011</button>
+                                        <button class="period__item" type="button">2012</button>
+                                        <button class="period__item" type="button">2013</button>
+                                        <button class="period__item" type="button">2014</button>
+                                        <button class="period__item" type="button">2015</button>
+                                        <button class="period__item" type="button">2016</button>
+                                        <button class="period__item" type="button">2017</button>
+                                        <button class="period__item" type="button">2018</button>
+                                        <button class="period__item" type="button">2019</button>
+                                        <button class="period__item" type="button">2020</button>
+                                        <button class="period__item" type="button">2021</button>
+                                        <button class="period__item" type="button">2022</button>
+                                        <button class="period__item" type="button">2023</button>
+                                        <button class="period__item" type="button">2024</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_inn" class="js-input-group__input input-group__input" type="text" name="tax_inn" placeholder="ИНН">
+                                <label class="input-group__label" for="tax_inn">ИНН<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wide">
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Выберите адрес клиники, в который хотели бы получить документ" data-minimum-results-for-search="Infinity">
+                            <option></option>
+                            <option value="1">ул. Говорова д. 1</option>
+                            <option value="2">ул. Ленина д. 101 корп. 2</option>
+                            <option value="3">Проспект Просвещения д. 15</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle popup__subtitle--with_checkboxes">
+                <span>
+                    Налогоплательщик и пациент одно лицо?<span class="required">*</span>
+                </span>
+    
+                <span class="checkboxes">
+                    <label class="checkbox">
+                        <input type="radio" value="Y" name="relative">
+                        <span class="checkbox__icon"></span>
+                        <span>Да</span>
+                    </label>
+    
+                    <label class="checkbox">
+                        <input type="radio" value="N" name="relative">
+                        <span class="checkbox__icon"></span>
+                        <span>Нет</span>
+                    </label>
+                </span>
+            </p>
+    
+            <p class="popup__subtitle">Пациент:<span class="required">*</span></p>
+    
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_fio_2" class="js-input-group__input input-group__input" type="text" name="tax_fio_2" placeholder="ФИО пациента">
+                                <label class="input-group__label" for="tax_fio_2">ФИО пациента<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple input-group--datepicker">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="tax_birth_2" class="js-input-group__input js-date-mask input-group__input" type="text" name="tax_birth_2" placeholder="дд.мм.гггг">
+                                <label class="input-group__label" for="tax_birth_2">Дата рождения<span class="required">*</span></label>
+                                <svg class="input-group__calendar-icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#calendar_icon" />
+                                </svg>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="wide">
+                    <div class="select-wrapper">
+                        <select class="js-select" data-placeholder="Степень родства с пациентом" data-minimum-results-for-search="Infinity">
+                            <option></option>
+                            <option value="1">1 степень</option>
+                            <option value="2">2 степень</option>
+                            <option value="3">3 степень</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="file-container">
+                <label class="file">
+                    <input id="tax_file" type="file" name="tax_file">
+                    <span class="file__inner">
+                        <span>Прикрепить документ о родстве<span class="required">*</span></span>
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#attach_icon" />
+                        </svg>
+                    </span>
+                </label>
+    
+                <div class="file-attach">
+                    <p class="file-attach__title">Прикрепленный файл:</p>
+                    <p class="file-attach__value">Файл не выбран...</p>
+    
+                    <button class="js-file-attach__clear file-attach__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="tax_success" data-src="#tax_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="tax_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Запрос справки для налогового вычета</p>
+    
+                <div class="popup__text">
+                    <p>Уважаемый пациент, запрос успешно отправлен</p>
+                    <p>Наш специалист обработает информацию по Вашей заявке в течение месяца и подготовит необходимые документы. Спасибо за обращение</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="prof" class="popup">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <p class="popup__title">Запрос на стоимость профосмотра</p>
+    
+        <p class="popup__subtitle">Пожалуйста, введите Ваши данные:</p>
+    
+        <form action="">
+            <div class="form-row">
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="prof_fio" class="js-input-group__input input-group__input" type="text" name="prof_fio" placeholder="ФИО контактного лица">
+                                <label class="input-group__label" for="prof_fio">ФИО контактного лица<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--phone">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="prof_phone" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="prof_phone" placeholder="(XXX) XXX-XX-XX">
+                                <label class="input-group__label" for="prof_phone">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="prof_org" class="js-input-group__input input-group__input" type="text" name="prof_org" placeholder="Название органицации">
+                                <label class="input-group__label" for="prof_org">Название органицации<span class="required">*</span></label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="input-group input-group--simple">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="prof_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="prof_email" placeholder="E-mail">
+                                <label class="input-group__label" for="prof_email">E-mail</label>
+                            </div>
+                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clear_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <p class="popup__subtitle">Напишите короткую информацию о Вашей организации:</p>
+    
+            <div class="input-group input-group--textarea">
+                <div class="input-group__inner">
+                    <div class="input-group__input-container">
+                        <textarea id="prof_comment" class="js-input-group__input input-group__textarea" name="prof_comment" placeholder="Информация об организации для рассчетов"></textarea>
+                        <div class="input-group__pseudo-textarea"></div>
+                        <label class="input-group__label" for="prof_comment">Информация об организации для рассчетов</label>
+                    </div>
+                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#clear_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+            <div class="button-block">
+                <p><span class="required">*</span> Обязательные для заполнения поля</p>
+    
+                <button class="button button--red" type="submit" data-fancybox="prof_success" data-src="#prof_success">Отправить</button>
+            </div>
+    
+            <div class="form-checkboxes">
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                </label>
+    
+                <label class="checkbox checkbox--small">
+                    <input type="checkbox" value="" name="">
+                    <span class="checkbox__icon"></span>
+                    <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                </label>
+            </div>
+        </form>
+    </div>
+    
+    <div id="prof_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Запрос на стоимость профосмотра</p>
+    
+                <div class="popup__text">
+                    <p>Заявка успешно создана</p>
+                    <p>Благодарим Вас за обращение в медицинский центр «Мой доктор»</p>
+                </div>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>В ближайшее время наш сотрудник свяжется с Вами для уточнения информации по запросу! Обращаем Ваше внимание, что заявки обрабатываются в будние дни с&nbsp;10:00&nbsp;до&nbsp;18:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <script src="js/slick.min.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/air-datepicker.js"></script>
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    <script src="js/select2-searchInputPlaceholder.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

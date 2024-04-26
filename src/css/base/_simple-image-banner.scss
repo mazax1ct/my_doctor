@@ -1,0 +1,18 @@
+.simple-image-banner {
+    border-radius: 17px;
+    display: block;
+    height: 236px;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-bottom: var(--typo_vertical_indent);
+    }
+
+    img {
+        display: block;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}

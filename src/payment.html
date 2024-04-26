@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Пациентам</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Оплата медицинских услуг
+                </li>
+            </ul>
+
+            <h1>Оплата медицинских услуг</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#info">Информация</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <section id="info" class="page__section">
+                        <div class="simple-image-banner">
+                            <img src="images/content/simple-image-banners/img_5.jpg" srcset="images/content/simple-image-banners/img_5@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="page__section">
+                            <a class="download-link_2" href="#">
+                                <svg class="download-link_2__icon" aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#document_icon" />
+                                </svg>
+                                <span class="download-link_2__text">
+                                    <span class="download-link_2__title">Оплата услуг по QR коду</span>
+                                    <span class="download-link_2__link">
+                                        <span>Открыть файл</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="page__section">
+                            <div class="accordions">
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Способы оплаты</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui amet eius, rerum delectus in blanditiis, perferendis, eligendi molestias ullam adipisci hic repellat eum doloremque sed ducimus sequi ad quo
+                                            magni.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Депозит</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>По страховке</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Корпоративным клиентам</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

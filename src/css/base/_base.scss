@@ -56,13 +56,11 @@ html {
     &__content {
         flex: 1 0 auto;
         padding-top: 95px;
-        //padding-bottom: 50px;
         @media(min-width: $sm) {
             padding-top: 115px;
         }
         @media(min-width: $hd) {
             padding-top: 195px;
-            //padding-bottom: 95px;
         }
     }
 
@@ -97,7 +95,7 @@ html {
 
     &__section {
         &:not(:last-child) {
-            margin-bottom: 48px;
+            margin-bottom: var(--typo_vertical_indent);
         }
     }
 }
@@ -166,7 +164,16 @@ h2 {
     }
 }
 
-h3 {}
+h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 0;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
 
 a {
     color: var(--text_color);
@@ -221,11 +228,43 @@ p {
 
 ol,
 ul {
-    list-style-position: inside;
+    margin-bottom: 1em;
     padding: 0;
+    @media(min-width: $sm) {
+        margin-bottom: 1.5em;
+    }
 
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+ol {
+    list-style-position: inside;
+}
+
+ul {
+    &:not([class]) {
+        list-style: none;
+
+        li {
+            padding-left: 22px;
+            position: relative;
+            z-index: 1;
+
+            &::before {
+                background-color: currentColor;
+                border-radius: 50%;
+                content: '';
+                height: 3px;
+                left: 11px;
+                position: absolute;
+                top: 0.9em;
+                transform: translate(-50%, -50%);
+                width: 3px;
+                z-index: 1;
+            }
+        }
     }
 }
 

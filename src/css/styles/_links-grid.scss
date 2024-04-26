@@ -93,3 +93,18 @@
         }
     }
 }
+
+.download-block {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+
+    .download-link {
+        @media(max-width: $sm - 0.01px) {
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            width: 486px;
+        }
+    }
+}

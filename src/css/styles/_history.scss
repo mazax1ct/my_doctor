@@ -1,0 +1,105 @@
+.history {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @media(min-width: $sm) {
+        gap: 32px;
+    }
+
+    &__item {
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+        }
+
+        &:nth-child(odd) {
+            @media(min-width: $sm) {
+                flex-direction: row-reverse;
+            }
+
+            .history__year {
+                @media(min-width: $sm) {
+                    padding-left: 24px;
+                    text-align: left;
+                }
+            }
+
+            .history__text {
+                &::before {
+                    @media(min-width: $sm) {
+                        left: 100%;
+                        //right: 0;
+                    }
+                }
+            }
+        }
+
+        &:not(:last-child) {
+            &::after {
+                border-left: 1px solid var(--blue_6);
+                content: '';
+                height: 70px;
+                left: 50%;
+                position: absolute;
+                transform: translateX(-50%);
+                top: 100%;
+                z-index: 1;
+                @media(min-width: $sm) {
+                    transform: translate(-50%, -18px);
+                }
+            }
+        }
+    }
+
+    &__year {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.25;
+        margin-bottom: 16px;
+        text-align: center;
+        @media(min-width: $sm) {
+            font-size: 28px;
+            line-height: 1.21428;
+            margin-bottom: 0;
+            padding-right: 24px;
+            text-align: right;
+            width: 50%;
+        }
+    }
+
+    &__text {
+        border: 1px solid var(--blue_6);
+        border-radius: 17px;
+        background-color: var(--light_blue_1);
+        padding: 24px 16px;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            padding: 24px;
+            width: 50%;
+        }
+
+        p {
+            line-height: 1.25;
+        }
+
+        &::before {
+            background-color: var(--blue_1);
+            border-radius: 50%;
+            content: '';
+            height: 16px;
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%, -50%);
+            width: 16px;
+            z-index: 1;
+            @media(min-width: $sm) {
+                left: 0;
+                top: 50%;
+            }
+        }
+    }
+}
