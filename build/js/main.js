@@ -240,6 +240,22 @@ $(document).ready(function () {
      ]
     });
   });
+
+  $('.js-simple-slider').each(function() {
+    var arrowsContainer = $(this).closest('.simple-slider').find('.simple-slider__arrows');
+    var dostContainer = $(this).closest('.simple-slider').find('.simple-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+    });
+  });
 });
 
 //состояние заполненности поля ввода

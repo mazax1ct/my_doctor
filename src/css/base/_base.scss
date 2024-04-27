@@ -389,3 +389,31 @@ ul {
         padding-left: 24px;
     }
 }
+
+.sign {
+    color: var(--grey_5);
+    font-size: 14px;
+    line-height: 1.21428;
+}
+
+.columns {
+    @media(min-width: $hd) {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__left-column {
+        @media(max-width: $hd - 0.01px) {
+            margin-bottom: 16px;
+        }
+        @media(min-width: $hd) {
+            width: calc(100% - 24px - 384px);
+        }
+    }
+
+    &__right-column {
+        @media(min-width: $hd) {
+            width: 384px;
+        }
+    }
+}
