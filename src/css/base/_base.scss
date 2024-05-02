@@ -144,6 +144,10 @@ h2 {
         margin-top: 0;
     }
 
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     &.small {
         font-size: 20px;
         font-weight: 600;
@@ -160,6 +164,10 @@ h2 {
     &.color-blue {
         @media(min-width: $sm) {
             margin-bottom: 32px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
