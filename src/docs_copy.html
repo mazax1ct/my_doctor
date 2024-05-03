@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Пациентам</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Выдача копий медицинских документов
+                </li>
+            </ul>
+
+            <h1>Выдача копий медицинских документов</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#info">Информация</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <section id="info" class="page__section">
+                        <div class="page__section">
+                            <div class="banner banner--type_3 banner--type_4">
+                                <div class="banner__inner">
+                                    <div class="banner__text-block">
+                                        <h2 class="color-blue">Подайте заявку, не выходя из дома</h2>
+                                        <div class="bordered-text">
+                                            <p>Заполните онлайн-заявку и наш менеджер<br> подготовит необходимые документы</p>
+                                            <button class="banner__button button button--red" type="button" data-fancybox="copy" data-src="#copy">Заполнить заявку</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="banner__image">
+                                        <img src="images/content/banners/banner_4/img.png" srcset="images/content/banners/banner_4/img@2x.png 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns page__section">
+                            <div class="columns__left-column">
+                                <h2>Как получить копии медицинской документации?</h2>
+
+                                <div class="bordered-text">
+                                    <p>Для получения копий медицинской документации в больнице, пациенту следует обратиться в медицинский отдел учреждения и заполнить соответствующую форму запроса.</p>
+
+                                    <p>Обычно предоставление копий документов возможно после подтверждения личности и оплаты возможных административных расходов.</p>
+
+                                    <p>Оставьте заявку на получение копий медицинской документации прямо на нашем сайте, заполнив соответствующую форму, и наш специализированный персонал свяжется с вами для уточнения деталей и обеспечит вам
+                                        необходимые копии.</p>
+                                </div>
+
+                                <h2>Когда будут готовы документы?</h2>
+
+                                <div class="bordered-text">
+                                    <p>Срок готовности медицинских документов зависит от внутренних процедур медицинского учреждения. Обычно после подачи заявки на сайте или лично в больнице, административный персонал свяжется с вами для уточнения
+                                        деталей и уведомит о времени, когда вы сможете получить копии документов.</p>
+
+                                    <p>Обратите внимание, что сроки могут варьироваться, и вам будут предоставлены подробности о готовности в процессе обработки вашего запроса.</p>
+                                </div>
+                            </div>
+
+                            <div class="columns__right-column">
+                                <div class="simple-slider">
+                                    <div class="simple-slider__arrows"></div>
+                                    <div class="js-simple-slider simple-slider__slider">
+                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg 2x" alt=""></div>
+                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg 2x" alt=""></div>
+                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg 2x" alt=""></div>
+                                        <div><img src="images/content/simple-slider/img_1.jpg" srcset="images/content/simple-slider/img_1@2x.jpg 2x" alt=""></div>
+                                    </div>
+                                    <div class="simple-slider__dots"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <div class="accordions">
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Как долго будут готовы документы?</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p><a href="#">Добровольное медицинское страхование (ДМС)</a> представляет собой форму страхования, при которой страхователь самостоятельно выбирает и оплачивает полис, обеспечивая себя дополнительной
+                                            медицинской
+                                            защитой. Этот вид страхования предоставляет доступ к широкому спектру медицинских услуг и лечения в частных клиниках и больницах, обеспечивая страхователю большую гибкость и контроль над своим здоровьем</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Как узнать готовность документов?</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down" />
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
