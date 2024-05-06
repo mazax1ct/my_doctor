@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">О нас</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Руководство
+                </li>
+            </ul>
+
+            <h1>Руководство</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#managent">Руководство</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div class="page__section">
+                        <div class="tabs-container">
+                            <div class="tabs-menu management-tabs">
+                                <p class="tabs-menu__title">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pin_icon" />
+                                    </svg>
+                                    <span>Выберите адрес:</span>
+                                </p>
+
+                                <button class="tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                <button class="tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                <button class="tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                <button class="tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                            </div>
+
+                            <div class="tab is-active" data-tab="1">
+                                <div class="management-list">
+                                    <div class="management">
+                                        <div class="management__image"><img src="images/content/management/img.png" srcset="images/content/management/img@2x.png 2x" alt=""></div>
+
+                                        <div class="management__text-block">
+                                            <p class="management__name">Давыдова Надежда Петровна</p>
+
+                                            <p class="management__place">главный врач ООО «МЦ ВМЛ «Мой доктор» на Детском проезде</p>
+
+                                            <div class="management__block">
+                                                <p class="management__title">часы приема граждан:</p>
+                                                <p>пн 14:00 - 17:00 (кб. 312)<br> ср 10:00 - 13:00 (кб. 312)</p>
+                                            </div>
+
+                                            <div class="management__block">
+                                                <p class="management__title">прием ведется по адресу:</p>
+                                                <p>141280, г. Ивантеевка, ул. Карла Маркса, д. 1, МЦ «Мой доктор на Карла Маркса», кабинет 312</p>
+                                            </div>
+
+                                            <button class="button button--blue" type="button" data-fancybox="ask_1" data-src="#ask">Задать вопрос</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="management">
+                                        <div class="management__image"><img src="images/content/management/img_2.png" srcset="images/content/management/img_2@2x.png 2x" alt=""></div>
+
+                                        <div class="management__text-block">
+                                            <p class="management__name">Нечаев Денис Васильевич</p>
+
+                                            <p class="management__place">директор ООО «МЦ ВМЛ «Мой доктор», директор ООО «МЦ ВМЛ «Мой доктор поликлиника»</p>
+
+                                            <div class="management__block">
+                                                <p class="management__title">часы приема граждан:</p>
+                                                <p>пн 14:00 - 17:00 (кб. 312)<br> ср 10:00 - 13:00 (кб. 312)</p>
+                                            </div>
+
+                                            <div class="management__block">
+                                                <p class="management__title">прием ведется по адресу:</p>
+                                                <p>141280, г. Ивантеевка, ул. Карла Маркса, д. 1, МЦ «Мой доктор на Карла Маркса», кабинет 312</p>
+                                            </div>
+
+                                            <button class="button button--blue" type="button" data-fancybox="ask_2" data-src="#ask">Задать вопрос</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab" data-tab="2">Руководство клиники на Карла Маркса</div>
+
+                            <div class="tab" data-tab="3">Руководство клиники на Хлебозаводской</div>
+
+                            <div class="tab" data-tab="4">Руководство клиники в Новой Слободе</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

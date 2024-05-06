@@ -180,20 +180,20 @@
                     <a class="breadcrumbs__link" href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Пациентам</a>
+                    <a class="breadcrumbs__link" href="#">О нас</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    Выдача результатов анализов
+                    Руководство
                 </li>
             </ul>
 
-            <h1>Выдача результатов анализов</h1>
+            <h1>Руководство</h1>
 
             <div class="page__columns">
                 <div class="page__left-column">
                     <ul class="left-menu">
                         <li class="left-menu__item">
-                            <a class="button button--white left-menu__link is-active" href="#info">Информация</a>
+                            <a class="button button--white left-menu__link is-active" href="#managent">Руководство</a>
                         </li>
                     </ul>
 
@@ -217,55 +217,77 @@
                 </div>
 
                 <div class="page__right-column">
-                    <section id="info" class="page__section">
-                        <div class="page__section">
-                            <div class="banner banner--type_2">
-                                <div class="banner__inner">
-                                    <div class="banner__text-block">
-                                        <h2 class="color-blue">Узнайте, как получить результаты<br> анализов, не выходя из дома</h2>
+                    <div class="page__section">
+                        <div class="tabs-container">
+                            <div class="tabs-menu management-tabs">
+                                <p class="tabs-menu__title">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#pin_icon" />
+                                    </svg>
+                                    <span>Выберите адрес:</span>
+                                </p>
+
+                                <button class="tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                <button class="tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                <button class="tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                <button class="tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                            </div>
+
+                            <div class="tab is-active" data-tab="1">
+                                <div class="management-list">
+                                    <div class="management">
+                                        <div class="management__image"><img src="images/content/management/img.png" srcset="images/content/management/img@2x.png 2x" alt=""></div>
+
+                                        <div class="management__text-block">
+                                            <p class="management__name">Давыдова Надежда Петровна</p>
+
+                                            <p class="management__place">главный врач ООО «МЦ ВМЛ «Мой доктор» на Детском проезде</p>
+
+                                            <div class="management__block">
+                                                <p class="management__title">часы приема граждан:</p>
+                                                <p>пн 14:00 - 17:00 (кб. 312)<br> ср 10:00 - 13:00 (кб. 312)</p>
+                                            </div>
+
+                                            <div class="management__block">
+                                                <p class="management__title">прием ведется по адресу:</p>
+                                                <p>141280, г. Ивантеевка, ул. Карла Маркса, д. 1, МЦ «Мой доктор на Карла Маркса», кабинет 312</p>
+                                            </div>
+
+                                            <button class="button button--blue" type="button" data-fancybox="ask_1" data-src="#ask">Задать вопрос</button>
+                                        </div>
                                     </div>
 
-                                    <div class="banner__image">
-                                        <img src="images/content/banners/banner_2/img.png" srcset="images/content/banners/banner_2/img@2x.png 2x" alt="">
+                                    <div class="management">
+                                        <div class="management__image"><img src="images/content/management/img_2.png" srcset="images/content/management/img_2@2x.png 2x" alt=""></div>
+
+                                        <div class="management__text-block">
+                                            <p class="management__name">Нечаев Денис Васильевич</p>
+
+                                            <p class="management__place">директор ООО «МЦ ВМЛ «Мой доктор», директор ООО «МЦ ВМЛ «Мой доктор поликлиника»</p>
+
+                                            <div class="management__block">
+                                                <p class="management__title">часы приема граждан:</p>
+                                                <p>пн 14:00 - 17:00 (кб. 312)<br> ср 10:00 - 13:00 (кб. 312)</p>
+                                            </div>
+
+                                            <div class="management__block">
+                                                <p class="management__title">прием ведется по адресу:</p>
+                                                <p>141280, г. Ивантеевка, ул. Карла Маркса, д. 1, МЦ «Мой доктор на Карла Маркса», кабинет 312</p>
+                                            </div>
+
+                                            <button class="button button--blue" type="button" data-fancybox="ask_2" data-src="#ask">Задать вопрос</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="page__section">
-                            <div class="accordions">
-                                <div class="accordion">
-                                    <button class="accordion__toggler" type="button">
-                                        <span>Как получить результаты анализов?</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#chevron_down" />
-                                        </svg>
-                                    </button>
-                                    <div class="accordion__body accordion__body--simple">
-                                        <p><a href="#">Добровольное медицинское страхование (ДМС)</a> представляет собой форму страхования, при которой страхователь самостоятельно выбирает и оплачивает полис, обеспечивая себя дополнительной
-                                            медицинской
-                                            защитой. Этот вид страхования предоставляет доступ к широкому спектру медицинских услуг и лечения в частных клиниках и больницах, обеспечивая страхователю большую гибкость и контроль над своим здоровьем</p>
-                                    </div>
-                                </div>
-                                <div class="accordion">
-                                    <button class="accordion__toggler" type="button">
-                                        <span>Когда будут готовы анализы?</span>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#chevron_down" />
-                                        </svg>
-                                    </button>
-                                    <div class="accordion__body accordion__body--simple">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
-                                            doloremque odio aliquid corporis, veritatis fuga?</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
-                                            doloremque odio aliquid corporis, veritatis fuga?</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
-                                            doloremque odio aliquid corporis, veritatis fuga?</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="tab" data-tab="2">Руководство клиники на Карла Маркса</div>
+
+                            <div class="tab" data-tab="3">Руководство клиники на Хлебозаводской</div>
+
+                            <div class="tab" data-tab="4">Руководство клиники в Новой Слободе</div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>

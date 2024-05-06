@@ -1,0 +1,164 @@
+.vacancies-banner {
+    @media(min-width: $hd) {
+        margin-top: -105px;
+    }
+
+    &__top {
+        margin-bottom: 24px;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0;
+        }
+        @media(min-width: $hd) {
+            align-items: flex-end;
+        }
+    }
+
+    &__text {
+        @media(min-width: $sm) {
+            padding-bottom: 24px;
+        }
+    }
+
+    &__button {
+        min-width: 180px;
+        @media(max-width: $sm - 0.01px) {
+            bottom: 0;
+            left: 50%;
+            position: absolute;
+            top: auto;
+            transform: translateX(-50%);
+            width: 270px;
+            z-index: 1;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        @media(min-width: $sm) {
+            min-width: 330px;
+            width: 330px;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    &__bottom {
+        border-radius: 17px;
+        border: 1px solid var(--blue_6);
+        background-color: var(--light_blue_1);
+        padding: 24px;
+        @media(min-width: $sm) {
+            padding: 32px;
+        }
+        @media(min-width: $md) {
+            align-items: center;
+            display: flex;
+            gap: 32px;
+            position: relative;
+            z-index: 1;
+        }
+
+        &::after {
+            @media(min-width: $md) {
+                border-left: 1px solid var(--blue_6);
+                content: '';
+                height: 41.37%;
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 1px;
+                z-index: 1;
+            }
+        }
+    }
+
+    &__bottom-block {
+        & + & {
+            @media(max-width: $md - 0.01px) {
+                border-top: 1px solid var(--blue_6);
+                margin-top: 16px;
+                padding-top: 16px;
+            }
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 2 - 32px / 2);
+        }
+    }
+}
+
+.vacancies {}
+
+.vacancy {
+    background: var(--white_1);
+    box-shadow: -22px 26px 14px rgba(13, 110, 253, 0.01), -12px 15px 11px rgba(13, 110, 253, 0.04), -6px 6px 8px rgba(13, 110, 253, 0.06);
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 16px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    @media(min-width: $sm) {
+        padding: 32px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    @include hover {
+        background-color: var(--light_blue_1);
+
+        .vacancy__link {
+            color: var(--red_3);
+        }
+    }
+    @include active {
+        .vacancy__link {
+            color: var(--red_4);
+        }
+    }
+
+    &__title {
+        color: var(--blue_1);
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: var(--blue_4);
+        display: block;
+        margin-bottom: 16px;
+
+        &--bordered {
+            border-bottom: 1px solid var(--blue_6);
+            padding-bottom: 16px;
+        }
+    }
+
+    &__link {
+        align-items: center;
+        color: var(--red_2);
+        display: flex;
+        gap: 5px;
+        font-weight: 700;
+        transition: color 0.3s;
+        text-decoration: none;
+
+        svg {
+            fill: currentColor;
+            height: 27px;
+            min-width: 27px;
+            width: 27px;
+        }
+    }
+}

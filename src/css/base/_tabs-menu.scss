@@ -1,0 +1,105 @@
+.tab {
+    display: none;
+
+    &.is-active {
+        display: block;
+    }
+}
+
+.tabs-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media(min-width: $sm) {
+        gap: 24px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        gap: 8px;
+        margin: 0;
+        @media(max-width: $hd - 0.01px) {
+            width: 100%;
+        }
+
+        svg {
+            fill: var(--blue_1);
+            height: 20px;
+            min-width: 20px;
+            margin: 0;
+            width: 20px;
+        }
+    }
+
+    &__button {
+        align-items: center;
+        border: 1px solid var(--blue_6);
+        border-radius: 11px;
+        background-color: var(--white_2);
+        color: var(--blue_3);
+        cursor: pointer;
+        display: inline-flex;
+        font-size: 15px;
+        font-weight: 500;
+        justify-content: center;
+        line-height: 1.5;
+        min-height: 45px;
+        padding: 0 16px;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.3s;
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            cursor: default;
+            pointer-events: none;
+        }
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--light_blue_1);
+                border-color: var(--blue_6);
+                color: var(--blue_3);
+            }
+            @include active {
+                background-color: var(--light_blue_2);
+                border-color: var(--blue_6);
+                color: var(--blue_3);
+            }
+
+            &.is-active {
+                background-color: var(--blue_6);
+                border-color: var(--blue_6);
+                color: var(--blue_3);
+                @include hover {
+                    background-color: var(--blue_6);
+                    border-color: var(--blue_6);
+                    color: var(--blue_3);
+                }
+                @include active {
+                    background-color: var(--blue_6);
+                    border-color: var(--blue_6);
+                    color: var(--blue_3);
+                }
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--grey_3);
+            border-color: var(--grey_3);
+            color: var(--grey_7);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.download-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 16px;
+    @media(min-width: $sm) {
+        gap: 24px;
+        flex-direction: row;
+
+        .download-link_2 {
+            max-width: 384px;
+            width: calc(100% / 2 - 24px / 2);
+        }
+    }
+}

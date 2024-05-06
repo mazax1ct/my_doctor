@@ -236,6 +236,7 @@ p {
 
 ol,
 ul {
+    margin-top: 0;
     margin-bottom: 1em;
     padding: 0;
     @media(min-width: $sm) {

@@ -256,6 +256,54 @@ $(document).ready(function () {
       appendArrows: arrowsContainer,
     });
   });
+
+  $('.js-only-mobile-slider').each(function() {
+    var arrowsContainer = $(this).closest('.only-moblie-slider').find('.only-moblie-slider__arrows');
+    var dostContainer = $(this).closest('.only-moblie-slider').find('.only-moblie-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+    });
+  });
+
+  $('.js-values-slider').each(function() {
+    var arrowsContainer = $(this).closest('.values-slider').find('.values-slider__arrows');
+    var dostContainer = $(this).closest('.values-slider').find('.values-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1279,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3
+         }
+       }
+     ]
+    });
+  });
 });
 
 //состояние заполненности поля ввода
@@ -377,5 +425,14 @@ $(document).on('click', '.accordion__toggler', function () {
       _this.removeClass('is-active');
     });
   }
+  return false;
+});
+
+//табы
+$(document).on('click', '.tabs-menu__button', function () {
+  $(this).closest('.tabs-container').find('.tabs-menu__button').removeClass('is-active');
+  $(this).addClass('is-active');
+  $(this).closest('.tabs-container').find('.tab').removeClass('is-active');
+  $(this).closest('.tabs-container').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
   return false;
 });
