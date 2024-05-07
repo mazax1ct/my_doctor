@@ -1,0 +1,55 @@
+.columned-tabs {
+    @media(min-width: $sm) {
+        display: flex;
+        gap: 24px;
+    }
+
+    .tabs-menu {
+        margin-bottom: 16px;
+        @media(max-width: $sm - 0.01px) {
+            gap: 8px;
+            flex-wrap: nowrap;
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+            overflow-x: auto;
+            padding-left: var(--container_padding);
+            padding-right: var(--container_padding);
+            white-space: nowrap;
+        }
+        @media(min-width: $sm) {
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 0;
+            min-width: 200px;
+            width: 200px;
+        }
+        @media(min-width: $hd) {
+            min-width: 280px;
+            width: 280px;
+        }
+    }
+
+    .tabs-menu__button {
+        justify-content: flex-start;
+        min-height: 45px;
+        padding-left: 10px;
+        padding-right: 10px;
+        @media(min-width: $hd) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
+    &__tabs {
+        @media(min-width: $sm) {
+            width: calc(100% - 200px - 24px);
+        }
+
+        .list-link {
+            @media(min-width: $sm) and (max-width: $hd - 0.01px) {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+}

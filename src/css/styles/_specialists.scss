@@ -1,0 +1,31 @@
+.specialists-menu {
+    .tabs-menu__button {
+        flex-grow: 1;
+        max-width: 180px;
+    }
+    @media(min-width: $sm) {
+        margin-bottom: 32px;
+    }
+}
+
+.specialists-filter {
+    margin-bottom: 24px;
+    @media(min-width: $sm) {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .category-selector {
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+            width: calc(100% / 2 - 24px / 2);
+        }
+        @media(min-width: $md) and (max-width: $hd - 0.01px) {
+            max-width: 50%;
+        }
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 16px;
+        }
+    }
+}

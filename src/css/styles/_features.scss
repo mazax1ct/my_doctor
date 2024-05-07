@@ -1,0 +1,41 @@
+.features-grid {
+    display: grid;
+    gap: 16px;
+    @media(min-width: $sm) {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+    @media(min-width: $md) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.feature-card {
+    border-radius: 17px;
+    border: 1px solid var(--blue_6);
+    padding: 24px;
+    @media(min-width: $sm) {
+        padding: 32px;
+    }
+
+    &__num {
+        align-items: center;
+        background-color: var(--light_blue_4);
+        border-radius: 15px;
+        color: var(--blue_1);
+        display: flex;
+        font-size: 28px;
+        font-weight: 900;
+        height: 58px;
+        justify-content: center;
+        margin-bottom: 16px;
+        width: 58px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+}

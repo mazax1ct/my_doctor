@@ -84,5 +84,16 @@
                 }
             }
         }
+
+        &--analysis {
+            padding: 16px;
+            @media(min-width: $sm) {
+                padding: 24px;
+            }
+        }
+
+        .accordion__toggler {
+            background-color: var(--white_1);
+        }
     }
 }

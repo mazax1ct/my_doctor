@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Специалисты
+                </li>
+            </ul>
+
+            <h1>Специалисты</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link is-active" href="#search">Поиск</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#spec">Специалисты</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div class="tabs-menu specialists-menu">
+                        <a class="tabs-menu__button is-active" href="#">Врачи</a>
+                        <a class="tabs-menu__button" href="#">Медсестры</a>
+                    </div>
+
+                    <div id="search" class="specialists-filter">
+                        <div class="category-selector select-wrapper select-wrapper--type_2">
+                            <select class="js-select" data-icon="speciality_icon" data-placeholder="Выберите специальность" data-minimum-results-for-search="1" data-search-input-placeholder="Выберите специальность">
+                                <option></option>
+                                <option value="1">Специальность 1</option>
+                                <option value="2">Специальность 2</option>
+                                <option value="3">Специальность 3</option>
+                                <option value="4">Специальность 5</option>
+                                <option value="5">Специальность 6</option>
+                                <option value="6">Специальность 7</option>
+                                <option value="7">Специальность 8</option>
+                                <option value="8">Специальность 9</option>
+                            </select>
+                        </div>
+
+                        <div class="category-selector select-wrapper select-wrapper--type_2">
+                            <select class="js-select" data-icon="doctor_icon" data-placeholder="Укажите ФИО врача" data-minimum-results-for-search="1" data-search-input-placeholder="Укажите ФИО врача">
+                                <option></option>
+                                <option value="1">Иванов<br> Иван Иванович</option>
+                                <option value="2">Иванов<br> Иван Иванович</option>
+                                <option value="3">Иванов<br> Иван Иванович</option>
+                                <option value="4">Иванов<br> Иван Иванович</option>
+                                <option value="5">Иванов<br> Иван Иванович</option>
+                                <option value="6">Иванов<br> Иван Иванович</option>
+                                <option value="7">Иванов<br> Иван Иванович</option>
+                                <option value="8">Иванов<br> Иван Иванович</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="spec">
+                        <div class="doctors-grid doctors-grid--type_1">
+                            <div class="doctor-card">
+                                <div class="doctor-card__image">
+                                    <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                </div>
+
+                                <div class="doctor-card__info">
+                                    <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                    <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                    <div class="doctor-card__bottom">
+
+                                        <div class="doctor-card__bottom-inner">
+                                            <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                            <a class="doctor-card__link" href="#">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <button class="button button--blue" type="button">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctor-card">
+                                <div class="doctor-card__image">
+                                    <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                </div>
+
+                                <div class="doctor-card__info">
+                                    <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                    <p class="doctor-card__text">к.м.н., врач хирург первой категории, специалист по сосудистой патологии, врач ультразвуковой диагностики</p>
+
+                                    <div class="doctor-card__bottom">
+
+                                        <div class="doctor-card__bottom-inner">
+                                            <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                            <a class="doctor-card__link" href="#">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <button class="button button--blue" type="button">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctor-card">
+                                <div class="doctor-card__image">
+                                    <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                </div>
+
+                                <div class="doctor-card__info">
+                                    <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                    <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                    <div class="doctor-card__bottom">
+
+                                        <div class="doctor-card__bottom-inner">
+                                            <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                            <a class="doctor-card__link" href="#">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <button class="button button--blue" type="button">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctor-card">
+                                <div class="doctor-card__image">
+                                    <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                </div>
+
+                                <div class="doctor-card__info">
+                                    <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                    <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                    <div class="doctor-card__bottom">
+
+                                        <div class="doctor-card__bottom-inner">
+                                            <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                            <a class="doctor-card__link" href="#">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <button class="button button--blue" type="button">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctor-card">
+                                <div class="doctor-card__image">
+                                    <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                </div>
+
+                                <div class="doctor-card__info">
+                                    <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                    <p class="doctor-card__text">к.м.н., врач хирург первой категории, специалист по сосудистой патологии, врач ультразвуковой диагностики</p>
+
+                                    <div class="doctor-card__bottom">
+
+                                        <div class="doctor-card__bottom-inner">
+                                            <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                            <a class="doctor-card__link" href="#">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <button class="button button--blue" type="button">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctor-card">
+                                <div class="doctor-card__image">
+                                    <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                </div>
+
+                                <div class="doctor-card__info">
+                                    <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                    <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                    <div class="doctor-card__bottom">
+
+                                        <div class="doctor-card__bottom-inner">
+                                            <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                            <a class="doctor-card__link" href="#">
+                                                <span>Подробнее</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right" />
+                                                </svg>
+                                            </a>
+                                        </div>
+
+                                        <button class="button button--blue" type="button">Записаться</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="show-more">
+                            <button class="show-more__button" type="button">Показать еще +</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
