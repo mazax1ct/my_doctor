@@ -1,0 +1,125 @@
+.analysis-info {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &--big {
+        .analysis-info__grid {
+            @media(min-width: $md) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .download-link {
+            @media(min-width: $md) {
+                grid-column: span 2;
+                max-width: 486px;
+            }
+        }
+
+        .analysis-info__block {
+            align-items: baseline;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            @media(min-width: $sm) {
+                align-items: center;
+                border-radius: 15px;
+                flex-direction: column;
+                gap: 5px;
+                justify-content: center;
+                min-height: 80px;
+            }
+
+            br {
+                @media(min-width: $sm) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        gap: 16px;
+        @media(min-width: $sm) {
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+    }
+
+    &__block {
+        align-items: center;
+        border: 1px solid var(--blue_6);
+        border-radius: 7px;
+        display: flex;
+        gap: 32px;
+        min-height: 40px;
+        padding: 4px 24px;
+    }
+
+    &__block-title {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.25;
+        @media(min-width: $sm) {
+            font-size: 20px;
+            line-height: 1;
+        }
+    }
+
+    &__block-price {
+        color: var(--blue_1);
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 1.22727;
+    }
+
+    &__block-time {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.2;
+
+        .big {
+            color: var(--blue_1);
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 1.22727;
+        }
+    }
+
+    &__desktop-link {
+        @media(max-width: $md - 0.01px) {
+            display: none;
+        }
+        @media(min-width: $md) {
+            justify-content: center;
+            min-height: 80px;
+            padding: 8px 24px;
+        }
+    }
+
+    &__mobile-link {
+        @media(min-width: $md) {
+            display: none;
+        }
+    }
+
+    .download-link {
+        padding-left: 24px;
+        padding-right: 24px;
+        @media(max-width: $sm - 0.01px) {
+            font-size: 14px;
+            justify-content: flex-start;
+        }
+    }
+}

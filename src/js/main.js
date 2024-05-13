@@ -206,7 +206,26 @@ $(document).ready(function () {
     } else {
       $(this).slick(articlesSliderOptions_3);
     }
+  });
 
+  //фильтр
+  var articleSliderFilterValue = $('.js-filtered-slider').find('.js-slider-filter.is-active').attr('data-filter');
+  var articleSlider = $('.js-filtered-slider').find('.js-articles-slider');
+
+  if(articleSliderFilterValue > 0) {
+    articleSlider.slick('slickUnfilter');
+    articleSlider.slick('slickFilter','[data-filter="' + articleSliderFilterValue + '"]');
+  }
+
+  $(document).on('click', '.js-slider-filter', function() {
+    $('.js-filtered-slider').find('.js-slider-filter.is-active').removeClass('is-active');
+    $(this).addClass('is-active');
+    articleSliderFilterValue = $(this).attr('data-filter');
+    articleSlider.slick('slickUnfilter');
+    articleSlider.slick('slickFilter','[data-filter="' + articleSliderFilterValue + '"]');
+
+    $('.js-filtered-slider').find('.articles-slider__bottom').find('.more-link').addClass('hidden');
+    $('.js-filtered-slider').find('.articles-slider__bottom').find('.more-link[data-filter="' + articleSliderFilterValue + '"]').removeClass('hidden');
   });
 
   $('.js-contacts-slider').each(function() {
@@ -276,6 +295,38 @@ $(document).ready(function () {
   $('.js-values-slider').each(function() {
     var arrowsContainer = $(this).closest('.values-slider').find('.values-slider__arrows');
     var dostContainer = $(this).closest('.values-slider').find('.values-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1279,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3
+         }
+       }
+     ]
+    });
+  });
+
+  $('.js-doctors-slider').each(function() {
+    var arrowsContainer = $(this).closest('.doctors-slider').find('.doctors-slider__arrows');
+    var dostContainer = $(this).closest('.doctors-slider').find('.doctors-slider__dots');
 
     $(this).slick({
       infinite: true,
@@ -429,8 +480,8 @@ $(document).on('click', '.accordion__toggler', function () {
 });
 
 //табы
-$(document).on('click', '.tabs-menu__button', function () {
-  $(this).closest('.tabs-container').find('.tabs-menu__button').removeClass('is-active');
+$(document).on('click', '.js-tabs-menu__button', function () {
+  $(this).closest('.tabs-container').find('.js-tabs-menu__button').removeClass('is-active');
   $(this).addClass('is-active');
   $(this).closest('.tabs-container').find('.tab').removeClass('is-active');
   $(this).closest('.tabs-container').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');

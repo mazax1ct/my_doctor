@@ -8,15 +8,15 @@
     @media(min-width: $md) {
         grid-template-columns: 1fr 1fr 1fr;
     }
+}
 
-    a {
-        border-radius: 15px;
-        display: block;
-        overflow: hidden;
-        @include hover {
-            img {
-                transform: scale(1.02);
-            }
+.photo-item {
+    border-radius: 15px;
+    display: block;
+    overflow: hidden;
+    @include hover {
+        img {
+            transform: scale(1.02);
         }
     }
 

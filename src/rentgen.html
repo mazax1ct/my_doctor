@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Диагностика</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Рентгенография
+                </li>
+            </ul>
+
+            <h1>Рентгенография</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#info">Описание</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#prices">Цены</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#services">Услуги</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#doctors">Врачи</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#actions">Акции</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#photos">Фото и видео</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div id="info" class="page__section">
+                        <div class="page__section">
+                            <div class="banner banner--type_3">
+                                <div class="banner__inner">
+                                    <div class="banner__text-block">
+                                        <div class="banner__action">Акция</div>
+
+                                        <h2 class="color-blue mb-8">Рентген-обследование со скидкой</h2>
+
+                                        <p>
+                                            <a class="banner__link" href="#">
+                                                Подробнее
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                </svg>
+                                            </a>
+                                        </p>
+
+                                        <button class="banner__button button button--blue" type="button">Записаться</button>
+                                    </div>
+
+                                    <div class="banner__image">
+                                        <img src="images/content/banners/banner_9/img.png" srcset="images/content/banners/banner_9/img@2x.png 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Рентгенография или рентген</h2>
+
+                            <div class="bordered-text">
+                                <p>Неинвазивное исследование внутренних структур организма с помощью
+                                    рентгеновских лучей. При прохождении излучения сквозь тело формируется изображение, проецирующееся
+                                    на светопрозрачную пленку или цифровой датчик. Более плотные ткани хуже пропускают лучи – на снимках
+                                    они видны как более светлые на темном фоне, который создают ткани с большей пропускаемостью. Рентген
+                                    применяют для диагностики патологий костных структур, мягких тканей и органов</p>
+                            </div>
+                        </div>
+
+                        <div class="accordions">
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Когда может быть назначена рентгенография?</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Какие заболевания помогает выявлять рентгенография?</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Подготовка и проведение рентгенографии</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Противопоказания</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="prices" class="page__section">
+                        <div class="page__section">
+                            <h2>Цены*</h2>
+
+                            <div class="prices tabs-container">
+                                <div class="prices__menu-block">
+                                    <div class="tabs-menu">
+                                        <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="1">Диагностика</button>
+                                    </div>
+
+                                    <a class="download-link" href="#">
+                                        <span>Скачать полный прайслист</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#download_icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <div class="accordions">
+                                        <div class="accordion">
+                                            <button class="accordion__toggler" type="button">
+                                                <span>Голова</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                                </svg>
+                                            </button>
+
+                                            <div class="accordion__body accordion__body--analysis">
+                                                <div class="analysis">
+                                                    <div class="analysis__inner">
+                                                        <div class="analysis__row analysis__row--big">
+                                                            <div class="analysis__code">000000</div>
+                                                            <div class="analysis__title">Первичный прием врача кардиолога</div>
+                                                            <div class="analysis__price analysis__price--desktop">999 999 руб</div>
+                                                        </div>
+
+                                                        <div class="analysis__row">
+                                                            <div class="analysis__code">[B01.015.001]</div>
+                                                            <div class="analysis__title">Прием (осмотр, консультация) врача кардиолога первичный</div>
+                                                        </div>
+
+                                                        <div class="analysis__price analysis__price--mobile">2200 руб</div>
+
+                                                        <div class="analysis__buttons">
+                                                            <button class="button button--white" type="button" data-fancybox="prepare_1" data-src="#prepare">
+                                                                <svg aria-hidden="true">
+                                                                    <use xlink:href="images/sprite.svg#circle_info_icon" />
+                                                                </svg>
+                                                                <span>Подготовка</span>
+                                                            </button>
+
+                                                            <button class="button button--red" type="button">Запись онлайн</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="analysis">
+                                                    <div class="analysis__inner">
+                                                        <div class="analysis__row analysis__row--big">
+                                                            <div class="analysis__code">000000</div>
+                                                            <div class="analysis__title">Первичный прием врача кардиолога</div>
+                                                            <div class="analysis__price analysis__price--desktop">2200 руб</div>
+                                                        </div>
+
+                                                        <div class="analysis__row">
+                                                            <div class="analysis__code">[B01.015.001]</div>
+                                                            <div class="analysis__title">Прием (осмотр, консультация) врача кардиолога первичный</div>
+                                                        </div>
+
+                                                        <div class="analysis__price analysis__price--mobile">2200 руб</div>
+
+                                                        <div class="analysis__buttons">
+                                                            <button class="button button--white" type="button" data-fancybox="prepare_2" data-src="#prepare">
+                                                                <svg aria-hidden="true">
+                                                                    <use xlink:href="images/sprite.svg#circle_info_icon" />
+                                                                </svg>
+                                                                <span>Подготовка</span>
+                                                            </button>
+
+                                                            <button class="button button--red" type="button">Запись онлайн</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion">
+                                            <button class="accordion__toggler" type="button">
+                                                <span>Позвоночник</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                                </svg>
+                                            </button>
+
+                                            <div class="accordion__body accordion__body--analysis">
+                                                <div class="analysis">
+                                                    <div class="analysis__inner">
+                                                        <div class="analysis__row analysis__row--big">
+                                                            <div class="analysis__code">000000</div>
+                                                            <div class="analysis__title">Первичный прием врача кардиолога</div>
+                                                            <div class="analysis__price analysis__price--desktop">999 999 руб</div>
+                                                        </div>
+
+                                                        <div class="analysis__row">
+                                                            <div class="analysis__code">[B01.015.001]</div>
+                                                            <div class="analysis__title">Прием (осмотр, консультация) врача кардиолога первичный</div>
+                                                        </div>
+
+                                                        <div class="analysis__price analysis__price--mobile">2200 руб</div>
+
+                                                        <div class="analysis__buttons">
+                                                            <button class="button button--white" type="button" data-fancybox="prepare_1" data-src="#prepare">
+                                                                <svg aria-hidden="true">
+                                                                    <use xlink:href="images/sprite.svg#circle_info_icon" />
+                                                                </svg>
+                                                                <span>Подготовка</span>
+                                                            </button>
+
+                                                            <button class="button button--red" type="button">Запись онлайн</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="analysis">
+                                                    <div class="analysis__inner">
+                                                        <div class="analysis__row analysis__row--big">
+                                                            <div class="analysis__code">000000</div>
+                                                            <div class="analysis__title">Первичный прием врача кардиолога</div>
+                                                            <div class="analysis__price analysis__price--desktop">2200 руб</div>
+                                                        </div>
+
+                                                        <div class="analysis__row">
+                                                            <div class="analysis__code">[B01.015.001]</div>
+                                                            <div class="analysis__title">Прием (осмотр, консультация) врача кардиолога первичный</div>
+                                                        </div>
+
+                                                        <div class="analysis__price analysis__price--mobile">2200 руб</div>
+
+                                                        <div class="analysis__buttons">
+                                                            <button class="button button--white" type="button" data-fancybox="prepare_2" data-src="#prepare">
+                                                                <svg aria-hidden="true">
+                                                                    <use xlink:href="images/sprite.svg#circle_info_icon" />
+                                                                </svg>
+                                                                <span>Подготовка</span>
+                                                            </button>
+
+                                                            <button class="button button--red" type="button">Запись онлайн</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="prices__bottom">
+                                    <a class="download-link" href="#">
+                                        <span>Скачать полный прайслист</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#download_icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="warning">
+                            <p class="warning__title">Внимание!</p>
+                            <div class="warning__text">
+                                <p>
+                                    Администрация клиники принимает меры по своевременному обновлению цен на сайте, однако во избежание недоразумений, <b>просим уточнять стимость</b> по телефону <a
+                                      href="tel:+79060334646">+7&nbsp;906&nbsp;033&nbsp;46&nbsp;46</a> или в
+                                    регистратуре. Размещеный прайс не является офертой
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page__section">
+                        <div class="page__section">
+                            <h2>Информация об услугах рентген-диагностики</h2>
+
+                            <div class="columned-tabs tabs-container">
+                                <div class="tabs-menu">
+                                    <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Голова</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Грудная клетка</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Верхние конечности</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="4">Нижние конечности</button>
+                                </div>
+
+                                <div class="columned-tabs__tabs">
+                                    <div class="tab is-active" data-tab="1">
+                                        <div class="links-list">
+                                            <a class="list-link" href="#">
+                                                <span class="list-link__inner">
+                                                    <span class="list-link__title">Анализ на бытовые аллергены</span>
+                                                    <span class="list-link__link">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+
+                                            <a class="list-link" href="#">
+                                                <span class="list-link__inner">
+                                                    <span class="list-link__title">Анализ на иммуноглобулин</span>
+                                                    <span class="list-link__link">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+
+                                            <a class="list-link" href="#">
+                                                <span class="list-link__inner">
+                                                    <span class="list-link__title">Эозинофильный катионный белок (ЕСР)</span>
+                                                    <span class="list-link__link">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+
+                                            <a class="list-link" href="#">
+                                                <span class="list-link__inner">
+                                                    <span class="list-link__title">Кожные пробы</span>
+                                                    <span class="list-link__link">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="tab" data-tab="2">
+                                        Второй таб
+                                    </div>
+                                    <div class="tab" data-tab="3">
+                                        Третий таб
+                                    </div>
+                                    <div class="tab" data-tab="4">
+                                        Четвертый таб
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h2>Рентгенология в МЦ «Мой доктор»</h2>
+
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-card__num">1</div>
+                                <p class="feature-card__title">Оборудование<br> экспертного класса</p>
+                                <p>В нашем медицинском центре установлено современное рентгенологическое оборудование</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-card__num">2</div>
+                                <p class="feature-card__title">Широкий спектр<br> исследований</p>
+                                <p>Мы выполняем обзорные снимки, прицельные снимки, снимки с функциональными пробами и под нагрузкой</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-card__num">3</div>
+                                <p class="feature-card__title">Квалифицированные<br> специалисты</p>
+                                <p>Наши врачи имеют большой опыт работы, постоянно обучаются новым методам и применяют их на практике</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="doctors" class="page__section">
+                        <div class="doctors-slider">
+                            <div class="doctors-slider__title-block">
+                                <h2 class="doctors-slider__title">Врачи</h2>
+                                <div class="doctors-slider__arrows"></div>
+                            </div>
+
+                            <div class="js-doctors-slider doctors-slider__slider">
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">к.м.н., врач хирург первой категории, специалист по сосудистой патологии, врач ультразвуковой диагностики</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctors-slider__bottom">
+                                <div class="doctors-slider__dots"></div>
+
+                                <a class="more-link" href="#">
+                                    <span>Все врачи</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="actions" class="page__section">
+                        <div class="articles-slider">
+                            <div class="articles-slider__title-block">
+                                <h2 class="articles-slider__title">Акции</h2>
+                                <div class="articles-slider__arrows"></div>
+                            </div>
+
+                            <div class="articles-slider__container">
+                                <div class="js-articles-slider articles-slider__slider">
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="articles-slider__bottom">
+                                <div class="articles-slider__dots"></div>
+
+                                <a class="more-link" href="#">
+                                    <span>Все акции</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="photos" class="page__section">
+                        <h2>Фото и видео</h2>
+
+                        <div class="js-filtered-slider articles-slider">
+                            <div class="articles-slider__title-block">
+                                <div class="articles-slider__title">
+                                    <div class="tabs-menu">
+                                        <button class="js-slider-filter tabs-menu__button is-active" type="button" data-filter="1">Видеогалерея</button>
+                                        <button class="js-slider-filter tabs-menu__button" type="button" data-filter="2">Фотогалерея</button>
+                                    </div>
+                                </div>
+
+                                <div class="articles-slider__arrows"></div>
+                            </div>
+
+                            <div class="articles-slider__container">
+                                <div class="js-articles-slider articles-slider__slider">
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Реабилитация постковидного синдрома</h3>
+
+                                                <p class="article-card__preview">В этом видео мы рассказываем о нашей новой программе востановления после коронавируса COVID-19</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_методы</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="articles-slider__bottom">
+                                <div class="articles-slider__dots"></div>
+
+                                <a class="more-link" href="#" data-filter="1">
+                                    <span>Все видео</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+
+                                <a class="more-link hidden" href="#" data-filter="2">
+                                    <span>Все фото</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner banner--type_1">
+                        <div class="banner__inner">
+                            <div class="banner__text-block">
+                                <h2 class="color-blue">Заявка на прием/диагностику в&nbsp;МЦ&nbsp;«Мой&nbsp;доктор»</h2>
+                                <div class="bordered-text">
+                                    <p>Оставьте заявку на запись и наш администратор<br> свяжется с Вами для подтверждения</p>
+                                    <button class="button button--red" type="button">Заполнить заявку</button>
+                                </div>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banners/banner_1/img.png" srcset="images/content/banners/banner_1/img@2x.png 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

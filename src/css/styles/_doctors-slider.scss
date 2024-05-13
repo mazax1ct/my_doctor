@@ -1,0 +1,74 @@
+.doctors-slider {
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
+    padding-right: var(--container_padding);
+    padding-left: var(--container_padding);
+    position: relative;
+    z-index: 1;
+
+    &__title-block {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 25px;
+        margin-left: auto;
+    }
+
+    &__slider {
+        margin-left: calc(0.01px - var(--container_padding));
+    }
+
+    .slick-slide {
+        margin-left: var(--container_padding);
+        padding-bottom: 24px;
+
+        .doctor-card {
+            height: 100%;
+        }
+    }
+
+    &__bottom {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            margin-top: 12px;
+        }
+
+        .more-link {
+            margin-left: auto;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__dots {
+        width: 100%;
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 32px;
+        }
+        @media(min-width: $hd) {
+            left: 0;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+    }
+}
