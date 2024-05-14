@@ -1,7 +1,13 @@
 .show-more {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     margin-top: 24px;
     text-align: right;
     @media(min-width: $sm) {
+        flex-direction: row;
+        justify-content: flex-end;
         margin-top: 32px;
     }
 
@@ -21,6 +27,9 @@
         @include active {
             color: var(--blue_8);
         }
+        @media(min-width: $sm) {
+            order: 2;
+        }
     }
 
     .button {
@@ -29,6 +38,7 @@
         }
         @media(min-width: $sm) {
             min-width: 162px;
+            order: 1;
         }
         @media(min-width: $hd) {
             min-width: 180px;

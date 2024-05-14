@@ -90,7 +90,7 @@
         @media(max-width: $sm - 0.01px) {
             margin-bottom: 32px;
         }
-        @media(min-width: $hd) {
+        @media(min-width: $sm) {
             left: 0;
             position: absolute;
             top: 50%;

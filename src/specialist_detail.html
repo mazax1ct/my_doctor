@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Врачи</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Кардиология</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Абрамова Гульнара Рашидовна
+                </li>
+            </ul>
+
+            <h1>Абрамова Гульнара Рашидовна</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#about">О враче</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#education">Образование</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#schedule">Расписание</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#reviews">Отзывы</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#photos">Фото и видео</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#doctors">Другие врачи</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div id="about" class="page__section">
+                        <div class="page__section">
+                            <div class="banner banner--type_3">
+                                <div class="banner__inner">
+                                    <div class="banner__text-block">
+                                        <div class="doctor-reviews">
+                                            <div class="doctor-reviews__value">5 отзывов</div>
+                                            <button class="button button--white" type="button">Оставить отзыв</button>
+                                        </div>
+                                        <div class="about-doctor bordered-text">
+                                            <p><b>Медицинский стаж:</b> 27 лет</p>
+                                            <p><b>Специальность:</b></p>
+                                            <ul>
+                                                <li>врач кардиолог</li>
+                                                <li>врач функциональной и ультразвуковой диагностики</li>
+                                            </ul>
+                                        </div>
+
+                                        <button class="banner__button button button--red" type="button">Записаться</button>
+                                    </div>
+
+                                    <div class="banner__image">
+                                        <img src="images/content/banners/banner_8/img.png" srcset="images/content/banners/banner_8/img@2x.png 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>О враче</h2>
+
+                            <div class="bordered-text">
+                                <p>Очень грамотный, обходительный врач с опытом работы врачом кардиологом с 2003 года, врачом функциональной диагностики с 2002 года и врачом ультразвуковой диагностики с 2017 года. Имеет опыт работы врачом кардиологом
+                                    в кардиологическом отделении Ивантеевкой ЦГБ</p>
+                            </div>
+                        </div>
+
+                        <div class="accordions">
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Деятельность</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Ключевые навыки</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                            <div class="accordion">
+                                <button class="accordion__toggler" type="button">
+                                    <span>Научные работы</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                    </svg>
+                                </button>
+                                <div class="accordion__body accordion__body--simple">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                        doloremque odio aliquid corporis, veritatis fuga?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="education" class="page__section">
+                        <div class="page__section">
+                            <h2>Образование</h2>
+
+                            <div class="tabs-container">
+                                <div class="tabs-menu tabs-menu--mobile_inline">
+                                    <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Основное</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Переподготовка</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Повышение квалификации</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <div class="education">
+                                        <div class="education__item">
+                                            <div class="education__year">2002 г.</div>
+                                            <div class="education__text">
+                                                <p>Москвоский областной научно исследовательский клинический институт им. М.Ф.Владимирского. <span>Специальность “Функциональная диагностика”</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="education__item">
+                                            <div class="education__year">2017 г.</div>
+                                            <div class="education__text">
+                                                <p>Москвоский областной научно-исследовательский клинический институт им. М.Ф.Владимирского. <span>Специальность “Ультразвуковая диагностика”</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="education__item">
+                                            <div class="education__year">2019 г.</div>
+                                            <div class="education__text">
+                                                <p>АНО ДПО “Академия медицинского образования”. <span>Специальность “Детская кардиология”</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" data-tab="2">
+                                    таб 2
+                                </div>
+
+                                <div class="tab" data-tab="3">
+                                    таб 3
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="schedule" class="page__section">
+                        <div class="page__section">
+                            <div class="schedule">
+                                <div class="schedule__title-block">
+                                    <h2>Расписание</h2>
+
+                                    <a class="download-link" href="#">
+                                        <span>Скачать расписание в формате excel</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#download_icon"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="schedule__grid">
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ПН</div>
+                                            <div class="schedule__day-date">24.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ВТ</div>
+                                            <div class="schedule__day-date">25.06</div>
+                                        </div>
+                                        <div class="schedule__place schedule__place--empty">—</div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">СР</div>
+                                            <div class="schedule__day-date">26.06</div>
+                                        </div>
+                                        <div class="schedule__place schedule__place--empty">—</div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ЧТ</div>
+                                            <div class="schedule__day-date">27.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ПТ</div>
+                                            <div class="schedule__day-date">28.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">СБ</div>
+                                            <div class="schedule__day-date">29.06</div>
+                                        </div>
+                                        <div class="schedule__place schedule__place--empty">—</div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ВС</div>
+                                            <div class="schedule__day-date">30.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ПН</div>
+                                            <div class="schedule__day-date">24.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ВТ</div>
+                                            <div class="schedule__day-date">25.06</div>
+                                        </div>
+                                        <div class="schedule__place schedule__place--empty">—</div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">СР</div>
+                                            <div class="schedule__day-date">26.06</div>
+                                        </div>
+                                        <div class="schedule__place schedule__place--empty">—</div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ЧТ</div>
+                                            <div class="schedule__day-date">27.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ПТ</div>
+                                            <div class="schedule__day-date">28.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">СБ</div>
+                                            <div class="schedule__day-date">29.06</div>
+                                        </div>
+                                        <div class="schedule__place schedule__place--empty">—</div>
+                                    </div>
+
+                                    <div class="schedule__item">
+                                        <div class="schedule__day">
+                                            <div class="schedule__day-title">ВС</div>
+                                            <div class="schedule__day-date">30.06</div>
+                                        </div>
+                                        <div class="schedule__place">
+                                            <div class="schedule__time">10:00 - 21:00</div>
+                                            <div class="schedule__cabinet">Кб. З, ДП</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <div class="accordions">
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Расшифровка обозначений в расписании</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="warning">
+                            <p class="warning__title">Внимание!</p>
+                            <div class="warning__text">
+                                <p>
+                                    Администрация клиники принимает меры по своевременному обновлению цен на сайте, однако во избежание недоразумений, <b>просим уточнять стимость</b> по телефону <a
+                                      href="tel:+79060334646">+7&nbsp;906&nbsp;033&nbsp;46&nbsp;46</a> или в
+                                    регистратуре. Размещеный прайс не является офертой
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="reviews" class="page__section">
+                        <h2>Отзывы</h2>
+
+                        <div class="reviews-grid">
+                            <div class="review-card" data-fancybox="review_card_1" data-src="#review_card_1">
+                                <p class="review-card__doctor">
+                                    <span class="review-card__doctor-title">Врач:</span>
+                                    <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
+                                </p>
+
+                                <p class="review-card__preview">
+                                    <span>
+                                        Хочу выразить благодарность Шайхутдиновой Эльмире Маратовне. Благодаря ей, впервые к 30 годам у меня был выявлен стенозаортального клапана, с последующей успешной операцией в Бакулева. Отличный врач, с чутким
+                                        подходом к лечению...
+                                    </span>
+                                    <span class="review-card__more">Читать больше</span>
+                                </p>
+
+                                <p class="review-card__author">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chat_icon" />
+                                    </svg>
+                                    <span class="review-card__author-name">Губенко Т.</span>
+                                    <span class="review-card__date">05 мая 2022</span>
+                                </p>
+
+                                <p class="review-card__show-answer">Показать ответ администрации</p>
+
+                                <div id="review_card_1" class="popup popup--info">
+                                    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="info-popup">
+                                        <div>
+                                            <p class="popup__title">Отзыв о враче</p>
+
+                                            <div class="popup__text">
+                                                <p><b>Дата отзыва:</b> 10.04.2024</p>
+                                                <p><b>Автор:</b> Анна</p>
+                                                <p><b>О ком:</b> Чабанова Наталья Борисовна</p>
+                                                <p>
+                                                    <b>Отзыв:</b> Женщины меня поймут, как сложно порой найти своего доктора Наталья Борисовна - тот самый специалист, который помог выявить причины моих недугов. Подобрала грамотное, эффективное
+                                                    лечение,
+                                                    назначила
+                                                    восстанавливающий курс. Спасибо Вам огромное, доктор!!!
+                                                </p>
+                                            </div>
+
+                                            <div class="popup__text ok-button-block color-grey">
+                                                <div>
+                                                    <p><b>Ответ администрации:</b><br> Здравствуйте, Анна!<br> Благодарим Вас за отзыв!<br> С уважением, Администрация</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review-card" data-fancybox="review_card_2" data-src="#review_card_2">
+                                <p class="review-card__doctor">
+                                    <span class="review-card__doctor-title">Врач:</span>
+                                    <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
+                                </p>
+
+                                <p class="review-card__preview">
+                                    <span>
+                                        Благодарим вас за то, что поделились вашим опытом о визите к нашему врачу. Мы серьезно относимся к каждому отзыву, и ваш отзыв играет важную роль в повышении качества наших медицинских услуг. Мы гордимся нашим
+                                        медицинским персо...
+                                    </span>
+                                    <span class="review-card__more">Читать больше</span>
+                                </p>
+
+                                <p class="review-card__author">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chat_icon" />
+                                    </svg>
+                                    <span class="review-card__author-name">Губенко Т.</span>
+                                    <span class="review-card__date">05 мая 2022</span>
+                                </p>
+
+                                <p class="review-card__show-answer">Показать ответ администрации</p>
+
+                                <div id="review_card_2" class="popup popup--info">
+                                    <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="info-popup">
+                                        <div>
+                                            <p class="popup__title">Отзыв о враче</p>
+
+                                            <div class="popup__text">
+                                                <p><b>Дата отзыва:</b> 10.04.2024</p>
+                                                <p><b>Автор:</b> Анна</p>
+                                                <p><b>О ком:</b> Чабанова Наталья Борисовна</p>
+                                                <p>
+                                                    <b>Отзыв:</b> Женщины меня поймут, как сложно порой найти своего доктора Наталья Борисовна - тот самый специалист, который помог выявить причины моих недугов. Подобрала грамотное, эффективное
+                                                    лечение,
+                                                    назначила
+                                                    восстанавливающий курс. Спасибо Вам огромное, доктор!!!
+                                                </p>
+                                            </div>
+
+                                            <div class="popup__text ok-button-block color-grey">
+                                                <div>
+                                                    <p><b>Ответ администрации:</b><br> Здравствуйте, Анна!<br> Благодарим Вас за отзыв!<br> С уважением, Администрация</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="show-more">
+                            <button class="show-more__button" type="button">Показать еще +</button>
+
+                            <button class="button button--blue" type="button" data-fancybox="review_" data-src="#review">Оставить отзыв</button>
+                        </div>
+                    </div>
+
+                    <div id="photos" class="page__section">
+                        <h2>Фото и видео</h2>
+
+                        <div class="js-filtered-slider articles-slider">
+                            <div class="articles-slider__title-block">
+                                <div class="articles-slider__title">
+                                    <div class="tabs-menu">
+                                        <button class="js-slider-filter tabs-menu__button is-active" type="button" data-filter="1">Видеогалерея</button>
+                                        <button class="js-slider-filter tabs-menu__button" type="button" data-filter="2">Фотогалерея</button>
+                                    </div>
+                                </div>
+
+                                <div class="articles-slider__arrows"></div>
+                            </div>
+
+                            <div class="articles-slider__container">
+                                <div class="js-articles-slider articles-slider__slider">
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Реабилитация постковидного синдрома</h3>
+
+                                                <p class="article-card__preview">В этом видео мы рассказываем о нашей новой программе востановления после коронавируса COVID-19</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_методы</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div data-filter="1">
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">Аллерген-специфическая иммунотерапия (АСИТ)</h3>
+
+                                                <p class="article-card__preview">Узнайте больше о том, как мы помогаем пациентам облегчить симптомы аллергии</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__tag">#наши_услуги</div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Смотреть</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                    <div data-filter="2">
+                                        <a class="photo-item" href="images/content/photo-gallery/img.jpg" data-fancybox="gallery">
+                                            <img src="images/content/photo-gallery/img.jpg" srcset="images/content/photo-gallery/img@2x.jpg 2x" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="articles-slider__bottom">
+                                <div class="articles-slider__dots"></div>
+
+                                <a class="more-link" href="#" data-filter="1">
+                                    <span>Все видео</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+
+                                <a class="more-link hidden" href="#" data-filter="2">
+                                    <span>Все фото</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page__section">
+                        <div class="popup popup--inline">
+                            <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#popup_close_icon" />
+                                </svg>
+                            </button>
+
+                            <p class="popup__title">Задать вопрос специалисту</p>
+
+                            <p>
+                                Уважаемые пациенты, если у Вас есть вопросы специалисту, которые<br>
+                                Вы хотели бы уточнить, пожалуйста, напишите запрос в форму обратной связи:
+                            </p>
+
+                            <form action="">
+                                <p class="popup__subtitle">Пожалуйста, введите ваши данные:</p>
+
+                                <div class="form-row">
+                                    <div>
+                                        <div class="input-group input-group--simple">
+                                            <div class="input-group__inner">
+                                                <div class="input-group__input-container">
+                                                    <input id="spec_ask_fio" class="js-input-group__input input-group__input" type="text" name="spec_ask_fio" placeholder="ФИО пациента">
+                                                    <label class="input-group__label" for="spec_ask_fio">ФИО пациента<span class="required">*</span></label>
+                                                </div>
+                                                <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#clear_icon" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="input-group input-group--simple">
+                                            <div class="input-group__inner">
+                                                <div class="input-group__input-container">
+                                                    <input id="spec_ask_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="spec_ask_email" placeholder="E-mail">
+                                                    <label class="input-group__label" for="spec_ask_email">E-mail<span class="required">*</span></label>
+                                                </div>
+                                                <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                                    <svg aria-hidden="true">
+                                                        <use xlink:href="images/sprite.svg#clear_icon" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="popup__subtitle">Напишите Ваш вопрос:</p>
+
+                                <div class="input-group input-group--textarea">
+                                    <div class="input-group__inner">
+                                        <div class="input-group__input-container">
+                                            <textarea id="spec_ask_question" class="js-input-group__input input-group__textarea" name="spec_ask_question" placeholder="Ваш вопрос"></textarea>
+                                            <div class="input-group__pseudo-textarea"></div>
+                                            <label class="input-group__label" for="spec_ask_question">Ваш вопрос<span class="required">*</span></label>
+                                        </div>
+                                        <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#clear_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="button-block">
+                                    <p><span class="required">*</span> Обязательные для заполнения поля</p>
+
+                                    <button class="button button--red" type="submit" data-fancybox="spec_ask_success" data-src="#spec_ask_success">Отправить</button>
+                                </div>
+
+                                <div class="form-checkboxes">
+                                    <label class="checkbox checkbox--small">
+                                        <input type="checkbox" value="" name="">
+                                        <span class="checkbox__icon"></span>
+                                        <span>Нажимая на кнопку “Отправить”, я даю согласие на <a href="#">обработку персональных данных</a><span class="required">*</span></span>
+                                    </label>
+
+                                    <label class="checkbox checkbox--small">
+                                        <input type="checkbox" value="" name="">
+                                        <span class="checkbox__icon"></span>
+                                        <span>Нажимая на кнопку “Отправить”, я принимаю условия <a href="#">политики конфиденциальности</a><span class="required">*</span></span>
+                                    </label>
+
+                                    <label class="checkbox checkbox--small">
+                                        <input type="checkbox" value="" name="">
+                                        <span class="checkbox__icon"></span>
+                                        <span>Нажимая на кнопку “Отправить”, я даю согласие на рассылку (e-mail, sms)</span>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div id="doctors" class="page__section">
+                        <div class="doctors-slider">
+                            <div class="doctors-slider__title-block">
+                                <h2 class="doctors-slider__title">Другие врачи</h2>
+                                <div class="doctors-slider__arrows"></div>
+                            </div>
+
+                            <div class="js-doctors-slider doctors-slider__slider">
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">к.м.н., врач хирург первой категории, специалист по сосудистой патологии, врач ультразвуковой диагностики</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="doctor-card">
+                                        <div class="doctor-card__image">
+                                            <img src="images/content/doctors/img.png" srcset="images/content/doctors/img@2x.png 2x" alt="">
+                                        </div>
+
+                                        <div class="doctor-card__info">
+                                            <p class="doctor-card__name">Иванов<br> Иван Иванович</p>
+
+                                            <p class="doctor-card__text">врач-невролог, врач мануальной терапии, врач рефлексотерапевт</p>
+
+                                            <div class="doctor-card__bottom">
+
+                                                <div class="doctor-card__bottom-inner">
+                                                    <p class="doctor-card__exp">Стаж 10 лет</p>
+
+                                                    <a class="doctor-card__link" href="#">
+                                                        <span>Подробнее</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </a>
+                                                </div>
+
+                                                <button class="button button--blue" type="button">Записаться</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="doctors-slider__bottom">
+                                <div class="doctors-slider__dots"></div>
+
+                                <a class="more-link" href="#">
+                                    <span>Все врачи</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="banner banner--type_1">
+                        <div class="banner__inner">
+                            <div class="banner__text-block">
+                                <h2 class="color-blue">Заявка на прием/диагностику в&nbsp;МЦ&nbsp;«Мой&nbsp;доктор»</h2>
+                                <div class="bordered-text">
+                                    <p>Оставьте заявку на запись и наш администратор<br> свяжется с Вами для подтверждения</p>
+                                    <button class="button button--red" type="button">Заполнить заявку</button>
+                                </div>
+                            </div>
+
+                            <div class="banner__image">
+                                <img src="images/content/banners/banner_1/img.png" srcset="images/content/banners/banner_1/img@2x.png 2x" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

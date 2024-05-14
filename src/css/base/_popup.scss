@@ -27,6 +27,14 @@
         }
     }
 
+    &--inline {
+        box-shadow: none;
+        border: 1px solid var(--blue_6);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     &__closer {
         @include button-reset;
         @include active-area;

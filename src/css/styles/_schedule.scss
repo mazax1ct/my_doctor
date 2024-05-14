@@ -1,0 +1,101 @@
+.schedule {
+    &__title-block {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        @media(min-width: $sm) {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        .download-link {
+            flex-grow: 1;
+            max-width: 486px;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 16px 10px;
+        @media(min-width: 600px) {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px 5px;
+        }
+        @media(min-width: $sm) {
+            grid-template-columns: repeat(7, 1fr);
+            gap: 24px 5px;
+        }
+        @media(min-width: $hd) {
+            gap: 24px 16px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 5px;
+    }
+
+    &__day {}
+
+    &__day-title {
+        align-items: center;
+        border: 1px solid var(--grey_2);
+        border-radius: 7px 7px 0 0;
+        background-color: var(--blue_6);
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        justify-content: center;
+        height: 36px;
+    }
+
+    &__day-date {
+        align-items: center;
+        border-radius: 0 0 7px 7px;
+        background-color: var(--blue_1);
+        color: var(--white_1);
+        display: flex;
+        font-size: 14px;
+        font-weight: 600;
+        justify-content: center;
+        height: 36px;
+    }
+
+    &__place {
+        align-items: center;
+        border: 1px solid var(--grey_2);
+        border-radius: 7px;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: center;
+        min-height: 80px;
+        padding: 8px;
+
+        &--empty {
+            font-weight: 700;
+        }
+    }
+
+    &__time {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    &__cabinet {
+        font-size: 14px;
+        line-height: 1.21428;
+    }
+}

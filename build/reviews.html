@@ -233,9 +233,8 @@
                         <button class="button button--blue" type="button" data-fancybox="review_" data-src="#review">Оставить отзыв на сайте</button>
                     </div>
 
-
                     <div class="reviews-grid">
-                        <div class="review-card" data-fancybox="review_1" data-src="#review_card_1">
+                        <div class="review-card" data-fancybox="review_card_1" data-src="#review_card_1">
                             <p class="review-card__doctor">
                                 <span class="review-card__doctor-title">Врач:</span>
                                 <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
@@ -267,10 +266,6 @@
                                 </button>
 
                                 <div class="info-popup">
-                                    <svg class="info-popup__icon" aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#success_icon" />
-                                    </svg>
-
                                     <div>
                                         <p class="popup__title">Отзыв о враче</p>
 
@@ -295,7 +290,7 @@
                             </div>
                         </div>
 
-                        <div class="review-card" data-fancybox="review_2" data-src="#review_card_2">
+                        <div class="review-card" data-fancybox="review_card_2" data-src="#review_card_2">
                             <p class="review-card__doctor">
                                 <span class="review-card__doctor-title">Врач:</span>
                                 <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
@@ -327,10 +322,6 @@
                                 </button>
 
                                 <div class="info-popup">
-                                    <svg class="info-popup__icon" aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#success_icon" />
-                                    </svg>
-
                                     <div>
                                         <p class="popup__title">Отзыв о враче</p>
 
@@ -355,7 +346,7 @@
                             </div>
                         </div>
 
-                        <div class="review-card" data-fancybox="review_3" data-src="#review_card_3">
+                        <div class="review-card" data-fancybox="review_card_3" data-src="#review_card_3">
                             <p class="review-card__doctor">
                                 <span class="review-card__doctor-title">Врач:</span>
                                 <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
@@ -387,10 +378,6 @@
                                 </button>
 
                                 <div class="info-popup">
-                                    <svg class="info-popup__icon" aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#success_icon" />
-                                    </svg>
-
                                     <div>
                                         <p class="popup__title">Отзыв о враче</p>
 
@@ -415,7 +402,7 @@
                             </div>
                         </div>
 
-                        <div class="review-card" data-fancybox="review_4" data-src="#review_card_4">
+                        <div class="review-card" data-fancybox="review_card_4" data-src="#review_card_4">
                             <p class="review-card__doctor">
                                 <span class="review-card__doctor-title">Врач:</span>
                                 <span class="review-card__doctor-name">Шайхутдинова Эльмира Маратовна</span>
@@ -447,10 +434,6 @@
                                 </button>
 
                                 <div class="info-popup">
-                                    <svg class="info-popup__icon" aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#success_icon" />
-                                    </svg>
-
                                     <div>
                                         <p class="popup__title">Отзыв о враче</p>
 
@@ -479,7 +462,6 @@
                     <div class="show-more">
                         <button class="show-more__button" type="button">Показать еще +</button>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1248,8 +1230,8 @@
                     <div class="input-group input-group--simple">
                         <div class="input-group__inner">
                             <div class="input-group__input-container">
-                                <input id="review_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="review_email" placeholder="E-mail">
-                                <label class="input-group__label" for="review_email">E-mail<span class="required">*</span></label>
+                                <input id="ask_email" class="js-input-group__input js-email-mask input-group__input" type="text" name="ask_email" placeholder="E-mail">
+                                <label class="input-group__label" for="ask_email">E-mail<span class="required">*</span></label>
                             </div>
                             <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
                                 <svg aria-hidden="true">
@@ -1329,6 +1311,33 @@
                 <div class="popup__text ok-button-block color-grey">
                     <div>
                         <p>В ближайшее время руководитель ответит на интересующий Вас вопрос. Обращаем Ваше внимание, что заявки обрабатываются в будние дни, с&nbsp;10:00&nbsp;до&nbsp;18:00</p>
+                    </div>
+    
+                    <button class="js-popup-closer button button--red" type="button">Ок</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="spec_ask_success" class="popup popup--info">
+        <button class="js-popup-closer popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#popup_close_icon" />
+            </svg>
+        </button>
+    
+        <div class="info-popup">
+            <svg class="info-popup__icon" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#success_icon" />
+            </svg>
+    
+            <div>
+                <p class="popup__title">Задать вопрос специалисту</p>
+    
+                <div class="popup__text ok-button-block color-grey">
+                    <div>
+                        <p>Уважаемый пациент, вопрос успешно отправлен</p>
+                        <p>Благодарим Вас за обращение<br> в медицинский центр «Мой доктор»</p>
                     </div>
     
                     <button class="js-popup-closer button button--red" type="button">Ок</button>
