@@ -1,0 +1,17 @@
+.licenses-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media(min-width: $sm) {
+        gap: 24px;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    .download-link {
+        max-width: 486px;
+        width: 100%;
+    }
+}

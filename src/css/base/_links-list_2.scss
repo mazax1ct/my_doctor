@@ -1,0 +1,10 @@
+.links-list_2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media(min-width: $sm) {
+        flex-direction: row;
+        gap: 24px;
+    }
+}

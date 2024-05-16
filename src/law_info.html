@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Пациентам</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Правовая информация
+                </li>
+            </ul>
+
+            <h1>Правовая информация</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#info">Информация</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <section id="info" class="page__section">
+                        <div class="page__section">
+                            <div class="links-grid links-grid--type_3">
+                                <a class="icon-link" href="#">
+                                    <span class="icon-link__icon"><img src="images/icons/icon-links/licenses.svg" alt=""></span>
+                                    <span class="icon-link__title">Лицензии</span>
+                                    <span class="icon-link__link">
+                                        Подробнее
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a class="icon-link" href="#">
+                                    <span class="icon-link__icon"><img src="images/icons/icon-links/folder.svg" alt=""></span>
+                                    <span class="icon-link__title">Правила обработки файлов cookie</span>
+                                    <span class="icon-link__link">
+                                        Подробнее
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a class="icon-link" href="#">
+                                    <span class="icon-link__icon"><img src="images/icons/icon-links/person.svg" alt=""></span>
+                                    <span class="icon-link__title">Политика обработки персональных данных</span>
+                                    <span class="icon-link__link">
+                                        Подробнее
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </span>
+                                </a>
+
+                                <a class="icon-link" href="#">
+                                    <span class="icon-link__icon"><img src="images/icons/icon-links/lock.svg" alt=""></span>
+                                    <span class="icon-link__title">Политика конфиденциальности</span>
+                                    <span class="icon-link__link">
+                                        Подробнее
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Реквизиты</h2>
+
+                            <div class="tabs-container">
+                                <div class="tabs-menu tabs-menu--smooth">
+                                    <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <p>Выписку из ЕГРЮЛ вы можете получить в электронном виде, воспользовавшись сервисом ФНС по <a href="#">ссылке</a>.</p>
+
+                                    <div class="requisites">
+                                        <div class="requisites__column">
+                                            <p><b>Полное наименование:</b> Общество с ограниченной ответственностью «Медицинский центр
+                                                восстановительных методов лечения «Мой доктор»</p>
+                                            <p><b>Сокращенное наименование:</b> ООО «МЦ ВМЛ «Мой доктор»</p>
+                                            <p><b>ОПФ:</b> Общество с ограниченной ответственностью</p>
+                                            <p><b>Адрес места нахождения:</b> 141280, Московская область,
+                                                г.о. Пушкинский, г. Ивантеевка, ул. Детский проезд, д. 8</p>
+                                            <p><b>Телефон/E-mail:</b> +7 (496) 536-57-73 / info@moy-doktor.org</p>
+                                            <p><b>ОГРН 1025001767340</b> (свидетельство государственной регистрации юридического лица выдано xx.xx.xxxx (наименование организации) по г. xxxxxx,
+                                                бланк серия xx № xxxxxxxxx)</p>
+                                            <p><b>ИНН/КПП:</b> 5016007723 / 501601001</p>
+                                        </div>
+                                        <div class="requisites__column">
+                                            <p><b>Директор:</b> Нечаев Денис Васильевич</p>
+                                            <p><b>Главный врач:</b> Давыдова Надежда Петровна</p>
+                                            <p><b>Сведения об учредителях:</b> Согласно данным ЕГРЮЛ учредителями ООО «МЦ ВМЛ «Мой доктор» являются
+                                                2 физических лица:</p>
+                                            <ul>
+                                                <li>Нечаев денис Васильевич (доля 50%)</li>
+                                                <li>Нечаева Галина Марковна (доля 50%)</li>
+                                            </ul>
+                                            <p><b>Юридический адрес:</b> 141280, Московская область, г.о. Пушкинский, г. Ивантеевка, ул. Хлебозаводская, д. 43А</p>
+                                            <p><b>Банковские реквизиты:</b> ПАО «Сбербанк России»
+                                                г. Москвы Королевское ОСБ: р/с 40702810740170131373,
+                                                БИК 044525225; к/сч 30101810400000000225</p>
+                                            <p><a href="#">Лицензия на осуществление медицинской деятельности</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" data-tab="2">
+                                    таб 2
+                                </div>
+
+                                <div class="tab" data-tab="3">
+                                    таб 3
+                                </div>
+
+                                <div class="tab" data-tab="4">
+                                    таб 4
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Режим работы наших отделений</h2>
+
+                            <div class="tabs-container">
+                                <div class="tabs-menu tabs-menu--smooth">
+                                    <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <p>Режим работы клиники на Детском проезде: с понедельника по воскресенье с 07:30 до 21:00</p>
+
+                                    <p>График работы специалистов в формате Excel можно скачать по ссылке. Обращаем Ваше внимание, что график носит информационный характер, во избежание недоразумений, актуальное расписание просим уточнять у
+                                        администраторов центра</p>
+                                </div>
+
+                                <div class="tab" data-tab="2">
+                                    таб 2
+                                </div>
+
+                                <div class="tab" data-tab="3">
+                                    таб 3
+                                </div>
+
+                                <div class="tab" data-tab="4">
+                                    таб 4
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Лицензии</h2>
+
+                            <div class="tabs-container">
+                                <div class="tabs-menu tabs-menu--smooth">
+                                    <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <p>
+                                        <b>Регистрационный номер лицензии</b>: Л041-01162-50/00322939.<br>
+                                        <b>Дата предоставления лицензии</b>: 08.06.2021<br>
+                                        Выдана Министерством здравоохранения Московской области
+                                    </p>
+
+                                    <div class="licenses-links">
+                                        <a class="download-link" href="#">
+                                            <span>Скачать выписку лицензии в PDF</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#download_icon"></use>
+                                            </svg>
+                                        </a>
+
+                                        <a class="download-link" href="#">
+                                            <span>Единый реестр лицензий Росздравнадзора</span>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#download_icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="licenses-slider">
+                                        <div class="licenses-slider__title-block">
+                                            <div></div>
+                                            <div class="licenses-slider__arrows"></div>
+                                        </div>
+
+                                        <div class="js-licenses-slider licenses-slider__slider">
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="licenses-slider__dots"></div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" data-tab="2">
+                                    <p>Другие лицензии</p>
+
+                                    <div class="licenses-slider">
+                                        <div class="licenses-slider__title-block">
+                                            <div></div>
+                                            <div class="licenses-slider__arrows"></div>
+                                        </div>
+
+                                        <div class="js-licenses-slider licenses-slider__slider">
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="images/content/licenses/img_3.jpg" srcset="images/content/licenses/img_3@2x.jpg 2x" alt="">
+                                            </div>
+                                        </div>
+
+                                        <div class="licenses-slider__dots"></div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" data-tab="3">
+                                    таб 3
+                                </div>
+
+                                <div class="tab" data-tab="4">
+                                    таб 4
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Порядок и сроки оказания платной медицинской помощи</h2>
+
+                            <p>Клиники не участвуют в реализации программ государственных гарантий бесплатного оказания гражданам медицинской помощи. Пациенты имеют возможность получения медицинской помощи в рамках программы государственных гарантий
+                                бесплатного оказания гражданам медицинской помощи и территориальных программ государственных гарантий бесплатного оказания гражданам медицинской помощи в других медицинских учреждениях, участвующих в реализации
+                                указанных программ.</p>
+
+                            <p>Платные услуги предоставляются в рамках договоров на оказание платных медицинских услуг за счет личных средств граждан, средств предприятий, учреждений и организаций и других средств, разрешенных законодательством.</p>
+
+                            <p>Оплата стоимости медицинских услуг производится в наличной форме в кассу клиники и/или в безналичной форме на расчетный счет организации.</p>
+
+                            <p>Сроки ожидания оказания платной медицинской услуги зависят от ее вида, количества специалистов в медицинской организации, которые ее оказывают, загруженности записи пациентов в момент конкретного запроса, а также
+                                состояния здоровья пациента.</p>
+
+                            <p>Вы можете уточнить срок ожидания (срок, когда медицинская организация объективно готова оказать пациенту соответствующую медицинскую услугу) по телефону (<a href="#">см. Контакты</a>) и у администраторов клиники.</p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Скачать выписку лицензии в PDF</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#download_icon"></use>
+                                    </svg>
+                                </a>
+                            </p>
+
+                            <p>При первичном обращении с пациентом или его законным представителем заключается договор об оказании платных медицинских услуг, со стороны пациента подписывается информированное добровольное согласие на медицинское
+                                вмешательство, заявление
+                                о предоставлении информации по электронной почте и оформляется амбулаторная карта. Амбулаторная карта является собственностью клиники и хранится в регистратуре либо в архиве.</p>
+
+                            <p>Для надлежащего оформления документов пациенту следует прибыть в клинику за 15 минут до начала приема.</p>
+
+                            <p>В случаях отказа от подписания договора и добровольного информированного согласия на медицинское вмешательство клиника вправе отказать в приеме.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Вы можете предварительно ознакомиться с текстом договора на оказание платных медицинских услуг, скачав его с сайта:</h2>
+
+                            <div class="page__section">
+                                <div class="tabs-container">
+                                    <div class="tabs-menu tabs-menu--smooth">
+                                        <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                        <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                        <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                        <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                                    </div>
+
+                                    <div class="tab is-active" data-tab="1">
+                                        <p>
+                                            <a class="download-link" href="#">
+                                                <span>Образец договора на оказание платных медицинских услуг (для взрослых)</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#download_icon"></use>
+                                                </svg>
+                                            </a>
+                                        </p>
+
+                                        <p>
+                                            <a class="download-link" href="#">
+                                                <span>Образец договора на оказание платных медицинских услуг (для детей)</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#download_icon"></use>
+                                                </svg>
+                                            </a>
+                                        </p>
+
+                                        <p>
+                                            <a class="download-link" href="#">
+                                                <span>Образец информированного добровольного согласия</span>
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#download_icon"></use>
+                                                </svg>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                    <div class="tab" data-tab="2">
+                                        таб 2
+                                    </div>
+
+                                    <div class="tab" data-tab="3">
+                                        таб 3
+                                    </div>
+
+                                    <div class="tab" data-tab="4">
+                                        таб 4
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p>Со стандартами медицинской помощи и клиническими рекомендациями (при их наличии), с учетом и на основании которых (соответственно) оказываются медицинские услуги, можно ознакомиться на «Официальном интернет-портале
+                                правовой информации» (<a href="https://www.pravo.gov.ru">www.pravo.gov.ru</a>) и официальном сайте Министерства здравоохранения Российской Федерации, на котором размещен рубрикатор клинических рекомендаций (<a
+                                  href="https://cr.minzdrav.gov.ru">https://cr.minzdrav.gov.ru</a>):</p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Официальный интернет-портал правовой информации</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#download_icon"></use>
+                                    </svg>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Рубрикатор клинических рекомендаций</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#download_icon"></use>
+                                    </svg>
+                                </a>
+                            </p>
+
+                            <p>Информация о методах оказания медицинской помощи, связанных с ними рисках, видах медицинского вмешательства,
+                                их последствиях и ожидаемых результатах оказания медицинской помощи предоставляется медицинским работником в доступной форме перед медицинским вмешательством, что подтверждается подписанием гражданином или его законным
+                                представителем информированного добровольного согласия на медицинское вмешательство.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Перечень платных медицинских услуг</h2>
+
+                            <p>Подробную информацию о наших услугах можно получить в разделе <a href="#">Услуги и цены</a>.</p>
+
+                            <p>Прейскурант на медицинские услуги можно <a href="#">скачать по ссылке</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Перечень льготных категорий граждан и список льгот</h2>
+
+                            <p>Сеть многопрофильных медицинских центров «Мой доктор» предлагает льготы следующим категориям граждан:</p>
+
+                            <ul>
+                                <li>льготная категория граждан 1</li>
+                                <li>льготная категория граждан 2</li>
+                            </ul>
+
+                            <p><b>С подробной информацией об условиях дисконтной программы можно ознакомиться в документе:</b></p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Условия дисконтной программы</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#download_icon"></use>
+                                    </svg>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Сведения о медицинских работниках</h2>
+
+                            <p>Со сведениями о медицинских работниках, участвующих в предоставлении платных медицинских услуг, об уровне
+                                их профессионального образования и квалификации можно ознакомиться в разделе <a href="#">Специалисты</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Сведения о руководстве</h2>
+
+                            <p>Со сведениями о руководстве можно ознакомиться на странице <a href="#">Руководство</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>График приема руководства/главных врачей</h2>
+
+                            <div class="tabs-container">
+                                <div class="tabs-menu tabs-menu--smooth">
+                                    <button class="js-tabs-menu__button tabs-menu__button is-active" type="button" data-tab="1">Детский проезд</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="2">Карла Маркса</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="3">Хлебозаводская</button>
+                                    <button class="js-tabs-menu__button tabs-menu__button" type="button" data-tab="4">Новая Слобода</button>
+                                </div>
+
+                                <div class="tab is-active" data-tab="1">
+                                    <div class="work-schedule">
+                                        <div class="work-schedule__block">
+                                            <div class="work-schedule__block-title">Должность</div>
+                                            <div class="work-schedule__block-val">Главный врач</div>
+                                        </div>
+
+                                        <div class="work-schedule__block">
+                                            <div class="work-schedule__block-title">ФИО</div>
+                                            <div class="work-schedule__block-val">Егоров А.В.</div>
+                                        </div>
+
+                                        <div class="work-schedule__block">
+                                            <div class="work-schedule__block-title">Часы приема</div>
+                                            <div class="work-schedule__block-val">пн 14:00-17:00<br> ср 10:00-13:00</div>
+                                        </div>
+
+                                        <div class="work-schedule__block">
+                                            <div class="work-schedule__block-title">Кабинет</div>
+                                            <div class="work-schedule__block-val">312</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab" data-tab="2">
+                                    таб 2
+                                </div>
+
+                                <div class="tab" data-tab="3">
+                                    таб 3
+                                </div>
+
+                                <div class="tab" data-tab="4">
+                                    таб 4
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Работа у нас</h2>
+
+                            <p>С информацией о возможностях трудоустройства можно ознакомиться в разделе <a href="#">Вакансии</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Отзывы наших пациентов</h2>
+
+                            <p>Отзывы наших пациентов доступны на странице <a href="#">Отзывы</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Лекарственное обеспечение</h2>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Перечень жизненно необходимых и важнейших лекарственных препаратов для медицинского применения на 2018 год</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Перечень лекарственных препаратов, предназначенных для обеспечения лиц, больных гемофилией, муковисцидозом, гипофизарным нанизмом, болезнью Гоше, злокачественными новообразованиями лимфоидной, кроветворной
+                                        и родственных им тканей, рассеянным склерозом, а также лиц после трансплантации органов и (или) тканей</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Перечень лекарственных препаратов для медицинского применения, в том числе лекарственных препаратов
+                                        для медицинского применения, назначаемых по решению врачебных комиссий медицинских организаций</span>
+                                </a>
+                            </p>
+
+                            <p>Клиники не обеспечивают пациентов бесплатными лекарственными препаратами.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Налоговый вычет</h2>
+
+                            <p>Подробная информация о возможности получения налогового вычета доступна на странице <a href="#">Налоговый вычет</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Добровольное медицинское страхование (ДМС)</h2>
+
+                            <p>Подробная информация о возможности получения обслуживания в рамках программы добровольного
+                                медицинского страхования доступна на странице <a href="#">Обслуживание по ДМС</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Список проверяющих и контролирующих органов</h2>
+
+                            <p><b>В эти ведомства пациент может обратиться с жалобой в случае нарушения его прав:</b></p>
+
+                            <p>
+                                Министерство здравоохранения Московской области<br>
+                                143407, Московская область, г. Красногорск, бульвар Строителей, д. 1. +7 (498) 602-03-01<br>
+                                сайт: <a href="https://mz.mosreg.ru/?ysclid=losm435vto886580868"><b>https://mz.mosreg.ru/?ysclid=losm435vto886580868</b></a>
+                            </p>
+
+                            <p>
+                                Управление лицензирования медицинской и фармацевтической деятельности по Московской области<br>
+                                143407, Московская область, г. Красногорск, бульвар Строителей, д. 1 +7 (498) 602-04-20<br>
+                                сайт: <a href="https://mz.mosreg.ru/?ysclid=losm435vto886580868"><b>https://mz.mosreg.ru/?ysclid=losm435vto886580868</b></a>
+                            </p>
+
+                            <p>
+                                Территориальный отдел Управления Федеральной службы по надзору в сфере защиты прав потребителей и благополучия человека по Московской области в г. Ивантеевка, Пушкинском, Сергиево-Посадском районах<br>
+                                141304, Московская область, Сергиев Посад, Хотьковский проезд, 18 +7 (496) 540-22-25<br>
+                                сайт: <a href="https://mz.mosreg.ru/?ysclid=losm435vto886580868"><b>https://mz.mosreg.ru/?ysclid=losm435vto886580868</b></a>
+                            </p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Порядок обработки жалоб - нужен текст</h2>
+
+                            <p>В случае возникновения претензий относительно качества оказанных медицинских услуг, нежелания продолжать в дальнейшем лечение в клинике, намерения защищать интересы исходя из норм Закона РФ «О защите прав потребителей»,
+                                Заказчик имеет право составить официальную претензию.</p>
+
+                            <p>Претензия составляется в письменном виде за личной подписью Заказчика либо отсканированный вариант направляется
+                                на электронную почту <a href="mailto:info@moy-doktor.ru">info@moy-doktor.ru</a> с указанием конкретных обстоятельств неисполнения клиникой своих обязательств
+                                и тех требований, которые предъявляет Заказчик на основе Закона РФ «О защите прав потребителей».</p>
+
+                            <p>Претензия рассматривается в течение 10 календарных дней, если она содержит требования, предусмотренные в ст. 31 Закона
+                                РФ «О защите прав потребителей», результат рассмотрения оформляется в письменном виде.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Внутренние документы и образцы</h2>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Правила поведения пациентов</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Положении о гарантии</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Правила эксплуатации результатов стамотологических услуг</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Информированное согласие на комплекс обследований</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Условия обработки персональных данных и cookie</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Согласие пациента на обработку специальных категорий персональных данных (данных о здоровье), биометрических данных</span>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Нормативно-правовые акты, регламентирующие деятельность</h2>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Федеральный закон от 21.11.2011 №323-ФЗ “Об основах охраны здоровья граждан в Российской Федерации</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Федеральный закон от 21.11.2011 №323-ФЗ “Об основах охраны здоровья граждан в Российской Федерации</span>
+                                </a>
+                            </p>
+
+                            <p>
+                                <a class="download-link" href="#">
+                                    <span>Федеральный закон от 21.11.2011 №323-ФЗ “Об основах охраны здоровья граждан в Российской Федерации</span>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Контактная информация</h2>
+
+                            <p>С контактной информацией можно ознакомиться в разделе <a href="#">Контакты</a>.</p>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Авторские права</h2>
+
+                            <p>Все права на тексты, фотографии и иные материалы, размещенные на страницах сайта <a href="https://moy-doktor.org">https://moy-doktor.org</a>, принадлежат владельцам и охраняются в соответствии с законодательством РФ.
+                                Любое использование или копирование материалов сайта возможно только при письменном согласии владельцев и обязательном указании ссылки на источник информации.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+.card {
+    border-radius: 17px;
+    border: 1px solid var(--blue_6);
+    padding: 24px 16px;
+    @media(min-width: $sm) {
+        padding: 32px;
+    }
+
+    &__icon {
+        border-radius: 17px;
+        background-color: var(--light_blue_4);
+        display: block;
+        height: 58px;
+        margin-bottom: 16px;
+        width: 58px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        border-top: 1px solid var(--blue_6);
+        padding-top: 16px;
+
+        a {
+            font-weight: 600;
+        }
+    }
+}

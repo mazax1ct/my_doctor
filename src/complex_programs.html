@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Мой доктор</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Услуги и цены</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Комплексные программы и Сheck-up
+                </li>
+            </ul>
+
+            <h1>Комплексные программы и Сheck-up</h1>
+
+            <div class="page__columns">
+                <div class="page__left-column">
+                    <ul class="left-menu">
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#info">Описание</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#programs">Программы</a>
+                        </li>
+                        <li class="left-menu__item">
+                            <a class="button button--white left-menu__link" href="#actions">Акции</a>
+                        </li>
+                    </ul>
+
+                    //= template/common/left-buttons.html
+                </div>
+
+                <div class="page__right-column">
+                    <div id="info" class="page__section">
+                        <div class="page__section">
+                            <div class="banner banner--type_2 banner--type_3 banner--type_4">
+                                <div class="banner__inner">
+                                    <div class="banner__text-block">
+                                        <div class="banner__action">Акция</div>
+
+                                        <h2 class="color-blue mb-8">Оформите карту в сад со скидкой</h2>
+
+                                        <p>
+                                            <a class="banner__link" href="#">
+                                                Подробнее
+                                                <svg aria-hidden="true">
+                                                    <use xlink:href="images/sprite.svg#arrow_right"></use>
+                                                </svg>
+                                            </a>
+                                        </p>
+                                    </div>
+
+                                    <div class="banner__image">
+                                        <img src="images/content/banners/banner_4/img.png" srcset="images/content/banners/banner_4/img@2x.png 2x" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <h2>Комплексное обслуживание в медицинском центре</h2>
+
+                            <div class="bordered-text">
+                                <p>Комплексное обслуживание в медицинском центре – это программы, включающие в себя определенный
+                                    набор услуг, необходимых в том или ином случае: для профилактики, общего оздоровления, базового
+                                    медицинского наблюдения за детьми, решения специальных задач</p>
+
+                                <p>Они разработаны нашими специалистами для того, чтобы предоставить пациентам полный объем
+                                    необходимых услуг в оптимальные сроки, и оптимизировать их затраты на медицинские услуги</p>
+                            </div>
+                        </div>
+
+                        <div class="page__section">
+                            <div class="accordions">
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Что такое Сheck-up? </span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>В чем отличие check-up от комплексных программ?</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="accordion__toggler" type="button">
+                                        <span>Кому рекомендуется Сheck-up диагностика?</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="accordion__body accordion__body--simple">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, sit facilis. Enim, dicta excepturi. Iusto vero necessitatibus itaque molestiae expedita repellendus, aspernatur, cupiditate dolore
+                                            doloremque odio aliquid corporis, veritatis fuga?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="programs" class="page__section">
+                        <h2>Программы и направления</h2>
+
+                        <div class="programs-list">
+                            <div class="program">
+                                <div class="program__image"><img src="images/content/programs/img_1.png" srcset="images/content/programs/img_1.png 2x" alt=""></div>
+
+                                <div class="program__text-block">
+                                    <p class="program__title">Планирование и ведение беременности</p>
+
+                                    <a class="button button--white" href="#">Программа “Планирование беременности”</a>
+
+                                    <a class="button button--white" href="#">Программа ведения беременности “Забота с 0 до 40 недель”</a>
+
+                                    <a class="button button--white" href="#">Программа ведения беременности “Забота с 14 до 40 недель”</a>
+                                </div>
+                            </div>
+
+                            <div class="program">
+                                <div class="program__image"><img src="images/content/programs/img_2.png" srcset="images/content/programs/img_2.png 2x" alt=""></div>
+
+                                <div class="program__text-block">
+                                    <p class="program__title">Программы для детей</p>
+
+                                    <a class="button button--white" href="#">Программа наблюдения за детьми «Забота с 0 до года»</a>
+
+                                    <a class="button button--white" href="#">Комплексный осмотр перед детским садом «Карта в сад»</a>
+
+                                    <a class="button button--white" href="#">Комплексный осмотр перед школой «Карта в школу»</a>
+                                </div>
+                            </div>
+
+                            <div class="program">
+                                <div class="program__image"><img src="images/content/programs/img_3.png" srcset="images/content/programs/img_3.png 2x" alt=""></div>
+
+                                <div class="program__text-block">
+                                    <p class="program__title">Онкология</p>
+
+                                    <a class="button button--white" href="#">CHECK-UP «Онко»</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="page__section">
+                        <h2>Особенности комплексных программ в МЦ «Мой доктор»</h2>
+
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <div class="feature-card__num">1</div>
+                                <p class="feature-card__title">Оборудование<br> экспертного класса</p>
+                                <p>В нашем медицинском центре установлено современное рентгенологическое оборудование</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-card__num">2</div>
+                                <p class="feature-card__title">Широкий спектр<br> исследований</p>
+                                <p>Мы выполняем обзорные снимки, прицельные снимки, снимки с функциональными пробами и под нагрузкой</p>
+                            </div>
+
+                            <div class="feature-card">
+                                <div class="feature-card__num">3</div>
+                                <p class="feature-card__title">Квалифицированные<br> специалисты</p>
+                                <p>Наши врачи имеют большой опыт работы, постоянно обучаются новым методам и применяют их на практике</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="actions" class="page__section">
+                        <div class="articles-slider">
+                            <div class="articles-slider__title-block">
+                                <h2 class="articles-slider__title">Акции</h2>
+                                <div class="articles-slider__arrows"></div>
+                            </div>
+
+                            <div class="articles-slider__container">
+                                <div class="js-articles-slider articles-slider__slider">
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a class="article-card" href="#">
+                                            <div class="article-card__image" href="#">
+                                                <img src="images/content/articles/img.jpg" srcset="images/content/articles/img@2x.jpg 2x" alt="">
+                                            </div>
+                                            <div class="article-card__text">
+                                                <h3 class="article-card__title">
+                                                    <span>Общий анализ крови<br> со скидкой</span>
+                                                    <span class="article-card__discount">-30%</span>
+                                                </h3>
+
+                                                <p class="article-card__preview">Предлагаем пройти обследование у компетентных специалистов по выгодной стоимости!</p>
+
+                                                <div class="article-card__bottom">
+                                                    <div class="article-card__action-period">
+                                                        <span>Акция действует:</span>
+                                                        <span class="article-card__action-period-date">до 31 мая</span>
+                                                    </div>
+
+                                                    <div class="article-card__link">
+                                                        <span>Условия</span>
+                                                        <svg aria-hidden="true">
+                                                            <use xlink:href="images/sprite.svg#arrow_right" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="articles-slider__bottom">
+                                <div class="articles-slider__dots"></div>
+
+                                <a class="more-link" href="#">
+                                    <span>Все акции</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

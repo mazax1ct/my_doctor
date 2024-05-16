@@ -1,0 +1,34 @@
+.requisites {
+    border: 1px solid var(--blue_6);
+    border-radius: 17px;
+    padding: 16px;
+    @media(min-width: $sm) {
+        display: flex;
+        gap: 24px;
+        padding: 24px;
+    }
+
+    &__column {
+        font-size: 14px;
+        line-height: 1.21428;
+
+        &:not(:last-child) {
+            @media(max-width: $sm - 0.01px) {
+                margin-bottom: 16px;
+            }
+        }
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - 24px / 2);
+        }
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+
+        a {
+            color: var(--blue_1);
+        }
+    }
+}

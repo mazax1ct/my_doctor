@@ -41,6 +41,18 @@
         padding-right: 120px;
     }
 
+    &--type_2 {
+        @media(min-width: $sm) {
+            gap: 16px;
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+        @media(min-width: $md) {
+            padding-left: 48px;
+            padding-right: 48px;
+        }
+    }
+
     &__icon {
         height: 45px;
         min-width: 45px;

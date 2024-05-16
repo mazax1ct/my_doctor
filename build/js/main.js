@@ -276,21 +276,23 @@ $(document).ready(function () {
     });
   });
 
-  $('.js-only-mobile-slider').each(function() {
-    var arrowsContainer = $(this).closest('.only-moblie-slider').find('.only-moblie-slider__arrows');
-    var dostContainer = $(this).closest('.only-moblie-slider').find('.only-moblie-slider__dots');
+  if($('body').width() < 768) {
+    $('.js-only-mobile-slider').each(function() {
+      var arrowsContainer = $(this).closest('.only-mobile-slider').find('.only-mobile-slider__arrows');
+      var dostContainer = $(this).closest('.only-mobile-slider').find('.only-mobile-slider__dots');
 
-    $(this).slick({
-      infinite: true,
-      mobileFirst: true,
-      dots: true,
-      appendDots: dostContainer,
-      arrows: true,
-      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
-      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
-      appendArrows: arrowsContainer,
+      $(this).slick({
+        infinite: true,
+        mobileFirst: true,
+        dots: true,
+        appendDots: dostContainer,
+        arrows: true,
+        prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+        nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+        appendArrows: arrowsContainer,
+      });
     });
-  });
+  }
 
   $('.js-values-slider').each(function() {
     var arrowsContainer = $(this).closest('.values-slider').find('.values-slider__arrows');
@@ -327,6 +329,38 @@ $(document).ready(function () {
   $('.js-doctors-slider').each(function() {
     var arrowsContainer = $(this).closest('.doctors-slider').find('.doctors-slider__arrows');
     var dostContainer = $(this).closest('.doctors-slider').find('.doctors-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1279,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3
+         }
+       }
+     ]
+    });
+  });
+
+  $('.js-licenses-slider').each(function() {
+    var arrowsContainer = $(this).closest('.licenses-slider').find('.licenses-slider__arrows');
+    var dostContainer = $(this).closest('.licenses-slider').find('.licenses-slider__dots');
 
     $(this).slick({
       infinite: true,
@@ -485,5 +519,10 @@ $(document).on('click', '.js-tabs-menu__button', function () {
   $(this).addClass('is-active');
   $(this).closest('.tabs-container').find('.tab').removeClass('is-active');
   $(this).closest('.tabs-container').find('.tab[data-tab="'+ $(this).attr('data-tab') +'"]').addClass('is-active');
+
+  if($(this).closest('.tabs-container').find('.js-licenses-slider').length > 0) {
+    $('.js-licenses-slider').slick('setPosition');
+  }
+
   return false;
 });
