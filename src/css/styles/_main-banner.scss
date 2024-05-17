@@ -1,0 +1,183 @@
+.main-banner {
+    background-image: linear-gradient(270deg, rgba(0, 162, 254, 0.043) 58.52%, rgba(149, 217, 255, 0) 100%), url("../images/backgrounds/main_banner_mobile_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 50%;
+    @media(min-width: $hd) {
+        background-image: linear-gradient(270deg, rgba(0, 162, 254, 0.043) 58.52%, rgba(149, 217, 255, 0) 100%), url("../images/backgrounds/main_banner_desktop_bg.jpg");
+    }
+
+    &__container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    &__slider {
+        position: relative;
+        z-index: 1;
+
+        .slick-next,
+        .slick-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 3;
+        }
+
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 480px;
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+        position: relative;
+        z-index: 1;
+        @media(min-width: $hd) {
+            min-height: 520px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+    }
+
+    &__text-block {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        max-width: 590px;
+        padding-top: 54px;
+        padding-bottom: 54px;
+        position: relative;
+        z-index: 2;
+        @media(min-width: $sm) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+    }
+
+    &__title {
+        color: var(--red_1);
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 1.21428;
+        margin-bottom: 24px;
+        order: 1;
+        @media(min-width: $sm) {
+            font-size: 40px;
+            line-height: 1.2;
+        }
+        @media(min-width: $hd) {
+            font-size: 45px;
+            line-height: 1.22222;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.22222;
+        order: 2;
+        @media(min-width: $sm) {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 48px;
+            @media(min-width: $sm) {
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        order: 3;
+        width: 100%;
+        @media(min-width: $sm) {
+            gap: 24px;
+            order: 4;
+        }
+
+        &:not(:last-child) {
+            @media(max-width: $sm - 0.01px) {
+                margin-bottom: 48px;
+            }
+        }
+    }
+
+    &__badge {
+        background-color: var(--white_2);
+        box-shadow: -22px 26px 14px rgba(13, 110, 253, 0.01), -12px 15px 11px rgba(13, 110, 253, 0.04), -6px 6px 8px rgba(13, 110, 253, 0.06), -1px 2px 5px rgba(13, 110, 253, 0.07);
+        border-radius: 15px;
+        color: var(--blue_4);
+        max-width: 180px;
+        padding: 16px;
+        @media(min-width: $sm) {
+            padding-left: 24px;
+            padding-right: 24px;
+            width: 100%;
+        }
+        @media(max-width: $sm - 0.01px) {
+            width: calc(100% / 2 - 16px / 2);
+        }
+    }
+
+    &__badge-title {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 1.16666;
+        @media(min-width: $sm) {
+            font-size: 28px;
+        }
+    }
+
+    &__badge-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    &__button {
+        order: 4;
+        @media(max-width: $sm - 0.01px) {
+            max-width: 376px;
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            margin-bottom: 60px;
+            order: 3;
+        }
+    }
+
+    &__image {
+        height: 100%;
+        left: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        @media(max-width: $sm - 0.01px) {
+            display: none;
+        }
+
+        img,
+        picture {
+            display: block;
+            height: 100%;
+        }
+    }
+}

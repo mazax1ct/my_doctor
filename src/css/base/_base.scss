@@ -54,6 +54,15 @@ html {
         }
     }
 
+    &--main_page {
+        .main-banner {
+            margin-top: -15px;
+            @media(min-width: $sm) {
+                margin-top: -25px;
+            }
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: 95px;
@@ -191,6 +200,15 @@ h3 {
 a {
     color: var(--text_color);
     transition: color 0.3s;
+
+    &:not([class]) {
+        @include hover {
+            color: var(--blue_7);
+        }
+        @include active {
+            color: var(--blue_8);
+        }
+    }
 }
 
 img {
@@ -433,5 +451,14 @@ ul {
         @media(min-width: $hd) {
             width: 384px;
         }
+    }
+}
+
+.accent-text {
+    color: var(--blue_1);
+    font-size: 20px;
+    font-weight: 900;
+    @media(min-width: $sm) {
+        font-size: 24px;
     }
 }

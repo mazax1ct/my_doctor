@@ -104,6 +104,25 @@ $(document).ready(function () {
     }
   });
 
+  if($('.js-main-banner-slider').length) {
+    $('.js-main-banner-slider').slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: false,
+      arrows: false,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      responsive: [
+       {
+         breakpoint: 1279,
+         settings: {
+           arrows: true
+         }
+       }
+     ]
+    });
+  }
+
   $('.js-articles-slider').each(function() {
     var arrowsContainer = $(this).closest('.articles-slider').find('.articles-slider__arrows');
     var arrowsContainer2 = $(this).closest('.articles-slider');
@@ -384,6 +403,40 @@ $(document).ready(function () {
          settings: {
            slidesToShow: 3,
            slidesToScroll: 3
+         }
+       }
+     ]
+    });
+  });
+
+  $('.js-programs-slider').each(function() {
+    var arrowsContainer = $(this).closest('.programs-slider').find('.programs-slider__arrows');
+    var dostContainer = $(this).closest('.programs-slider').find('.programs-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      variableWidth: true,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1279,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 3,
+           variableWidth: false
          }
        }
      ]

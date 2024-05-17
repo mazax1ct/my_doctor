@@ -96,4 +96,23 @@
             background-color: var(--white_1);
         }
     }
+
+    &__body-title {
+        color: var(--blue_1);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+        padding: 16px;
+        @media(min-width: $sm) {
+            padding: 16px 24px;
+        }
+        @media(min-width: $hd) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--blue_6);
+        }
+    }
 }

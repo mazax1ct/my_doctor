@@ -7,9 +7,7 @@
     }
 
     &--bg {
-        @media(min-width: $sm) {
-            background-color: #F1FAFF;
-        }
+        background-color: var(--light_blue_3);
     }
 
     h2 {
@@ -22,6 +20,7 @@
         @media(min-width: $hd) {
             font-size: 45px;
             line-height: 1.22222;
+            margin-bottom: 48px;
         }
     }
 }

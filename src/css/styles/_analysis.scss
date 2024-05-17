@@ -17,15 +17,69 @@
         }
     }
 
+    &--type_2 {
+        &:not(:last-child) {
+            margin-bottom: 0;
+
+            .analysis__inner {
+                padding-bottom: 16px;
+            }
+        }
+
+        .analysis__inner {
+            padding: 16px;
+            @media(min-width: $sm) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            @media(min-width: $hd) {
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+
+        .analysis__row--big {
+            display: flex;
+            gap: 0 16px;
+            flex-wrap: wrap;
+            @media(min-width: $sm) {
+                gap: 24px;
+            }
+
+            &:not(:last-child) {
+                @media(min-width: $sm) {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .analysis__code {
+                @media(max-width: $sm - 0.01px) {
+                    width: 100%;
+                }
+            }
+
+            .analysis__title {
+                @media(max-width: $sm - 0.01px) {
+                    max-width: calc(100% - 110px);
+                }
+            }
+        }
+    }
+
     &__row {
         align-items: baseline;
         font-size: 14px;
         line-height: 1.21428;
-        margin-bottom: 10px;
         @media(min-width: $sm) {
             display: flex;
             gap: 24px;
-            margin-bottom: 16px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+            @media(min-width: $sm) {
+                margin-bottom: 16px;
+            }
         }
 
         &--big {
@@ -33,9 +87,14 @@
             font-weight: 500;
             line-height: 1.25;
             @media(min-width: $sm) {
-                margin-bottom: 18px;
                 position: relative;
                 z-index: 1;
+            }
+
+            &:not(:last-child) {
+                @media(min-width: $sm) {
+                    margin-bottom: 18px;
+                }
             }
 
             .analysis__code {
@@ -88,6 +147,10 @@
         }
     }
 
+    &__qnt {
+        margin-left: auto;
+    }
+
     &__time {
         font-size: 14px;
         font-weight: 600;
@@ -103,9 +166,12 @@
     }
 
     &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         @media(min-width: $sm) {
             align-items: center;
-            display: flex;
+            flex-direction: row;
             gap: 24px;
         }
 

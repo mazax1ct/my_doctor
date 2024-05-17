@@ -1,0 +1,122 @@
+.program-card {
+    background: var(--white_2);
+    box-shadow: -22px 26px 14px rgba(13, 110, 253, 0.01), -12px 15px 11px rgba(13, 110, 253, 0.04), -6px 6px 8px rgba(13, 110, 253, 0.06);
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+    &__image {
+        border-radius: 17px 17px 0 0;
+        display: block;
+        height: 280px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 16px 20px 32px;
+    }
+
+    &__title {
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        transition: color 0.3s;
+    }
+
+    &__text {
+        color: var(--blue_4);
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    &__bottom {
+        border-top: 1px solid var(--blue_6);
+        display: block;
+        margin-top: auto;
+        padding-top: 16px;
+    }
+
+    &__price-block {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 16px;
+    }
+
+    &__price {
+        color: var(--blue_1);
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    &__code {
+        font-size: 14px;
+    }
+
+    &__button {
+        align-items: center;
+        border: 1px solid var(--blue_6);
+        border-radius: 11px;
+        background-color: var(--white_2);
+        color: var(--blue_3);
+        display: inline-flex;
+        font-size: 15px;
+        font-weight: 500;
+        justify-content: center;
+        line-height: 1.5;
+        min-height: 45px;
+        padding: 0 8.5px;
+        text-decoration: none;
+        text-align: center;
+        transition: all 0.3s;
+        width: 100%;
+    }
+}
+
+a.program-card {
+    @include hover {
+        img {
+            transform: scale(1.02);
+        }
+
+        .program-card__title {
+            color: var(--blue_2);
+        }
+
+        .program-card__button {
+            background-color: var(--light_blue_1);
+            border-color: var(--blue_6);
+            color: var(--blue_3);
+        }
+    }
+    @include active {
+        .program-card__title {
+            color: var(--blue_1);
+        }
+
+        .program-card__button {
+            background-color: var(--light_blue_2);
+            border-color: var(--blue_6);
+            color: var(--blue_3);
+        }
+    }
+}

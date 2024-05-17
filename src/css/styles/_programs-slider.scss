@@ -1,0 +1,86 @@
+.programs-slider {
+    margin-left: calc(0.01px - var(--container_padding));
+    margin-right: calc(0.01px - var(--container_padding));
+    padding-right: var(--container_padding);
+    padding-left: var(--container_padding);
+    position: relative;
+    z-index: 1;
+
+    &__title-block {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            margin-bottom: 32px;
+        }
+
+        .download-link {
+            margin-left: auto;
+            margin-right: auto;
+            flex-grow: 1;
+            max-width: 486px;
+            @media(max-width: $sm - 0.01px) {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 25px;
+        margin-left: auto;
+    }
+
+    &__slider {
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        @media(min-width: $hd) {
+            margin-right: 0;
+        }
+    }
+
+    .slick-slide {
+        padding-left: var(--container_padding);
+        padding-bottom: 24px;
+        width: 316px;
+        @media(min-width: $hd) {
+            width: auto;
+        }
+
+        .program-card {
+            height: 100%;
+        }
+    }
+
+    &__bottom {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+        @media(min-width: $sm) {
+            margin-top: 12px;
+        }
+
+        .download-link {
+            width: 100%;
+            @media(min-width: $sm) {
+                display: none;
+            }
+        }
+    }
+
+    &__dots {
+        width: 100%;
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 24px;
+        }
+    }
+}
