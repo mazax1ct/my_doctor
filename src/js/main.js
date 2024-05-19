@@ -377,6 +377,40 @@ $(document).ready(function () {
     });
   });
 
+  $('.js-doctors-slider-2').each(function() {
+    var arrowsContainer = $(this).closest('.doctors-slider').find('.doctors-slider__arrows');
+    var dostContainer = $(this).closest('.doctors-slider').find('.doctors-slider__dots');
+
+    $(this).slick({
+      infinite: true,
+      mobileFirst: true,
+      dots: true,
+      appendDots: dostContainer,
+      arrows: true,
+      prevArrow: '<button class="slick-prev" type="button" title="Назад"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg></button>',
+      nextArrow: '<button class="slick-next" type="button" title="Вперед"><svg aria-hidden="true"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg></button>',
+      appendArrows: arrowsContainer,
+      variableWidth: true,
+      responsive: [
+       {
+         breakpoint: 767,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 2
+         }
+       },
+       {
+         breakpoint: 1279,
+         settings: {
+           slidesToShow: 4,
+           slidesToScroll: 4,
+           variableWidth: false
+         }
+       }
+     ]
+    });
+  });
+
   $('.js-licenses-slider').each(function() {
     var arrowsContainer = $(this).closest('.licenses-slider').find('.licenses-slider__arrows');
     var dostContainer = $(this).closest('.licenses-slider').find('.licenses-slider__dots');
@@ -441,6 +475,12 @@ $(document).ready(function () {
        }
      ]
     });
+  });
+
+  //удаление клонов фенси в слайдерах
+  $('.slick-cloned [data-fancybox]').each(function() {
+    var attr = $(this).attr('data-fancybox');
+    $(this).removeAttr('data-fancybox').attr('data-fancybox-trigger', attr);
   });
 });
 

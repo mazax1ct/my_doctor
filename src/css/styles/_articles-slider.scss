@@ -66,16 +66,23 @@
     &__bottom {
         align-items: center;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         flex-wrap: wrap;
+        gap: 24px;
         position: relative;
         z-index: 1;
         @media(min-width: $sm) {
             margin-top: 12px;
         }
 
+        .button {
+            @media(max-width: $sm - 0.01px) {
+                width: 100%;
+            }
+        }
+
         .more-link {
-            margin-left: auto;
+            //margin-left: auto;
             position: relative;
             z-index: 2;
 
@@ -87,15 +94,18 @@
 
     &__dots {
         width: 100%;
-        @media(max-width: $sm - 0.01px) {
-            margin-bottom: 32px;
-        }
         @media(min-width: $sm) {
             left: 0;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
+        }
+
+        .slick-dots {
+            @media(min-width: $sm) and (max-width: $hd - 0.01px) {
+                justify-content: flex-start;
+            }
         }
     }
 }

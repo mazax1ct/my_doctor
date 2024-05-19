@@ -23,4 +23,16 @@
             margin-bottom: 48px;
         }
     }
+
+    .articles-slider__title-block {
+        @media(min-width: $hd) {
+            margin-bottom: 48px;
+        }
+    }
+
+    .articles-slider__title {
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+        }
+    }
 }

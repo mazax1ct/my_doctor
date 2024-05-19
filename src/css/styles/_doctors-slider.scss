@@ -15,10 +15,46 @@
         @media(min-width: $hd) {
             margin-bottom: 32px;
         }
+
+        &--type_2 {
+            @media(max-width: $sm - 0.01px) {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+            @media(min-width: $sm) {
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+
+            .doctors-slider__title {
+                font-size: 22px;
+                line-height: 1.22727;
+                max-width: 285px;
+            }
+        }
     }
 
     &__title {
-        margin: 0;
+        margin: 0 !important;
+    }
+
+    &__note {
+        align-items: center;
+        display: flex;
+        gap: 24px;
+        line-height: 1.2;
+        @media(min-width: $sm) and (max-width: $md - 0.01px) {
+            width: calc(100% - 285px - 16px);
+        }
+        @media(min-width: $md) {
+            max-width: 640px;
+            width: calc(100% - 285px - 16px - 16px - 85px);
+        }
+
+        img {
+            min-width: 56px;
+            width: 56px;
+        }
     }
 
     &__arrows {
@@ -29,6 +65,28 @@
 
     &__slider {
         margin-left: calc(0.01px - var(--container_padding));
+
+        &--type_2 {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+            @media(min-width: $hd) {
+                margin-right: 0;
+            }
+
+            .slick-slide {
+                margin-left: 0 !important;
+                padding-left: var(--container_padding);
+                padding-bottom: 24px;
+                width: 316px;
+                @media(min-width: $hd) {
+                    width: auto;
+                }
+
+                .doctor-card {
+                    height: 100%;
+                }
+            }
+        }
     }
 
     .slick-slide {
@@ -63,12 +121,18 @@
         @media(max-width: $sm - 0.01px) {
             margin-bottom: 32px;
         }
-        @media(min-width: $hd) {
+        @media(min-width: $sm) {
             left: 0;
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
+        }
+
+        .slick-dots {
+            @media(min-width: $sm) and (max-width: $hd - 0.01px) {
+                justify-content: flex-start;
+            }
         }
     }
 }
