@@ -503,7 +503,6 @@
                 </div>
             </div>
 
-
             <br>
 
             <label class="file">
@@ -657,51 +656,6 @@
     //= template/common/popups.html
 
     //= template/common/scripts.html
-
-    <script>
-        var dp = new AirDatepicker('.js-date-mask', {
-            //visible: true,
-            prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg>',
-            nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg>',
-            onShow(isFinished) {
-                $('.js-date-mask').closest('.input-group').addClass('is-filled')
-            },
-            onHide(isFinished) {
-                if ($('.js-date-mask').val() == '') {
-                    $('.js-date-mask').closest('.input-group').removeClass('is-filled')
-                }
-            }
-        });
-
-        $(document).on('click', '.input-group--datepicker .js-input-group__clear', function() {
-            //dp.clear();
-            return false
-        });
-
-        var dpr = new AirDatepicker('.js-date-mask-range', {
-            range: true,
-            multipleDatesSeparator: ' - ',
-            //inline: true,
-            //visible: true,
-            prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg>',
-            nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg>',
-            onShow(isFinished) {
-                $('.js-date-mask-range').closest('.input-group').addClass('is-filled')
-            },
-            onHide(isFinished) {
-                if ($('.js-date-mask-range').val() == '') {
-                    $('.js-date-mask-range').closest('.input-group').removeClass('is-filled')
-                }
-            }
-        });
-
-        $(document).on('click', '.input-group--datepicker .js-input-group__clear', function() {
-            //dpr.clear();
-            //dpr.hide();
-            return false
-        });
-    </script>
-
 </body>
 
 </html>
