@@ -1,0 +1,44 @@
+.to-top {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: 147px;
+    display: none;
+    height: 45px;
+    justify-content: center;
+    left: auto;
+    position: absolute;
+    right: 20px;
+    top: auto;
+    width: 45px;
+    z-index: 2;
+    @media(min-width: $sm) {
+        bottom: 114px;
+        right: 24px;
+    }
+    @media(min-width: $hd) {
+        bottom: 96px;
+        right: 40px;
+        z-index: 10;
+    }
+    @include hover {
+        svg {
+            fill: var(--blue_7);
+        }
+    }
+    @include active {
+        svg {
+            fill: var(--blue_8);
+        }
+    }
+
+    &.is-active {
+        display: flex;
+    }
+
+    svg {
+        fill: var(--blue_1);
+        height: 45px;
+        width: 45px;
+    }
+}

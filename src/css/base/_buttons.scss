@@ -36,7 +36,7 @@
         &:not(:disabled),
         &:not([data-disabled]) {
             @include hover {
-                background-color: var(--red_3);
+                background-color: var(--red_4);
                 color: var(--white_1);
             }
             @include active {
@@ -58,7 +58,7 @@
     }
 
     &--blue {
-        background-color: var(--blue_2);
+        background-color: var(--blue_10);
         color: var(--white_1);
         gap: 16px;
 
@@ -72,11 +72,11 @@
         &:not(:disabled),
         &:not([data-disabled]) {
             @include hover {
-                background-color: var(--blue_7);
+                background-color: var(--blue_11);
                 color: var(--white_1);
             }
             @include active {
-                background-color: var(--blue_8);
+                background-color: var(--blue_11);
                 color: var(--white_1);
             }
         }

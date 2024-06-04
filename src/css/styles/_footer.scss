@@ -25,6 +25,7 @@
     }
 
     &__logo {
+        display: block;
         order: 1;
         width: 200px;
         @media(max-width: $hd - 0.01px) {
@@ -35,8 +36,7 @@
             display: block;
         }
     }
-
-    &__to-top {
+    /*&__to-top {
         display: block;
         height: 45px;
         order: 2;
@@ -67,8 +67,7 @@
             height: 45px;
             width: 45px;
         }
-    }
-
+    }*/
     &__buttons {
         align-items: center;
         display: flex;
@@ -95,6 +94,15 @@
         .footer__button {
             @media(min-width: $hd) {
                 max-width: 180px;
+            }
+
+            &.button--light_blue {
+                @include hover {
+                    background-color: var(--blue_6);
+                }
+                @include active {
+                    background-color: var(--blue_6);
+                }
             }
         }
 
@@ -165,10 +173,10 @@
         margin-bottom: 32px;
         text-decoration: none;
         @include hover {
-            color: var(--blue_7);
+            color: var(--blue_10);
         }
         @include active {
-            color: var(--blue_8);
+            color: var(--blue_10);
         }
 
         svg {
@@ -195,12 +203,33 @@
     }
 
     &__menu-link {
+        position: relative;
         text-decoration: none;
+        z-index: 1;
         @include hover {
             color: var(--blue_7);
+
+            &::after {
+                opacity: 1;
+            }
         }
         @include active {
             color: var(--blue_8);
+        }
+
+        &::after {
+            background-color: var(--light_blue_1);
+            border-radius: 8px;
+            content: '';
+            height: calc(100% + 16px);
+            left: -8px;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transition: opacity 0.3s;
+            transform: translateY(-50%);
+            width: calc(100% + 16px);
+            z-index: -1;
         }
     }
 
@@ -352,14 +381,14 @@
         &--vk {
             background-color: var(--blue_9);
             @include hover {
-                background-color: var(--blue_1);
+                background-color: var(--blue_11);
             }
         }
 
         &--od {
             background-color: var(--orange_1);
             @include hover {
-                background-color: var(--orange_2);
+                background-color: #ca6105;
             }
         }
 

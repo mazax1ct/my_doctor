@@ -99,7 +99,8 @@
 .slick-next svg {
   fill: var(--blue_1);
   height: 30px;
-  transition: fill 0.3s;
+  transform: scale(1);
+  transition: fill 0.3s, transform 0.3s;
   width: 30px;
 }
 
@@ -116,6 +117,7 @@
   .slick-prev:hover svg,
   .slick-next:hover svg {
     fill: var(--blue_7);
+    transform: scale(1.2);
   }
 }
 

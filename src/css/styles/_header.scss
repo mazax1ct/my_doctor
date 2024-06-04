@@ -7,12 +7,18 @@
     z-index: 10;
 
     &.is-out {
-        transform: translateY(-100%);
+        //transform: translateY(-100%);
     }
 
     &.is-scrolled {
         position: fixed;
         transition: transform 0.2s;
+
+        .main-menu__link {
+            @media(min-width: $hd) {
+                height: 50px;
+            }
+        }
     }
 
     &.menu-is-open {
@@ -38,6 +44,10 @@
 
     &__top {
         border-bottom: 1px solid var(--grey_2);
+        @media(min-width: $hd) {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     &__top-inner {
@@ -247,20 +257,52 @@
             display: flex;
             height: 80px;
             padding: 0;
+            position: relative;
+            transition: height 0.3s;
+            z-index: 1;
         }
 
         &:not(.is-active) {
             @include hover {
-                color: var(--blue_7);
+                color: var(--blue_1);
+                font-weight: 700;
+
+                &::after {
+                    @media(min-width: $hd) {
+                        background-color: var(--blue_1);
+                        bottom: 0;
+                        content: '';
+                        height: 2px;
+                        left: 0;
+                        position: absolute;
+                        top: auto;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                }
             }
             @include active {
-                color: var(--blue_8);
+                color: var(--blue_1);
             }
         }
 
         &.is-active {
             color: var(--blue_1);
             font-weight: 700;
+
+            &::after {
+                @media(min-width: $hd) {
+                    background-color: var(--blue_1);
+                    bottom: 0;
+                    content: '';
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    top: auto;
+                    width: 100%;
+                    z-index: 1;
+                }
+            }
         }
     }
 

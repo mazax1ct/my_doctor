@@ -234,6 +234,12 @@
         </div>
 
         <div class="float-block compensate-for-scrollbar">
+            <a class="js-to-top to-top" href="#" title="Наверх">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#arrow_up" />
+                </svg>
+            </a>
+        
             <div class="float-block__note">
                 <div class="container">ИМЕЮТСЯ ПРОТИВОПОКАЗАНИЯ, НЕОБХОДИМО<br> ПРОКОНСУЛЬТИРОВАТЬСЯ СО СПЕЦИАЛИСТОМ</div>
             </div>
@@ -282,7 +288,7 @@
         <div class="footer__top">
             <div class="container">
                 <div class="footer__top-top">
-                    <div class="footer__logo"><img src="images/logo.png" srcset="images/logo@2x.png" alt="Мой доктор"></div>
+                    <a class="footer__logo" href="main.html"><img src="images/logo.png" srcset="images/logo@2x.png" alt="Мой доктор"></a>
     
                     <div class="footer__buttons">
                         <button class="footer__button button button--red" type="button" data-fancybox="record_2" data-src="#record">Запись на прием</button>
@@ -298,12 +304,6 @@
     
                         <button class="footer__button button button--light_blue" type="button" data-fancybox="review" data-src="#review">Оставить отзыв</button>
                     </div>
-    
-                    <a class="footer__to-top" href="#" title="Наверх">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#arrow_up" />
-                        </svg>
-                    </a>
                 </div>
     
                 <div class="footer__blocks">
@@ -1230,7 +1230,7 @@
                 <label class="file">
                     <input id="resume_file" type="file" name="resume_file">
                     <span class="file__inner">
-                        <span>Прикрепить файл резюме<span class="required">*</span></span>
+                        <span>Прикрепить файл резюме</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#attach_icon" />
                         </svg>
@@ -1679,89 +1679,91 @@
     
                 <span class="checkboxes">
                     <label class="checkbox">
-                        <input type="radio" value="Y" name="relative">
+                        <input type="radio" value="Y" name="same_patient" checked>
                         <span class="checkbox__icon"></span>
                         <span>Да</span>
                     </label>
     
                     <label class="checkbox">
-                        <input type="radio" value="N" name="relative">
+                        <input type="radio" value="N" name="same_patient">
                         <span class="checkbox__icon"></span>
                         <span>Нет</span>
                     </label>
                 </span>
             </p>
     
-            <p class="popup__subtitle">Пациент:<span class="required">*</span></p>
+            <div id="same_patient" class="same-patient">
+                <p class="popup__subtitle">Пациент:<span class="required">*</span></p>
     
-            <div class="form-row">
-                <div>
-                    <div class="input-group input-group--simple">
-                        <div class="input-group__inner">
-                            <div class="input-group__input-container">
-                                <input id="tax_fio_2" class="js-input-group__input input-group__input" type="text" name="tax_fio_2" placeholder="ФИО пациента">
-                                <label class="input-group__label" for="tax_fio_2">ФИО пациента<span class="required">*</span></label>
+                <div class="form-row">
+                    <div>
+                        <div class="input-group input-group--simple">
+                            <div class="input-group__inner">
+                                <div class="input-group__input-container">
+                                    <input id="tax_fio_2" class="js-input-group__input input-group__input" type="text" name="tax_fio_2" placeholder="ФИО пациента">
+                                    <label class="input-group__label" for="tax_fio_2">ФИО пациента<span class="required">*</span></label>
+                                </div>
+                                <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clear_icon" />
+                                    </svg>
+                                </button>
                             </div>
-                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#clear_icon" />
-                                </svg>
-                            </button>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <div class="input-group input-group--simple input-group--datepicker">
+                            <div class="input-group__inner">
+                                <div class="input-group__input-container">
+                                    <input id="tax_birth_2" class="js-input-group__input js-date-mask input-group__input" type="text" name="tax_birth_2" placeholder="дд.мм.гггг">
+                                    <label class="input-group__label" for="tax_birth_2">Дата рождения<span class="required">*</span></label>
+                                    <svg class="input-group__calendar-icon" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#calendar_icon" />
+                                    </svg>
+                                </div>
+                                <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clear_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="wide">
+                        <div class="select-wrapper">
+                            <select class="js-select" data-placeholder="Степень родства с пациентом" data-minimum-results-for-search="Infinity">
+                                <option></option>
+                                <option value="1">1 степень</option>
+                                <option value="2">2 степень</option>
+                                <option value="3">3 степень</option>
+                            </select>
                         </div>
                     </div>
                 </div>
     
-                <div>
-                    <div class="input-group input-group--simple input-group--datepicker">
-                        <div class="input-group__inner">
-                            <div class="input-group__input-container">
-                                <input id="tax_birth_2" class="js-input-group__input js-date-mask input-group__input" type="text" name="tax_birth_2" placeholder="дд.мм.гггг">
-                                <label class="input-group__label" for="tax_birth_2">Дата рождения<span class="required">*</span></label>
-                                <svg class="input-group__calendar-icon" aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#calendar_icon" />
-                                </svg>
-                            </div>
-                            <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#clear_icon" />
-                                </svg>
-                            </button>
-                        </div>
+                <div class="file-container">
+                    <label class="file">
+                        <input id="tax_file" type="file" name="tax_file">
+                        <span class="file__inner">
+                            <span>Прикрепить документ о родстве<span class="required">*</span></span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#attach_icon" />
+                            </svg>
+                        </span>
+                    </label>
+    
+                    <div class="file-attach">
+                        <p class="file-attach__title">Прикрепленный файл:</p>
+                        <p class="file-attach__value">Файл не выбран...</p>
+    
+                        <button class="js-file-attach__clear file-attach__clear" type="button" title="Очистить">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clear_icon" />
+                            </svg>
+                        </button>
                     </div>
-                </div>
-    
-                <div class="wide">
-                    <div class="select-wrapper">
-                        <select class="js-select" data-placeholder="Степень родства с пациентом" data-minimum-results-for-search="Infinity">
-                            <option></option>
-                            <option value="1">1 степень</option>
-                            <option value="2">2 степень</option>
-                            <option value="3">3 степень</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="file-container">
-                <label class="file">
-                    <input id="tax_file" type="file" name="tax_file">
-                    <span class="file__inner">
-                        <span>Прикрепить документ о родстве<span class="required">*</span></span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#attach_icon" />
-                        </svg>
-                    </span>
-                </label>
-    
-                <div class="file-attach">
-                    <p class="file-attach__title">Прикрепленный файл:</p>
-                    <p class="file-attach__value">Файл не выбран...</p>
-    
-                    <button class="js-file-attach__clear file-attach__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
                 </div>
             </div>
     
@@ -2018,6 +2020,8 @@
     <script src="js/select2.full.min.js"></script>
     <script src="js/select2-addon.js"></script>
     <script src="js/select2-searchInputPlaceholder.js"></script>
+    
+    <script src="js/onepageNav.js"></script>
     
     <script src="js/main.js"></script>
 </body>

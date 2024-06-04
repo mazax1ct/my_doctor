@@ -61,4 +61,13 @@
             width: 100%;
         }
     }
+
+    .contacts-link {
+        @include hover {
+            background-color: var(--blue_6);
+        }
+        @include active {
+            background-color: var(--blue_6);
+        }
+    }
 }

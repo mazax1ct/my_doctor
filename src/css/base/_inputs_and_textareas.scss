@@ -193,6 +193,18 @@
     }
 
     &--datepicker {
+        &.is-open {
+            .input-group__input {
+                border-radius: 7px 7px 0 0;
+            }
+
+            .input-group__label {
+                color: var(--blue_4);
+                font-size: 12px;
+                top: 8px;
+            }
+        }
+
         .input-group__input {
             &:focus ~ .input-group__calendar-icon {
                 fill: var(--blue_1);

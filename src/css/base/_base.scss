@@ -13,7 +13,7 @@ html {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 24px;
+    scroll-padding-top: 150px;
 }
 
 .page {
@@ -95,7 +95,7 @@ html {
         @media(min-width: $hd) {
             margin-bottom: 0;
             position: sticky;
-            top: 24px;
+            top: 150px;
             width: 180px;
         }
     }
@@ -198,7 +198,7 @@ h3 {
 }
 
 a {
-    color: var(--text_color);
+    color: var(--blue_3);
     transition: color 0.3s;
 
     &:not([class]) {
@@ -248,10 +248,10 @@ p {
         &:not([class]) {
             font-weight: 600;
             @include hover {
-                color: var(--blue_7);
+                color: var(--blue_10);
             }
             @include active {
-                color: var(--blue_8);
+                color: var(--blue_10);
             }
         }
     }

@@ -153,6 +153,8 @@
 
     &__button {
         order: 4;
+        padding-left: 24px;
+        padding-right: 24px;
         @media(max-width: $sm - 0.01px) {
             max-width: 376px;
             width: 100%;

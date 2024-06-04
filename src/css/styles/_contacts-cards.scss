@@ -20,7 +20,11 @@
         background-color: var(--light_blue_1);
 
         img {
-            transform: scale(1.02);
+            transform: scale(1.2);
+        }
+
+        .contacts-card__address {
+            color: var(--blue_11);
         }
     }
 
@@ -57,10 +61,12 @@
 
     &__address {
         align-items: center;
+        color: var(--blue_10);
         display: flex;
         gap: 10px;
         font-weight: 500;
         line-height: 1.25;
+        transition: color 0.3s;
 
         &:not(:last-child) {
             margin-bottom: 20px;

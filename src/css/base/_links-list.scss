@@ -1,12 +1,14 @@
 .links-list {
     border-radius: 11px;
     border: 1px solid var(--blue_6);
+    overflow: hidden;
 }
 
 .list-link {
     display: block;
     padding-left: 16px;
     padding-right: 16px;
+    transition: background-color 0.3s;
     text-decoration: none;
     @media(min-width: $sm) {
         padding-left: 48px;
@@ -19,8 +21,10 @@
         }
     }
     @include hover {
+        background-color: var(--light_blue_1);
+
         .list-link__link {
-            color: var(--red_3);
+            color: var(--red_4);
         }
     }
     @include active {

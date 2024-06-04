@@ -95,6 +95,10 @@
         .accordion__toggler {
             background-color: var(--white_1);
         }
+
+        .accordion__toggler--blue {
+            background-color: var(--light_blue_1);
+        }
     }
 
     &__body-title {

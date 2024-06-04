@@ -2,22 +2,11 @@
     background: #FEFEFE;
     border: 1px solid var(--blue_6);
     border-radius: 17px;
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     padding: 32px 16px;
     @media(min-width: $sm) {
         padding: 40px 30px;
-    }
-    @include hover {
-        .review-card__show-answer {
-            color: var(--red_3);
-        }
-    }
-    @include active {
-        .review-card__show-answer {
-            color: var(--red_4);
-        }
     }
 
     &__doctor {
@@ -39,9 +28,24 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 1.25;
+        text-decoration: none;
         @media(min-width: $md) {
             font-size: 18px;
             line-height: 1.22222;
+        }
+    }
+
+    &__inner {
+        cursor: pointer;
+        @include hover {
+            .review-card__show-answer {
+                color: var(--red_4);
+            }
+        }
+        @include active {
+            .review-card__show-answer {
+                color: var(--red_4);
+            }
         }
     }
 
@@ -50,11 +54,10 @@
         font-size: 16px;
         line-height: 1.25;
         margin-bottom: 24px;
-        position: relative;
-        padding-right: 8px;
-        z-index: 1;
-
-        &::after {
+        //position: relative;
+        //padding-right: 8px;
+        //z-index: 1;
+        /*&::after {
             background-image: url("data:image/svg+xml,%3Csvg width='9' height='178' viewBox='0 0 9 178' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.85355 0.646447C4.65829 0.451184 4.34171 0.451184 4.14645 0.646447L0.964466 3.82843C0.769204 4.02369 0.769204 4.34027 0.964466 4.53553C1.15973 4.7308 1.47631 4.7308 1.67157 4.53553L4.5 1.70711L7.32843 4.53553C7.52369 4.7308 7.84027 4.7308 8.03553 4.53553C8.2308 4.34027 8.2308 4.02369 8.03553 3.82843L4.85355 0.646447ZM4.14645 177.354C4.34172 177.549 4.6583 177.549 4.85356 177.354L8.03554 174.172C8.2308 173.976 8.2308 173.66 8.03554 173.464C7.84028 173.269 7.5237 173.269 7.32843 173.464L4.50001 176.293L1.67158 173.464C1.47632 173.269 1.15974 173.269 0.964474 173.464C0.769211 173.66 0.769211 173.976 0.964474 174.172L4.14645 177.354ZM4 1L4.00001 177L5.00001 177L5 1L4 1Z' fill='%230D6EFD' fill-opacity='0.3'/%3E%3C/svg%3E%0A");
             background-position: 50% 0;
             background-repeat: no-repeat;
@@ -67,7 +70,7 @@
             top: 0;
             width: 9px;
             z-index: 1;
-        }
+        }*/
     }
 
     &__more {
@@ -118,5 +121,12 @@
         &:not(:last-child) {
             margin-bottom: 0;
         }
+    }
+}
+
+a.review-card__doctor-name {
+    color: var(--blue_10);
+    @include hover {
+        color: var(--blue_11);
     }
 }

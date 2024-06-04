@@ -1,21 +1,24 @@
 //отслеживание скролла для шапки
 var header = $('.header'),
+    toTop = $('.js-to-top'),
     scrollPrev = 0;
 
 var resize_scroll = function(e) {
   var scrolled = $(window).scrollTop();
 
-  if (scrolled > $('.header').height() * 2) {
+  if (scrolled > $('.header').height() * 0.5) {
 		header.addClass('is-scrolled');
+    toTop.addClass('is-active');
 	} else {
 		header.removeClass('is-scrolled');
+    toTop.removeClass('is-active');
 	}
 
-  if ( scrolled > $('.header').height() && scrolled > scrollPrev ) {
+  /*if ( scrolled > $('.header').height() && scrolled > scrollPrev ) {
 		header.addClass('is-out');
 	} else {
 		header.removeClass('is-out');
-	}
+	}*/
 
 	scrollPrev = scrolled;
 };
@@ -23,6 +26,16 @@ var resize_scroll = function(e) {
 $(document).ready(function() {
   //запуск функции навешивания класса на шапку
   resize_scroll();
+
+  //левое меню
+  $('.left-menu').find('.left-menu__item:first a').addClass('is-active');
+
+  $('.left-menu__link').onePgaeNav({
+    wrapper: '.left-menu',
+    activeClass: 'is-active',
+    navStop: 150,
+	  navStart: 160
+	});
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -622,10 +635,26 @@ $(document).on('click', '.js-tabs-menu__button', function () {
 
 //datepicker
 $(".js-date-mask").each(function(index, element) {
-  console.log(element);
-  new AirDatepicker(element, {
+  var parent = element.closest('.input-group');
+  var clear = $(parent).find('.js-input-group__clear');
+
+  let dp = new AirDatepicker(element, {
     prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg>',
-    nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg>'
+    nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg>',
+    container: parent,
+    onShow: ({date}) => {
+      parent.classList.add('is-open');
+    },
+    onHide: ({date}) => {
+      parent.classList.remove('is-open');
+    },
+    onSelect: ({date}) => {
+      parent.classList.add('is-filled');
+    }
+  });
+
+  $(clear).click(function() {
+    dp.clear();
   });
 });
 
@@ -636,4 +665,13 @@ $(".js-date-mask-range").each(function(index, element) {
     prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg>',
     nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg>'
   });
+});
+
+//блок налогоплательщика в попапе запроса налогового вычета
+$(document).on('change', 'input[name="same_patient"]', function () {
+  if($(this).val() == 'N') {
+    $('#same_patient').show();
+  } else {
+    $('#same_patient').hide();
+  }
 });
