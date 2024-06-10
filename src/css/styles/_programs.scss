@@ -69,4 +69,10 @@
             line-height: 1.22727;
         }
     }
+
+    .button--white {
+        @include hover {
+            background-color: var(--blue_6);
+        }
+    }
 }

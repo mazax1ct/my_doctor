@@ -16,6 +16,9 @@
         bottom: 114px;
         right: 24px;
     }
+    @media(max-width: $hd - 0.01px) {
+        display: none !important;
+    }
     @media(min-width: $hd) {
         bottom: 96px;
         right: 40px;

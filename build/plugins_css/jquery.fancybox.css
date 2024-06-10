@@ -412,10 +412,10 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-slide--html .fancybox-close-small {
-  color: currentColor;
+  /*color: currentColor;
   padding: 10px;
   right: 0;
-  top: 0;
+  top: 0;*/
 }
 
 .fancybox-slide--image.fancybox-is-scaling .fancybox-content {
