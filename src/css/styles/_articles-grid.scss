@@ -1,14 +1,21 @@
 .articles-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
     @media(min-width: $sm) {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 24px;
     }
 
     &--type_2 {
         @media(min-width: $md) {
             grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+
+    .article-card {
+        &:not(:last-child) {
+            @media(max-width: $sm - 0.01px) {
+                margin-bottom: 24px;
+            }
         }
     }
 }

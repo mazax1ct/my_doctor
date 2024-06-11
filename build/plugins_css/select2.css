@@ -246,6 +246,7 @@
   transform: translateY(-50%);
   right: 16px;
   width: 20px;
+  z-index: 1052
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow b {
