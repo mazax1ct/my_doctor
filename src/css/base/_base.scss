@@ -26,6 +26,8 @@ html {
     font-weight: 400;
     line-height: 1.7;
     overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
 
     &.is-overflow {
         overflow: hidden;
