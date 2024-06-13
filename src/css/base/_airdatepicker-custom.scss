@@ -3,7 +3,10 @@
     --adp-border-radius: 7px;
     --adp-day-name-color: var(--grey_7);
     border: none;
-    --adp-width: 340px;
+    --adp-width: 288px;
+    @media(min-width: 375px) {
+        --adp-width: 340px;
+    }
     box-shadow: -22px 26px 14px rgba(13, 110, 253, 0.01), -12px 15px 11px rgba(13, 110, 253, 0.04), -6px 6px 8px rgba(13, 110, 253, 0.06), -1px 2px 5px rgba(13, 110, 253, 0.07);
     --adp-nav-action-size: 24px;
     --adp-cell-background-color-selected: var(--blue_1);
@@ -87,8 +90,12 @@
     font-size: 14px;
     flex: 0;
     height: 36px;
-    min-width: 44px;
-    width: 44px;
+    min-width: 36px;
+    width: 36px;
+    @media(min-width: 375px) {
+        min-width: 44px;
+        width: 44px;
+    }
 
     &.-weekend- {
         color: var(--red_1);

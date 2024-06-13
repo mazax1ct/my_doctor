@@ -122,9 +122,9 @@
         border-bottom: 1px solid var(--grey_3);
         display: flex;
         font-size: 13px;
+        line-height: 1;
         min-height: 42px;
-        padding: 8px;
-        white-space: nowrap;
+        padding: 8px 0 8px 8px;
     }
 
     &__list {

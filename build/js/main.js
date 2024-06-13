@@ -642,6 +642,7 @@ $(".js-date-mask").each(function(index, element) {
     prevHtml: '<svg title="Назад"><use xlink:href="images/sprite.svg#circle_arrow_left" /></svg>',
     nextHtml: '<svg title="Вперёд"><use xlink:href="images/sprite.svg#circle_arrow_right" /></svg>',
     container: parent,
+    //inline: true,
     onShow: ({date}) => {
       parent.classList.add('is-open');
     },
