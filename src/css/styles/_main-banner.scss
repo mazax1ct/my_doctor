@@ -46,8 +46,8 @@
         z-index: 1;
         @media(min-width: $hd) {
             min-height: 520px;
-            padding-left: 80px;
-            padding-right: 80px;
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -166,14 +166,17 @@
     }
 
     &__image {
-        height: 100%;
-        left: auto;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-        @media(max-width: $sm - 0.01px) {
-            display: none;
+        @media(max-width: $sm - 0.02px) {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+        @media(min-width: $sm) {
+            height: 100%;
+            left: auto;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
         }
 
         img,
@@ -181,5 +184,13 @@
             display: block;
             height: 100%;
         }
+    }
+
+    &__small-badge {
+        background-color: var(--red_1);
+        border-radius: 10px;
+        color: #fff;
+        font-weight: 500;
+        padding: 4px 16px;
     }
 }
