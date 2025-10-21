@@ -1,7 +1,7 @@
 .main-banner {
     background-image: linear-gradient(270deg, rgba(0, 162, 254, 0.043) 58.52%);
     @media(max-width: $sm - 0.02px) {
-        height: calc(100vh - 80px - 70px - 56px);
+        height: calc(100dvh - 80px - 70px - 56px);
     }
 
     &__container {
