@@ -1,8 +1,6 @@
 .main-banner {
-    //background-image: linear-gradient(270deg, rgba(0, 162, 254, 0.043) 58.52%, rgba(149, 217, 255, 0) 100%), url("../images/backgrounds/main_banner_mobile_bg.jpg");
     background-image: linear-gradient(270deg, rgba(0, 162, 254, 0.043) 58.52%);
-    /*background-repeat: no-repeat; background-size: cover; background-position: 100% 50%;*/
-    /*@media(min-width: $hd) { background-image: linear-gradient(270deg, rgba(0, 162, 254, 0.043) 58.52%, rgba(149, 217, 255, 0) 100%), url("../images/backgrounds/main_banner_desktop_bg.jpg"); }*/
+
     &__container {
         margin-left: auto;
         margin-right: auto;
@@ -60,14 +58,17 @@
             padding-top: 60px;
             padding-bottom: 60px;
         }
+
+        &:has(.main-banner__small-badge) {
+            padding-top: 10px;
+        }
     }
 
     &__title {
-        color: var(--red_1);
         font-size: 28px;
         font-weight: 800;
         line-height: 1.21428;
-        margin-bottom: 24px;
+        margin-bottom: 12px;
         order: 1;
         @media(min-width: $sm) {
             font-size: 40px;
@@ -76,6 +77,10 @@
         @media(min-width: $hd) {
             font-size: 45px;
             line-height: 1.22222;
+        }
+
+        span {
+            color: var(--red_1);
         }
     }
 
@@ -90,7 +95,7 @@
         }
 
         &:not(:last-child) {
-            margin-bottom: 48px;
+            //margin-bottom: 48px;
             @media(min-width: $sm) {
                 margin-bottom: 32px;
             }
@@ -178,7 +183,12 @@
         img,
         picture {
             display: block;
-            height: 100%;
+            @media(max-width: $sm - 0.02px) {
+                max-width: 300px;
+            }
+            @media(min-width: $sm) {
+                height: 100%;
+            }
         }
     }
 
